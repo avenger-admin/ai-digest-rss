@@ -5,9 +5,30 @@
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday AI×SDLC TLDR: do-this-week first, then watch. Full digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
-    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 07:45:00 +0800</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-17</title>
+      <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-17</link>
+      <guid isPermaLink="false">ai-digest-2026-09-17</guid>
+      <pubDate>Thu, 17 Sep 2026 07:45:00 +0800</pubDate>
+      <description><![CDATA[
+<h2>Do this week</h2>
+<ul>
+<li><strong>Copilot code review got shell tools + ensemble Lite:</strong> review agents can run builds/tests behind the agent firewall — treat review as higher privilege near secrets/IaC; fold review wait and tokens into $/merged PR.</li>
+<li><strong>Still: enterprise-managed Copilot agent permissions</strong> — ask/deny shell + network on TF/secrets repos; app-code can stay looser. Managed rules cannot be bypassed.</li>
+<li>Gate agent MCPs/skills/plugins like packages (allowlists); agents pull dependencies without a human in the loop.</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>GitHub HydraFusion research preview: cascade/critique routing for quality at ~36–67% lower estimated cost vs Opus 5 — model-neutral task-shape routing for token-cost standards.</li>
+<li>Sourcegraph Agentic Batch Changes GA (Cloud now; self-hosted with 8.0): pay per merged changeset; agent reacts to CI failures — no unsupervised auto-merge.</li>
+<li>Coder Agents GA + Agent Relay for Claude Code (Sep 15): corp-ready self-hosted execution with RBAC/audit; Relay still early access.</li>
+<li>Anthropic CI 25× in six months — plan test-selection capacity for 10–20× as agents scale.</li>
+</ul>
+]]></description>
+    </item>
     <item>
       <title>AI digest — 2026-09-16</title>
       <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-16</link>
