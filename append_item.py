@@ -28,8 +28,10 @@ def main() -> None:
     if args.watch:
         w_li = "\n".join(f"<li>{html.escape(b)}</li>" for b in args.watch)
         watch_block = f"<h2>Watch</h2>\n<ul>\n{w_li}\n</ul>\n"
+    link = f"https://avenger-admin.github.io/ai-digest-rss/#{args.date}"
     item = f"""    <item>
       <title>AI digest — {args.date}</title>
+      <link>{link}</link>
       <guid isPermaLink="false">ai-digest-{args.date}</guid>
       <pubDate>{rfc}</pubDate>
       <description><![CDATA[
