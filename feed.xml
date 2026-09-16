@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spinal Frontier — Daily AI Digest (TLDR)</title>
+    <link>https://avenger-admin.github.io/ai-digest-rss</link>
+    <description>Weekday AI×SDLC TLDR: do-this-week first, then watch. Full digest stays in Grok Bot room Daily AI News Summary.</description>
+    <language>en-AU</language>
+    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0800</lastBuildDate>
+    <ttl>60</ttl>
+    <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-16</title>
+      <guid isPermaLink="false">ai-digest-2026-09-16</guid>
+      <pubDate>Wed, 16 Sep 2026 07:45:00 +0800</pubDate>
+      <description><![CDATA[
+<h2>Do this week</h2>
+<ul>
+<li><strong>Copilot enterprise-managed agent permissions:</strong> for TF/Scalr + secrets repos, require approval (or block) on shell + network; app-code can stay looser.</li>
+<li>Keep premium/agentic models off-by-default pending metered pilots; use Auto Efficiency for autocomplete-shaped work.</li>
+<li>As coding agents grow, treat CI wait as part of $/merged PR — no auto-approve on IaC/secrets.</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>Anthropic CI scale story (agentic coding straining CI) — plan capacity for 10–20×.</li>
+<li>OpenAI “software factory” multi-agent review patterns (contrast only; they have unlimited tokens).</li>
+<li>Atlassian governed agent loops (early access).</li>
+</ul>
+]]></description>
+    </item>
+  </channel>
+</rss>
