@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spinal Frontier — Daily AI Digest (TLDR)</title>
+    <title>Daily AI Digest (TLDR)</title>
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday AI×SDLC TLDR: do-this-week first, then watch. Full digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
