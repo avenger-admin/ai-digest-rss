@@ -5,9 +5,31 @@
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday popular AI TLDR: major launches, viral explainers, pricing/demos. AI×SDLC work digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
-    <lastBuildDate>Mon, 21 Sep 2026 07:53:52 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 07:59:11 +0800</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-22</title>
+      <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-22</link>
+      <guid isPermaLink="false">ai-digest-2026-09-22</guid>
+      <pubDate>Tue, 22 Sep 2026 07:45:00 +0800</pubDate>
+      <media:thumbnail url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-22.jpg" width="2400" height="1260"/>
+      <media:content url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-22.jpg" type="image/jpeg" medium="image" width="2400" height="1260"/>
+      <description><![CDATA[
+<img src="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-22.jpg" alt="Lead still: Grok 4.7 available in GitHub Copilot"/>
+<h2>Do this week</h2>
+<ul>
+<li>xAI Grok 4.7 (Sep 21): longer multi-step coding/knowledge work at Grok 4.6 prices — $2 / $6 per MTok standard; faster variant $4 / $12. Available via xAI API, Cursor, Grok Build, and third-party routers. Company claims stronger self-verification on long tasks; independent Terminal-Bench figures disagree with xAI’s xHigh listing — treat $/completed job, not headline token rate.</li>
+<li>GitHub Copilot: Grok 4.7 rolling out across VS Code / JetBrains / CLI / cloud agent / Enterprise — usage-based at provider list pricing. Copilot Business/Enterprise admins: new models auto-enable unless model policy default is off or this model is disabled.</li>
+<li>Xiaomi MiMo-V2.6 (Sep 21): open-weights Pro (≈1T sparse MoE / 42B active) + Flash (309B / 15B active), 1M ctx, text/image/video/audio; RL code + envs published; API prices held at V2.5; UltraSpeed hosted tier claimed up to 20× output speed.</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>Cloudflare “Agent Development Lifecycle” stack push (@cloudflare/ci on Workflows, agent traces, preview-per-agent) — industry “software factory” narrative; useful framing for CI/observability, not a reason to drop human gates near IaC/secrets.</li>
+<li>Frontier pricing/perf noise: Grok 4.7 vs Claude/GPT class on Terminal-Bench — watch independent evals before budgeting agent loops.</li>
+</ul>
+]]></description>
+    </item>
     <item>
       <title>AI digest — 2026-09-21</title>
       <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-21</link>
