@@ -5,9 +5,31 @@
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday popular AI TLDR: major launches, viral explainers, pricing/demos. AI×SDLC work digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
-    <lastBuildDate>Tue, 22 Sep 2026 07:59:11 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 08:00:02 +0800</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-23</title>
+      <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-23</link>
+      <guid isPermaLink="false">ai-digest-2026-09-23</guid>
+      <pubDate>Wed, 23 Sep 2026 07:45:00 +0800</pubDate>
+      <media:thumbnail url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-23.jpg" width="1200" height="630"/>
+      <media:content url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-23.jpg" type="image/jpeg" medium="image" width="1200" height="630"/>
+      <description><![CDATA[
+<img src="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-23.jpg" alt="Lead still: Claude Opus 5.5 launch"/>
+<h2>Do this week</h2>
+<ul>
+<li>Anthropic Claude Opus 5.5 (Sep 22): first Claude 5.5 model — claims Fable 5.1-level work at ~40% lower run cost vs Opus 5. List price $4 / $20 per MTok (cache reads $0.20, 60% cheaper); &gt;30% faster output. Live on Claude Platform, AWS (incl. Bedrock), Google Cloud, Azure. Sonnet/Haiku 5.5 “coming weeks.”</li>
+<li>GitHub Copilot: Opus 5.5 rolling out for Pro+/Max/Business/Enterprise across VS Code, JetBrains, CLI, coding agent, Mobile, etc. Usage-based at provider list pricing. Business/Enterprise: new models auto-enable unless model policy default is off or this model is disabled.</li>
+<li>OpenAI GPT-6 Sol + Luna (same day, ~90 min later): Sol $2 / $10, Luna $0.10 / $0.50 per MTok (50% under GPT-5.6 promo). Sol for coding/agentic; Luna for high-volume clerical. API + ChatGPT Work/Codex; Luna also Free/Go desktop.</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>Google AX (open-source Apache 2.0): Kubernetes-style orchestrator for long-running agent sandboxes (Task/Workspace/Gateway/Model) — corp fleet compute primitive, not a hobby LangGraph substitute.</li>
+<li>Price-war signal: cheaper Opus + Sol/Luna same day after both labs talked “pacing the frontier” — watch real $/completed coding job, not list rates alone.</li>
+</ul>
+]]></description>
+    </item>
     <item>
       <title>AI digest — 2026-09-22</title>
       <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-22</link>
