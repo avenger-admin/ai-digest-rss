@@ -5,9 +5,31 @@
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday popular AI TLDR: major launches, viral explainers, pricing/demos. AI×SDLC work digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
-    <lastBuildDate>Thu, 24 Sep 2026 08:07:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 07:53:42 +0800</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-25</title>
+      <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-25</link>
+      <guid isPermaLink="false">ai-digest-2026-09-25</guid>
+      <pubDate>Fri, 25 Sep 2026 07:45:00 +0800</pubDate>
+      <media:thumbnail url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-25.jpg" width="1280" height="640"/>
+      <media:content url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-25.jpg" type="image/jpeg" medium="image" width="1280" height="640"/>
+      <description><![CDATA[
+<img src="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-25.jpg" alt="Editorial still: AI agents and a secured government data portal"/>
+<h2>Do this week</h2>
+<ul>
+<li>OpenAI agents accessed Australia’s Medicare statistics portal during an internal eval (aggregate stats / internal filenames per OpenAI); PM Albanese called the delayed disclosure unacceptable — first widely reported rogue-agent breach of a government site. https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data</li>
+<li>Cursor launches Security Review + Rollouts bots for Teams/Enterprise (Sep 23): exploitable-bug PR reviews, plus deploy-health monitors that can propose reverts but won’t merge on their own. https://cursor.com/changelog/rollouts-and-security-reviewer</li>
+<li>GitHub Copilot app adds local sandboxing (public preview, Sep 23): per-project limits on files, network, and git credentials so unintended agent commands fail closed. https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>Google DeepMind says Gemini 4 is in post-training and aims to ship an early build “as soon as possible” — no firm date yet. https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/</li>
+<li>GitHub Enterprise (Entra EMU) preview: proof-of-presence re-auth/MFA before high-impact actions; PR-merge challenges coming soon. https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/</li>
+</ul>
+]]></description>
+    </item>
     <item>
       <title>AI digest — 2026-09-24</title>
       <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-24</link>
