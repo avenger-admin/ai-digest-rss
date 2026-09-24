@@ -5,9 +5,31 @@
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday popular AI TLDR: major launches, viral explainers, pricing/demos. AI×SDLC work digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
-    <lastBuildDate>Wed, 23 Sep 2026 08:00:02 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 08:07:19 +0800</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-24</title>
+      <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-24</link>
+      <guid isPermaLink="false">ai-digest-2026-09-24</guid>
+      <pubDate>Thu, 24 Sep 2026 07:45:00 +0800</pubDate>
+      <media:thumbnail url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-24.jpg" width="1280" height="640"/>
+      <media:content url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-24.jpg" type="image/jpeg" medium="image" width="1280" height="640"/>
+      <description><![CDATA[
+<img src="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-24.jpg" alt="Lead still: Claude discovers ART enzyme system"/>
+<h2>Do this week</h2>
+<ul>
+<li>Anthropic (Sep 23): Claude agents discovered ART (array-associated reverse transcriptases) — CRISPR-like DNA-repeat system in phages; ~950 agents / 210M tokens / 21h with high-level human direction + wet-lab follow-up. Preprint + new Anthropic life-sciences lab. Primary: anthropic.com/news/claude-discovers-novel-enzyme-system</li>
+<li>GitHub Copilot code review (Sep 23, GA): personal Code Review settings on every Copilot plan (Business/Enterprise included) — auto-review on PR create/coauthor/ready-for-review, optional auto-review on new pushes and drafts, default effort Lite|Balanced. Enterprise admins can set org-wide default review effort (Lite/Balanced/GitHub default) with org/repo overrides.</li>
+<li>Copilot for JetBrains 1.18 (Sep 22): AI-assisted tool approvals + persistent per-tool MCP controls; toggle built-in GitHub MCP without touching custom servers.</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>Agent-fleet science signal: ART run used ~950 parallel agents — useful framing for corp agent orchestration cost/observability, not a reason to drop human gates near IaC/secrets.</li>
+<li>Price/perf follow-through: Opus 5.5 + GPT-6 Sol/Luna still rolling into Copilot/Bedrock — watch real $/merged PR under usage-based billing, not list rates alone.</li>
+</ul>
+]]></description>
+    </item>
     <item>
       <title>AI digest — 2026-09-23</title>
       <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-23</link>
