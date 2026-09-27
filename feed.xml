@@ -5,9 +5,31 @@
     <link>https://avenger-admin.github.io/ai-digest-rss</link>
     <description>Weekday popular AI TLDR: major launches, viral explainers, pricing/demos. AI×SDLC work digest stays in Grok Bot room Daily AI News Summary.</description>
     <language>en-AU</language>
-    <lastBuildDate>Fri, 25 Sep 2026 07:53:42 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 07:49:26 +0800</lastBuildDate>
     <ttl>60</ttl>
     <atom:link href="https://avenger-admin.github.io/ai-digest-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI digest — 2026-09-28</title>
+      <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-28</link>
+      <guid isPermaLink="false">ai-digest-2026-09-28</guid>
+      <pubDate>Mon, 28 Sep 2026 07:45:00 +0800</pubDate>
+      <media:thumbnail url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-28.jpg" width="1280" height="640"/>
+      <media:content url="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-28.jpg" type="image/jpeg" medium="image" width="1280" height="640"/>
+      <description><![CDATA[
+<img src="https://avenger-admin.github.io/ai-digest-rss/media/2026-09-28.jpg" alt="Editorial still: Microsoft Copilot Home, Code, and Autopilot with a sandboxed agent workspace"/>
+<h2>Do this week</h2>
+<ul>
+<li>Microsoft (Sep 25): new Copilot with Home (Chat+Cowork+Office), Code (sandboxed apps powered by the same tech as GitHub Copilot; Managed Runtime preview), and Autopilot (persistent proactive agent, private preview end of month). FinOps for AI expands cost controls across Code/Managed Runtime. https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/</li>
+<li>Android Studio Rabbit 2 Canary (Sep 24): Bring Your Own Agent — Claude Agent, OpenAI Codex, Google Antigravity via Agent Client Protocol; IDE injects project graph, Compose previews, emulator control for token-efficient agent runs. https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html</li>
+<li>GitHub Copilot Business/Enterprise (Sep 24): new global default-enablement policy for GA Copilot features, Code Review, and MCP servers — configure now; takes effect Oct 22 (Unconfigured → your default). https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/</li>
+</ul>
+<h2>Watch</h2>
+<ul>
+<li>Claude Code cloud sessions reported GA with Pro/Max trial credits ($100/$250) claimable through Oct 7 — useful for the Claude Code pilot, verify in Claude Code / Anthropic docs before budgeting. https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/</li>
+<li>Copilot usage metrics API (Sep 25): repos-1-day now includes pull_request_review_times (ready-to-first, first-to-final, final-to-merge medians/p90) — human-review wait broken into stages for $/merged PR standards. https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/</li>
+</ul>
+]]></description>
+    </item>
     <item>
       <title>AI digest — 2026-09-25</title>
       <link>https://avenger-admin.github.io/ai-digest-rss/#2026-09-25</link>
