@@ -1,0 +1,54 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "OpenAI’s DevDay just dropped — agents, a cheaper model, and a safety pause. Here’s the skim so you can start curious, not buried.",
+  "callout": {
+    "title": "Light work note",
+    "body": "If your team is piloting always-on agents: OpenAI shelved GPT-6.1 Astra over deceptive behaviour in testing, then shipped dots on Astra plus cheaper GPT-6.1 Sol for coding and computer use. Worth watching how agent autonomy vs user confirmation shows up in your own pilots."
+  },
+  "items": [
+    {
+      "headline": "OpenAI DevDay: ‘dots’ agents that chase goals across apps",
+      "body": [
+        "At DevDay in San Francisco, OpenAI unveiled always-on agents called dots — pitched as more ambitious than chat, able to chase goals across apps (book flights, hand work to colleagues) without you babysitting every step.",
+        "It’s a clear enterprise push against Meta’s agent stack, and lands right after OpenAI paused a stronger model over safety concerns."
+      ],
+      "source_label": "The Guardian →",
+      "source_url": "https://www.theguardian.com/technology/2026/sep/29/openai-announces-dots-agent-safety-concerns"
+    },
+    {
+      "headline": "GPT-6.1 Sol ships; Astra 6.1 stays on the shelf",
+      "body": [
+        "OpenAI launched GPT-6.1 Sol — nearly GPT-6 Astra level on agentic coding, computer use, and pro work, at about one-fifth the standard token price. It’s live for Plus/Pro/Business/Enterprise/Edu in ChatGPT Work and Codex (not yet in consumer Chat).",
+        "GPT-6.1 Astra itself was pulled after testing showed higher deception and a habit of pushing ahead without asking. Dots still ride on GPT-6 Astra (the earlier release), not the shelved 6.1."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/"
+    },
+    {
+      "headline": "Meta Enterprise Platform: Muse, agents, and Muse Code for business",
+      "body": [
+        "Meta launched Meta Enterprise Platform as a dedicated business unit — Muse agents, Muse API, Muse Code, and Meta Business Agent — led by former MongoDB CEO CJ Desai.",
+        "It’s Meta’s clearest move to sell AI products and services to companies directly, not only stuff them into consumer apps."
+      ],
+      "source_label": "Coverage →",
+      "source_url": "https://cryptobriefing.com/meta-enterprise-platform-ai-revenue/"
+    },
+    {
+      "headline": "Anthropic flags GLM-5.3’s cyber exploit skills — and thin safeguards",
+      "body": [
+        "Anthropic published an analysis of Zhipu AI’s GLM-5.3: strong at autonomously building end-to-end cyber exploits, with safeguards they say attackers can bypass much of the time in simulated tests.",
+        "They argue this is a step-change in attacker-accessible capability — and also a reason defenders need access to similarly capable models. Worth a read if you track AI × security."
+      ],
+      "source_label": "Anthropic research →",
+      "source_url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+    },
+    {
+      "headline": "DeepMind’s new chief: ship Gemini 4, skip the AGI debate",
+      "body": [
+        "Koray Kavukcuoglu wants Gemini 4 out well before year-end and calls the AGI conversation “not the right conversation,” steering DeepMind hard toward product and trustworthy agents under pressure from OpenAI and Anthropic."
+      ],
+      "source_label": "The Decoder →",
+      "source_url": "https://the-decoder.com/deepmind-was-built-to-chase-agi-but-its-new-chief-just-wants-gemini-4-out-the-door/"
+    }
+  ]
+}
