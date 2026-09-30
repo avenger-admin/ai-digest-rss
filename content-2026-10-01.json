@@ -1,0 +1,55 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Gemini 4 finally has a name, Copilot’s multi-model experiment hits VS Code, and AWS gives OpenAI agents a Bedrock home. Easy skim for Thursday.",
+  "callout": {
+    "title": "Light work note",
+    "body": "If you use Copilot Business/Enterprise: HydraFusion just landed in VS Code and the Copilot app as a research preview — an admin may need to flip on preview features before it shows in the model picker. Worth a look if you’re weighing quality vs token cost across models."
+  },
+  "items": [
+    {
+      "headline": "Google ships Gemini 4 Argon — but only to trusted cyber defenders (for now)",
+      "body": [
+        "DeepMind announced Gemini 4 Argon yesterday: a frontier model aimed at long-horizon software engineering, enterprise knowledge work, and cybersecurity defense. It’s already in use inside Google (including large C/C++→Rust migrations) and posts a 1M-token output limit.",
+        "Broader access is phased — starting with paid API customers and Google AI Ultra after more safeguard work. Intro pricing is listed at $2 / $10 per million input/output tokens (rising after the intro period)."
+      ],
+      "source_label": "Google DeepMind →",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    },
+    {
+      "headline": "GitHub’s HydraFusion leaves the CLI — now in VS Code and the Copilot app",
+      "body": [
+        "HydraFusion, Copilot’s multi-model research preview, is now in VS Code (1.140+) and the GitHub Copilot app — not just Copilot CLI. It isn’t one model; it picks among Single, Cascade, or Critique workflows to hit a quality bar efficiently.",
+        "GitHub also improved transparency and real-time progress updates. Available to Pro, Pro+, Business, and Enterprise (org admins must enable preview features for Business/Enterprise)."
+      ],
+      "source_label": "GitHub Changelog →",
+      "source_url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/"
+    },
+    {
+      "headline": "Amazon Bedrock Managed Agents (OpenAI-powered) enter preview",
+      "body": [
+        "AWS and OpenAI jointly launched Bedrock Managed Agents in preview — a customized, AWS-native take on OpenAI’s Agents API. Agents run inside AWS with IAM roles, CloudTrail logging, durable sessions, MCP tools, and optional human approval before consequential actions.",
+        "No extra BMA charge during preview beyond the AWS resources you use. Preview regions: US East (N. Virginia), US West (Oregon), and US East (Ohio)."
+      ],
+      "source_label": "AWS →",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/"
+    },
+    {
+      "headline": "OpenAI says it disrupted a large model-distillation campaign",
+      "body": [
+        "OpenAI reported shutting down a coordinated effort to extract “protected reasoning” from its models — adversarial distillation meant to help train or copy another model. Operators didn’t hack encryption or databases; they manipulated interactions at scale against the terms of service.",
+        "Activity ran from early July, with spikes of ~16k extraction-pattern requests from over 4,000 users, and a related cluster of 15,000+ users disrupted by July 28. Findings were shared via the Frontier Model Forum."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/"
+    },
+    {
+      "headline": "Holo4: open generalist agents that click, code, and call APIs",
+      "body": [
+        "H Company released Holo4 (27B dense and 35B-A3B MoE) — agentic models trained to use GUIs, code, MCP, and APIs in one stack, aimed at real business workflows rather than a single interface.",
+        "Weights are on Hugging Face (including GGUF), with trajectories open-sourced for benchmark replay. On OSWorld 2.0, Holo4 27B scores 61.7% — behind top closed models, but far smaller and cheaper per task."
+      ],
+      "source_label": "Hugging Face blog →",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo4"
+    }
+  ]
+}
