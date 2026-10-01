@@ -1,0 +1,55 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Friday’s skim: always-on agents, snappier voice AI, cheaper enterprise search, watermarked proteins, and a US watchdog looking hard at frontier AI.",
+  "callout": {
+    "title": "Light work note",
+    "body": "Claude Sonnet 5.5 landed on Amazon Bedrock (28 Sep): Anthropic’s faster, lower cost-per-task Sonnet for focused coding and knowledge work, via the global inference profile on bedrock-runtime. Handy if you’re comparing Bedrock options for everyday agent loops."
+  },
+  "items": [
+    {
+      "headline": "Microsoft ships real-time speech: streaming transcription + new voice models",
+      "body": [
+        "On 1 Oct, Microsoft AI put MAI-Transcribe-2-Streaming live — its first streaming speech-to-text model — alongside MAI-Voice-2.1 and the faster Voice-2.1-Flash. Streaming transcription aims for partial results in about ~120 ms across 60 languages; the voice models cover 23 languages with the same speaker identity when switching languages.",
+        "They’re available through Microsoft Foundry (and partners such as Vercel’s AI Gateway). Flash is pitched for low-latency agents (~45 ms model inference, $15 per 1M characters); full Voice-2.1 is $22 per 1M for higher-fidelity narration."
+      ],
+      "source_label": "Microsoft AI →",
+      "source_url": "https://microsoft.ai/models/mai-transcribe-2/"
+    },
+    {
+      "headline": "OpenAI’s Dots: always-on agents that keep working without you prompting",
+      "body": [
+        "At DevDay (29 Sep), OpenAI introduced Dots — persistent agents powered by GPT-6 Astra with their own cloud computer and browser. They can chase goals in the background, connect to thousands of apps via plugins, and show up in ChatGPT, Slack, or Teams.",
+        "Rollout starts with Pro, Business Premium, and Enterprise in eligible markets (you start with your primary dot). Specialist dots for orgs are in preview, including a stated path into Microsoft Agent 365 for governance."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/introducing-dots"
+    },
+    {
+      "headline": "Cohere Embed 5: index once with Pro, query cheaper with Fast",
+      "body": [
+        "On 30 Sep Cohere launched Embed 5 in two tiers that share one embedding space: Pro for maximum retrieval quality ($0.12 per million text tokens) and Fast for live queries ($0.08). Teams can index with Pro and query with Fast without rebuilding the vector index — useful for RAG and agent search costs.",
+        "Both support 128K context, text + images, 100+ languages, and self-hosting (including vLLM). Generally available on Cohere’s API, Model Vault, Microsoft Foundry, and Amazon SageMaker."
+      ],
+      "source_label": "Cohere →",
+      "source_url": "https://cohere.com/blog/embed-5"
+    },
+    {
+      "headline": "DeepMind’s SynthID Bio watermarks AI-designed proteins",
+      "body": [
+        "Also 30 Sep: Google DeepMind introduced SynthID Bio, a proof-of-concept that embeds a verifiable watermark into AI-generated protein sequences and predicted 3D structures — and, in lab tests, still kept the proteins biologically functional.",
+        "The pitch is provenance for biosecurity and database integrity (so synthesis screeners and public repositories can tell “made by AI”). Methods, code, and data are being opened to researchers."
+      ],
+      "source_label": "Google DeepMind →",
+      "source_url": "https://deepmind.google/blog/introducing-synthid-bio/"
+    },
+    {
+      "headline": "FTC opens a probe into OpenAI, Anthropic — and safety evaluator METR",
+      "body": [
+        "On 30 Sep, reporting confirmed by an FTC official said the US Federal Trade Commission is investigating frontier AI labs (including OpenAI and Anthropic) plus nonprofit evaluator METR over potential dangers of their technology. Civil investigative demands (subpoena-like document and testimony requests) are expected in the coming weeks.",
+        "The timing sits beside high-profile agent incidents earlier this year and a White House voluntary safety accord — a reminder that “agents that act on their own” are now a live regulatory topic, not just a product demo."
+      ],
+      "source_label": "Semafor →",
+      "source_url": "https://www.semafor.com/article/09/30/2026/ftc-probes-openai-anthropic-and-metr"
+    }
+  ]
+}
