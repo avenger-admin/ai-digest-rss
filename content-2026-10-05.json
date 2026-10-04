@@ -1,0 +1,55 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Monday’s skim after the weekend: an AI video chat that fooled nearly half its testers, models that decide instead of write, a landmark ruling on AI voice clones, and fresh open tools for robots and search.",
+  "callout": {
+    "title": "Light work note",
+    "body": "Since you’re piloting Claude Code: Anthropic shipped “mods” on 1 Oct (Claude Code 2.1.287+, on by default). They’re small TypeScript functions, packaged as plugins, that can rewrite prompts, guard tool calls, or change the UI. They aren’t sandboxed and run with Claude Code’s full access to the machine, so it’s worth deciding who can install them; Anthropic points orgs to managed settings and a built-in security mod that loads first."
+  },
+  "items": [
+    {
+      "headline": "Tavus says its Griffin video AI fooled 48% of people into thinking it was human",
+      "body": [
+        "Tavus unveiled Griffin late last week, calling it the first “human interaction model”: an AI that holds live, face-to-face video conversations, reading your voice and expressions and answering with speech, facial movement, and body language in real time. Tavus says 48% of people who chatted with it thought they were talking to a real person, versus under 3% for earlier systems.",
+        "It isn’t public yet. Griffin-Lite is a limited research preview for select testers, and the founder says they’re working with partners on safeguards so people always know they’re talking to an AI."
+      ],
+      "source_label": "Tavus →",
+      "source_url": "https://www.tavus.io/griffin"
+    },
+    {
+      "headline": "“Decision models” are a thing now: Cloudflare and AWS ship AIs that pick, not write",
+      "body": [
+        "On 1 Oct Cloudflare released Clef (27B) and Clef-flash (9B), and a day later AWS Strands Labs released Strands Decider 2B. Instead of generating text, these models read a situation and a set of allowed answers, then return a probability for each one, which suits jobs like routing a request, blocking it, or escalating to a human.",
+        "The appeal is speed and cost: Clef-flash reports a median of about 39 ms per decision. Both are open-weight under Apache 2.0 on Hugging Face, Clef also runs on Cloudflare Workers AI, and Cloudflare is offering hands-on fine-tuning for custom workloads."
+      ],
+      "source_label": "Cloudflare →",
+      "source_url": "https://blog.cloudflare.com/clef-decision-models/"
+    },
+    {
+      "headline": "A Tokyo court says your voice can be protected from AI clones",
+      "body": [
+        "In a case brought by voice actor Kenjiro Tsuda (Jujutsu Kaisen) against TikTok’s operator, the Tokyo District Court ruled that using an AI voice resembling a performer to draw in an audience can infringe their publicity rights. More than 180 videos with a voice closely mimicking his had been posted without permission.",
+        "It’s the first time a Japanese court has explicitly put a person’s voice alongside their name and face under that protection, which could shape how platforms and voice-cloning apps handle imitations."
+      ],
+      "source_label": "News On Japan →",
+      "source_url": "https://newsonjapan.com/article/150940.php"
+    },
+    {
+      "headline": "NVIDIA open-sources OSMO, the job runner behind its robot AI work",
+      "body": [
+        "NVIDIA has released OSMO, a Kubernetes-based orchestrator it built internally for projects like GR00T and Isaac Sim. Teams describe training, simulation, and hardware-in-the-loop tests in one YAML file, and OSMO sends each job to the right hardware, from big GB200 clusters down to Jetson edge devices.",
+        "It landed in a busy week for open developer tooling, alongside Cloudflare open-sourcing Forge, a pipeline that generates SDKs, CLIs, and docs from an API."
+      ],
+      "source_label": "Hypernova →",
+      "source_url": "https://www.hypernova.news/article/nvidia-open-sources-osmo-a-kubernetes-orchestrator-for-robots"
+    },
+    {
+      "headline": "Perplexity’s new embedding model fetches the answer and the evidence",
+      "body": [
+        "Perplexity Research and turbopuffer released pplx-embed-v2-context-9b-preview on 2 Oct. It embeds each chunk with the whole document in view and is trained to retrieve an answer together with the context needed to check it, rather than one “gold” passage.",
+        "It’s a self-hosted preview with MIT-licensed weights on Hugging Face (not on Perplexity’s API yet), covering 50+ languages, with a warning that the interface may still change."
+      ],
+      "source_label": "Laplace Atlas →",
+      "source_url": "https://www.laplaceatlas.com/stories/perplexity-and-turbopuffer-release-pplx-embed-v2-context-9b-preview-embe-6045cf0c"
+    }
+  ]
+}
