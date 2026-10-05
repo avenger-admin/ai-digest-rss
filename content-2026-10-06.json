@@ -1,0 +1,55 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Tuesday’s skim: a big new open model from a US startup, invisible watermarks coming to ChatGPT in Europe, a cheap way to plug open models into the coding agents you already use, JetBrains’ new agent hub, and a German model built for government work.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Together Link is the one to bookmark if token spend is on your mind: it keeps Claude Code or Codex as-is and quietly routes easy tasks to cheaper open models. It’s a beta, so treat it as something to try in a sandbox, not roll out."
+  },
+  "items": [
+    {
+      "headline": "Reflection unveils Beam, a 501-billion-parameter open model aimed at coding and agents",
+      "body": [
+        "Reflection AI, a two-year-old US startup, showed off Beam on Monday, its first open-weight model. It’s a mixture-of-experts design with 501B total parameters but only 23B active at a time, built for reasoning, coding, and agent work.",
+        "Reflection says it matches Z.ai’s GLM-5.2 on reasoning benchmarks while using 3–4x less compute, though nobody has checked that independently yet. Weights are due later this month under Apache 2.0; for now there’s a waitlist."
+      ],
+      "source_label": "Reflection →",
+      "source_url": "https://reflection.ai/blog/introducing-beam"
+    },
+    {
+      "headline": "ChatGPT and Codex will start invisibly watermarking text in the EU",
+      "body": [
+        "To meet the EU AI Act’s transparency rules, OpenAI will add a hidden watermark to text from ChatGPT and Codex for EU users over the coming weeks. Outside the EU it isn’t on by default, but API developers anywhere can switch it on for some models starting now.",
+        "It follows Anthropic, which began watermarking Claude’s text worldwide two months ago and got some pushback from users who felt the words were theirs."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+    },
+    {
+      "headline": "Together Link swaps cheaper open models into Claude Code, Codex, and friends",
+      "body": [
+        "Together AI released a free, MIT-licensed command-line tool that connects coding agents like Claude Code, Codex, and OpenCode to open models such as Kimi K3 and GLM 5.3. Its default router looks at each session’s first task and sends quick fixes to fast, cheap models and hard problems to stronger ones.",
+        "Together claims savings of over 50%, and 50–80% compared with running everything on Opus 5.5. It’s in beta on macOS and Linux only."
+      ],
+      "source_label": "MarkTechPost →",
+      "source_url": "https://www.marktechpost.com/2026/10/05/meet-together-link-a-free-cli-that-runs-open-models-like-kimi-k3-and-glm-5-3-inside-claude-code-codex-and-opencode/"
+    },
+    {
+      "headline": "JetBrains opens early access to Air, one home for all your coding agents",
+      "body": [
+        "Air now runs inside JetBrains IDEs as an early-access plugin and in the 2026.3 EAP builds. It supports Codex, Gemini, GitHub Copilot, Claude Agent, and JetBrains’ own Junie out of the box, and you can bring your existing subscriptions.",
+        "To get people trying it, JetBrains is giving away free runs of Junie Lite, a cost-efficient agent for everyday tasks. The older AI Assistant plugin sticks around separately."
+      ],
+      "source_label": "JetBrains →",
+      "source_url": "https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/"
+    },
+    {
+      "headline": "Aleph Alpha releases Kolibri, a German–English model for government and industry",
+      "body": [
+        "Germany’s Aleph Alpha released Kolibri, a 78B-parameter model with only about 3B active per token, so it runs fast and cheap. It’s built for public administration, aviation, and industry, with a context window of up to a million tokens.",
+        "It’s designed to run on infrastructure customers control, with the EU AI Act in mind, and the weights are on Hugging Face under Apache 2.0."
+      ],
+      "source_label": "The Decoder →",
+      "source_url": "https://the-decoder.com/aleph-alpha-releases-kolibri-an-open-weight-model-that-makes-the-case-for-european-ai-sovereignty/"
+    }
+  ]
+}
