@@ -1,0 +1,55 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Wednesday’s skim: Mistral goes big with a trillion-parameter model, Google ships a small search model you can run on your own machine, OpenAI teaches its agents contract paperwork, a new assistant that drives your computer for you, and why so many websites are slamming the door on AI agents.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "EmbeddingGemma 2 is the quiet one to bookmark: an Apache 2.0 search model small enough to run on a laptop, so code and doc search can stay on your own hardware instead of going out to a cloud API."
+  },
+  "items": [
+    {
+      "headline": "Mistral unveils Large 4, a trillion-parameter model it nicknames “Le Chonk”",
+      "body": [
+        "France’s Mistral released Mistral Large 4 on Tuesday in public preview through its API. It’s a mixture-of-experts model with 1.05 trillion total parameters (49 billion active at a time), handles images as well as text, and has a one-million-token context window.",
+        "Mistral says it’s the best open-weight model made in Europe or the US, especially for coding, agents, cybersecurity, and finance, though independent benchmarks are still to come. Preview pricing is $0.68 per million input tokens and $2.09 per million output, and the weights are due at the end of October after safety testing."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
+    },
+    {
+      "headline": "Google’s EmbeddingGemma 2 brings multimodal search onto your own device",
+      "body": [
+        "Google released EmbeddingGemma 2, a 740-million-parameter open model built on Gemma 4 that puts text, code, images, video, and audio into one shared search space, so a text query can find a matching photo or a moment in a clip.",
+        "It’s Apache 2.0, the weights are on Hugging Face and Kaggle, and it works with Sentence Transformers out of the box. Android ML Kit support is promised in the coming weeks."
+      ],
+      "source_label": "RuntimeWire →",
+      "source_url": "https://runtimewire.com/article/google-embeddinggemma-2-on-device-multimodal-search"
+    },
+    {
+      "headline": "OpenAI trains GPT-6 Astra on real contracting software with Ironclad",
+      "body": [
+        "OpenAI’s first computer-use research partnership pairs GPT-6 Astra with Ironclad, the contract-management company. Together they built 11 realistic tasks, like setting up agreements, approvals, and reusable legal terms inside Ironclad’s software.",
+        "Astra averaged 55% on those tasks against 41.6% for GPT-5.6 Sol, and took about half the time per attempt (19 minutes versus 37). It’s a glimpse of where agents are heading: learning a company’s actual tools and rules, not just browsing the web."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/advancing-computer-use-with-ironclad"
+    },
+    {
+      "headline": "Hark Pro launches as a free assistant that uses your computer for you",
+      "body": [
+        "Hark, a startup from serial founder Brett Adcock, widely released Hark Pro on Tuesday. It runs on a model trained specifically for computer use, sits full-screen with a chat box and little dashboard panels, and proactively offers to handle things like expenses, emails, and bookings.",
+        "One nice touch is that it shows a small live window of the agent navigating the web, so you can see what it’s doing. It’s free with a paid tier for heavy users, and Hark is promising its own AI device in 2027."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/"
+    },
+    {
+      "headline": "AI agents keep getting bounced by websites, and Meta wants a fix",
+      "body": [
+        "Personal agents like Meta’s Muse and ChatGPT’s Dots are running into blocks across the web. Amazon is deliberately blocking Muse, while other sites, from airlines to Yelp and eBay, are turning agents away through policy or plain old “are you human?” checks.",
+        "Meta, Walmart, Stripe, Sierra, and others have started work on an open standard for how agents talk to businesses, so a helpful agent shopping for you can be told apart from a spam bot."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
+    }
+  ]
+}
