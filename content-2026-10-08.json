@@ -1,0 +1,55 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Thursday’s skim: ChatGPT starts answering with interactive pictures and buttons, OpenAI drops hundreds of AI-made maths results in one go, tiny “decision models” arrive from Liquid AI and OpenAI, a $3,499 box that runs your AI at home, and Figma’s design agent leaves beta.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "OpenAI’s new Decisions API charges $0.10 per million input tokens and nothing for output, so routing a request to the right model or tagging a ticket costs a sliver of a normal chat call. Liquid’s d1-3B does the same kind of job on your own hardware. Both are worth a quick test anywhere we pay a big model just to pick between a few options."
+  },
+  "items": [
+    {
+      "headline": "ChatGPT gets a lot more visual with “Intelligent UI”",
+      "body": [
+        "OpenAI rolled out GPT-6 inside ChatGPT on Wednesday, and with it a feature called Intelligent UI. Answers can now include interactive diagrams, editable charts, tappable buttons, and little custom tools, like a bill splitter or a retirement calculator built on the spot right in the chat.",
+        "Plus, Pro, Business, and Enterprise users get it now on GPT-6 Sol, and free and Go users get it today on the lighter GPT-6 Luna. If you prefer plain text, you can dial the visuals back."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/"
+    },
+    {
+      "headline": "OpenAI drops hundreds of AI-made maths results in one go",
+      "body": [
+        "OpenAI published 372 results from an unnamed internal model, each meant to solve or substantially advance an open maths problem, including progress related to the Riemann hypothesis and faster versions of well-known algorithms. Most came from a single prompt to a single agent, at roughly three hours of compute each, and they’re posted on GitHub rather than in journals.",
+        "Mathematicians are split. Many are excited by the sheer amount of new ground, while others point out that the release skips community guidelines like naming the model and saying how many problems it tried and failed."
+      ],
+      "source_label": "The Decoder →",
+      "source_url": "https://the-decoder.com/openai-dumps-372-ai-generated-math-proofs-on-github-telling-the-academic-world-to-keep-up/"
+    },
+    {
+      "headline": "Small, fast “decision models” keep coming, from Liquid AI and OpenAI",
+      "body": [
+        "Liquid AI released open-weight d1-3B and an experimental d1-omni-600M. Instead of writing text, they take a situation (text, images, or audio for the small one) and return a yes/no probability, a pick from a list, or a score, in a single pass. d1-3B answers in about 8 ms on an RTX 4090 and 50 ms on a tiny Jetson Orin Nano.",
+        "OpenAI’s Decisions API went into public beta the day before, built on GPT-6 Luna, and OpenAI also trimmed its API rate-limit tiers from five to three, with the top tier now unlocked after $500 in payments."
+      ],
+      "source_label": "Liquid AI →",
+      "source_url": "https://www.liquid.ai/blog/d1-open"
+    },
+    {
+      "headline": "Ghost’s $3,499 Core is a screenless box that runs your AI at home",
+      "body": [
+        "Ghost, a San Francisco startup led by 19-year-old Zain Javaid, came out of stealth with an $11 million seed round from Andreessen Horowitz. Its first product, Core, packs an Nvidia RTX Pro 4000 Blackwell GPU with 24GB of memory, 64GB of RAM, and preloaded open models, and you talk to it from your phone.",
+        "The pitch is that your models, memory, and personal data stay encrypted on the device, with no subscription required. The first batch ships at the end of October, so independent reviews are still to come."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/05/at-19-ghost-founder-raises-11-million-to-build-a-3499-computer-for-your-personal-ai/"
+    },
+    {
+      "headline": "Figma’s design agent is out of beta",
+      "body": [
+        "Figma’s AI agent, which works directly on the design canvas, is now generally available after launching in beta in May. It’s faster, can search across your Figma files, FigJam boards, and Slides for context, and lets you watch teammates’ agents working live.",
+        "Teams can also give it markdown guideline files with their design rules, which it reads every time someone prompts with that library enabled. It now draws from Figma’s AI credits on paid plans."
+      ],
+      "source_label": "Figma →",
+      "source_url": "https://www.figma.com/release-notes/"
+    }
+  ]
+}
