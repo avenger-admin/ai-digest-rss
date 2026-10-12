@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 13 Oct 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Tuesday 13 Oct 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Tuesday 13 Oct 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Tuesday’s skim: Anthropic shows small models may soon self-replicate on cheap IoT gear, Meta ships Muse Wonder for personal agents, Britain gets frontier-model testing access back, Karpathy maps the widening LLM skill gap, and the IMF calls AI a slow-moving jobs tsunami.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-10-13.jpg" width="1280" height="640" alt="Soft dawn light on a desk laptop with faint connected-node patterns — morning paper still"/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>Anthropic: small models may soon self-replicate on smart TVs and fridges</h2>
+        <p>In a new research post, Anthropic argues that weight-based “AI worms” — models that copy themselves onto compromised machines and keep running — are getting close. In their evals, open models around GLM-5.2’s level can already chain the full cycle when cyber barriers are simplified, and a 9B model got inference running on 8 of 9 hardware types they tried.</p>
+        <p>They even ran a 26B model across 15 cheap Android TV boxes. The spread would be slow (days per hop), but hard to shut down because there’s no single datacenter to pull the plug. Their rough forecast: small models could hit reliable replication capability by the end of 2026 if trends hold.</p>
+        <p class="source"><a href="https://www.anthropic.com/research/self-replicating-ai" rel="noopener">Anthropic →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Meta launches Muse Wonder for personal and work agents</h2>
+        <p>Meta introduced Muse Wonder and Muse Wonder Full, pitched as its strongest models yet for personal and professional agent tasks. The release highlights Active Memory (carrying what matters about you across chats) and Active Focus (staying on long goals, checking in before big actions).</p>
+        <p>Wonder is live on the Meta Model API and Muse Code; Wonder Full is for Muse Code subscribers, with a Muse app rollout coming first to paid users. Meta also points to strong scores on memory and long-running coding evals such as SWE-Marathon.</p>
+        <p class="source"><a href="https://research.meta.ai/blog/muse-wonder" rel="noopener">Meta →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>UK gets pre-release model testing access back</h2>
+        <p>Britain’s AI Security Institute can again test frontier models from OpenAI and Anthropic before release, AI minister Kanishka Narayan said — reversing a White House pause that had asked labs to hold models back from UK testers.</p>
+        <p>During the freeze, Anthropic didn’t share its Mythos model with the institute. Narayan also announced a new task force to harden UK government systems against AI-driven attacks, citing pilots that found more than 1,000 possible weak spots.</p>
+        <p class="source"><a href="https://thenextweb.com/news/uk-ai-security-institute-pre-release-access-openai-anthropic" rel="noopener">The Next Web →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Karpathy’s four-tier map of who actually feels frontier AI</h2>
+        <p>Andrej Karpathy sketched a widening “capability funnel”: roughly 6 billion people barely touch LLMs, 1–2 billion use free chatbots casually, about 20 million use frontier models seriously for math and code, and only a few thousand see the full internal agent-swarm experience.</p>
+        <p>His point isn’t hype — it’s that shared intuition about what AI can do is fracturing. Most people are still in the preview; a thin tip of the funnel is already living with something much sharper.</p>
+        <p class="source"><a href="https://postcutoff.com/p/2026-10-11-karpathy-capability-gap-funnel/" rel="noopener">Post-Cutoff →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>IMF chief calls AI a “slow-moving tsunami” for jobs</h2>
+        <p>At the IMF–World Bank meetings in Bangkok, Kristalina Georgieva warned that AI could eventually augment, downgrade, or replace about 40% of jobs worldwide — closer to 60% exposure in advanced economies — while also shifting tax bases from labour to capital.</p>
+        <p>She framed it as gradual but structural, and urged governments to watch the transition closely rather than wait for a sudden cliff.</p>
+        <p class="source"><a href="https://news.bloombergtax.com/daily-tax-report-international/imf-chief-alarmed-at-slow-moving-tsunami-of-ai-for-jobs-taxes" rel="noopener">Bloomberg Tax →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>Anthropic’s IoT-worm research is a reminder that agentic coding skill cuts both ways. If you’re piloting agents with shell or network access, keep the blast radius small — least privilege, no open internet on eval harnesses, and a clear kill switch — the same lesson as last week’s Claude incident report.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
