@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 14 Oct 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Wednesday 14 Oct 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Wednesday 14 Oct 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Wednesday’s skim: Google finally ships Gemini 4 Argon (and it’s already in Copilot), Anthropic says it has choked off most Claude distillation, OpenAI used its own models to catch an office bugger, and Fish Audio’s new voice model takes direction like an actor.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-10-14.jpg" width="1280" height="640" alt="Sunlit desk at dawn with a laptop showing glowing blue-violet crystals, a coffee cup and headphones"/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>Google finally launches Gemini 4 Argon</h2>
+        <p>After months of teasers, Google’s new frontier model is out. Google says Argon answers more directly, with less hedging and repetition, and The Verge reports Google claims it beats GPT-6 Astra, Claude Fable 5.1 and Claude Opus 5.5 on a range of coding, science, finance and law benchmarks. It has a 1M-token input-output limit through the Gemini API.</p>
+        <p>Pricing starts at an introductory $2 per million input tokens and $10 per million output (cached input 95% off), rising to $4 and $20 after 30 November. It’s live for developers in AI Studio, for Pro and Ultra subscribers in the Gemini app, and it landed in GitHub Copilot the same day.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" rel="noopener">Google →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Anthropic says it has cut Claude distillation by 90–99%</h2>
+        <p>Anthropic shared how it’s fighting “distillation attacks”, where rivals harvest Claude’s step-by-step reasoning through networks of fake accounts to train their own models. New defences include “preserved thinking” (new API accounts can’t edit Claude’s earlier context), a two-stage classifier that blocks reasoning-extraction attempts, and stricter limits and bans for repeat offenders.</p>
+        <p>The result, it says, is 10 to 100 times less reasoning leaking out, and tens of thousands of accounts banned. It names Zhipu, which it says distilled cyber skills into GLM-5.3, and Moonshot. Anthropic admits there are trade-offs: some developers had to update their integrations, and in under 0.1% of cases a legitimate request gets blocked and still charged.</p>
+        <p class="source"><a href="https://www.anthropic.com/research/distillation-defenses" rel="noopener">Anthropic →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>OpenAI used its own models to catch a hidden office bug</h2>
+        <p>OpenAI says the FBI has arrested one of its engineers after a sophisticated listening device was found hidden in one of its San Francisco offices. The company says it used its own models to work out what the device was, where it came from and who planted it.</p>
+        <p>OpenAI says it has no sign the person accessed model weights, source code or customer data, and the employee has been fired. It’s pitching the episode as an example of AI helping defend against insider threats.</p>
+        <p class="source"><a href="https://www.nbcnews.com/tech/tech-news/openai-employee-arrested-hidden-listening-device-company-says-rcna603262" rel="noopener">NBC News →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Fish Audio’s Drama 3 lets you direct an AI voice like an actor</h2>
+        <p>Fish Audio released Drama 3, a text-to-speech model you steer in plain words, describing how a line should be delivered and letting it play the part. It speaks 83 languages and is aimed at audiobooks, audio drama, game dialogue and short video. The launch video has Uncle Roger directing his own AI clone.</p>
+        <p>It’s on fish.audio, in its iOS and Android apps, and through the API, which is 80% off ($10 per million characters) until 12 November.</p>
+        <p class="source"><a href="https://fish.audio/blog/fish-audio-drama-3/" rel="noopener">Fish Audio →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>Gemini 4 Argon is now generally available in GitHub Copilot for Business and Enterprise, and under default model enablement it switches on automatically unless an admin has turned that off. It’s billed at Google’s list price under usage-based billing, so it’s worth a quick look at your org’s Copilot model policy before people start reaching for it on big agent runs.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
