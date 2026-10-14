@@ -1,0 +1,46 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Thursday’s skim: Anthropic’s agents wrote so much code that Git couldn’t keep up, Google Play now lets you install the apps you vibe-code for yourself, Liquid AI ships a fast agent model that runs on a laptop, and Physical Intelligence opens its robot brains to outside teams.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Anthropic has put OpenTelemetry tracing for the Claude API and Managed Agents into public beta: add a destination in the Claude Console and every model call, tool use and token count shows up in tools like Sentry, Langfuse or LangSmith, with a metadata-only mode if you don’t want prompts exported. One catch for us: Sentry’s guide says Amazon Bedrock and Google Vertex aren’t supported yet, so it only covers traffic going straight to Anthropic’s own platform."
+  },
+  "items": [
+    {
+      "headline": "Anthropic’s agents outgrew Git, so it built its own",
+      "body": [
+        "Anthropic says merges to its monorepo jumped from about 2,500 a day in May to more than 30,000 a day by September, almost all of it from Claude, and Git became its biggest bottleneck. It was running several hundred internal Git mirrors just to cope with roughly 25 million CI checkouts a day.",
+        "So a team of seven built Scion, an always-online version control system where the server does the commits, merges and history lookups, and migrated the whole monorepo in five months. Checkouts now take seconds instead of minutes, and the setup uses about 200 times less CPU and memory than the old mirrors. Anthropic is clear it isn’t a Git replacement for normal teams and won’t open-source it, but it wants to work with GitHub, GitLab and the open-source community to bring the ideas to Git."
+      ],
+      "source_label": "Anthropic →",
+      "source_url": "https://www.anthropic.com/engineering/redesigning-source-control"
+    },
+    {
+      "headline": "Google Play will now install the apps you vibe-code for yourself",
+      "body": [
+        "You can describe an Android app in plain words in Google AI Studio, and Google Play will now install it on your own phone through a new “personal library”, with no developer account and nothing published to the public store. Nobody else can see or find these apps.",
+        "It’s rolling out first to people 18 and over in select markets, including the US. Google says sharing with a small circle of friends and family is coming in the next few months, and there’ll be a path to a proper public listing (with the usual reviews) if an app takes off."
+      ],
+      "source_label": "TechCrunch →",
+      "source_url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/"
+    },
+    {
+      "headline": "Liquid AI’s new open model runs agents fast on your own laptop",
+      "body": [
+        "Liquid AI released LFM2.5-24B-A2B, a 24-billion-parameter model that only uses about 2 billion of them for each word it writes, so it’s quick and light enough to run locally. It thinks before it answers, calls tools, handles a 131K-token context, and is tuned for multi-step agent work.",
+        "Liquid says it runs at 184 tokens a second on an Apple M5 Max and 114 on an AMD Ryzen AI Max+ 395. The weights are open on Hugging Face, with ready-made builds for llama.cpp, MLX, vLLM and ONNX, which makes it an interesting one to watch for private, self-hosted coding helpers."
+      ],
+      "source_label": "Liquid AI →",
+      "source_url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+    },
+    {
+      "headline": "Physical Intelligence opens its robot brains to outside teams",
+      "body": [
+        "Physical Intelligence, the startup behind the π0 and π0.5 robot foundation models, launched a beta API. Robotics teams upload demonstrations of their own robot doing a task, Pi fine-tunes its latest model on its own infrastructure, and the team runs the result through a hosted endpoint.",
+        "Early partners include an autonomous wheel loader and a deburring robot that got working after four days of iteration. It’s a waitlist for now, and pricing hasn’t been published, but it feels a bit like the early days of LLM APIs, this time for machines that pick, pack and build."
+      ],
+      "source_label": "Physical Intelligence →",
+      "source_url": "https://www.pi.website/blog/api-beta"
+    }
+  ]
+}
