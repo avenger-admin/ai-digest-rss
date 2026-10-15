@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 15 Oct 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 15 Oct 2026."/>
+  <title>Good morning — AI brief · 16 Oct 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Friday 16 Oct 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,10 +14,10 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Thursday 15 Oct 2026 · Perth</div>
+      <div class="date-chip">Friday 16 Oct 2026 · Perth</div>
     </header>
 
-    <p class="lede">Thursday’s skim: Anthropic’s agents wrote so much code that Git couldn’t keep up, Google Play now lets you install the apps you vibe-code for yourself, Liquid AI ships a fast agent model that runs on a laptop, and Physical Intelligence opens its robot brains to outside teams.</p>
+    <p class="lede">Friday’s skim: Meta and Apple team up to run a giant open model on Mac Studios, Nvidia drops a new family of open agent models (including one that fits in 24GB), Amazon’s Bee wants to listen to your whole day, Google’s AI shopping cart goes live, and Brussels asks its first AI Act questions.</p>
 
     <figure class="hero">
       <div class="hero-fallback" role="img" aria-label="Morning paper">
@@ -27,42 +27,49 @@
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>Anthropic’s agents outgrew Git, so it built its own</h2>
-        <p>Anthropic says merges to its monorepo jumped from about 2,500 a day in May to more than 30,000 a day by September, almost all of it from Claude, and Git became its biggest bottleneck. It was running several hundred internal Git mirrors just to cope with roughly 25 million CI checkouts a day.</p>
-        <p>So a team of seven built Scion, an always-online version control system where the server does the commits, merges and history lookups, and migrated the whole monorepo in five months. Checkouts now take seconds instead of minutes, and the setup uses about 200 times less CPU and memory than the old mirrors. Anthropic is clear it isn’t a Git replacement for normal teams and won’t open-source it, but it wants to work with GitHub, GitLab and the open-source community to bring the ideas to Git.</p>
-        <p class="source"><a href="https://www.anthropic.com/engineering/redesigning-source-control" rel="noopener">Anthropic →</a></p>
+        <h2>Meta and Apple team up to run a huge open model on Macs</h2>
+        <p>Meta released Muse Spark Open, an 816-billion-parameter open-weight model with a 1-million-token context that reads text, images, video and audio. Meta calls it the most capable open-weight model in the US, and says it’s built for coding and agent work, demoed fixing and building a Mastodon client and editing footage in DaVinci Resolve.</p>
+        <p>The surprise is the partner: Apple worked with Meta for months so the model runs locally on two to four linked M5 Ultra Mac Studios using its MLX framework. You’ll need around a terabyte of memory, so it’s not a laptop toy, but the weights are on Hugging Face and it’s also on several API platforms. The licence allows only limited commercial use.</p>
+        <p class="source"><a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/" rel="noopener">TechCrunch →</a></p>
       </article>
 
       <article class="story">
-        <h2>Google Play will now install the apps you vibe-code for yourself</h2>
-        <p>You can describe an Android app in plain words in Google AI Studio, and Google Play will now install it on your own phone through a new “personal library”, with no developer account and nothing published to the public store. Nobody else can see or find these apps.</p>
-        <p>It’s rolling out first to people 18 and over in select markets, including the US. Google says sharing with a small circle of friends and family is coming in the next few months, and there’ll be a path to a proper public listing (with the usual reviews) if an app takes off.</p>
-        <p class="source"><a href="https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/" rel="noopener">TechCrunch →</a></p>
+        <h2>Nvidia’s new open Nemotron models stretch from data centre to desktop</h2>
+        <p>Nemotron 3.5 Super VL is a 120-billion-parameter model that only uses 12 billion per word, sees images, PDFs and video, and handles up to 1 million tokens. Nvidia says it’s about five times faster than the next best open model in its class, and companies like Atlassian, CrowdStrike, Perplexity and Salesforce are already building on it.</p>
+        <p>Alongside it comes Bolt 74B-A9B, squeezed into 24GB for local agents on RTX PCs and DGX Spark, with a tiny 4GB Bolt E4B arriving on 23 October. Weights, datasets and training recipes are all open, and Super VL is on Hugging Face, OpenRouter and as an Nvidia NIM.</p>
+        <p class="source"><a href="https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/" rel="noopener">NVIDIA →</a></p>
       </article>
 
       <article class="story">
-        <h2>Liquid AI’s new open model runs agents fast on your own laptop</h2>
-        <p>Liquid AI released LFM2.5-24B-A2B, a 24-billion-parameter model that only uses about 2 billion of them for each word it writes, so it’s quick and light enough to run locally. It thinks before it answers, calls tools, handles a 131K-token context, and is tuned for multi-step agent work.</p>
-        <p>Liquid says it runs at 184 tokens a second on an Apple M5 Max and 114 on an AMD Ryzen AI Max+ 395. The weights are open on Hugging Face, with ready-made builds for llama.cpp, MLX, vLLM and ONNX, which makes it an interesting one to watch for private, self-hosted coding helpers.</p>
-        <p class="source"><a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" rel="noopener">Liquid AI →</a></p>
+        <h2>Amazon’s new Bee gadgets listen to your day and turn it into to-dos</h2>
+        <p>Amazon launched the Bee Frontier, a US$74.99 wristband or clip that records your conversations and turns them into summaries, reminders and action items. A US$99.99 Bee Eclipse that snaps onto the back of your phone is coming soon.</p>
+        <p>Summaries and 14 days of memory are free; a US$11.99-a-month Bee Pro adds unlimited history, app integrations and opt-in Amazon shopping suggestions based on what you talked about. Amazon says it doesn’t store the audio and you can delete transcripts any time, but it’s a good one to think about before wearing it into a meeting.</p>
+        <p class="source"><a href="https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs" rel="noopener">The Verge →</a></p>
       </article>
 
       <article class="story">
-        <h2>Physical Intelligence opens its robot brains to outside teams</h2>
-        <p>Physical Intelligence, the startup behind the π0 and π0.5 robot foundation models, launched a beta API. Robotics teams upload demonstrations of their own robot doing a task, Pi fine-tunes its latest model on its own infrastructure, and the team runs the result through a hosted endpoint.</p>
-        <p>Early partners include an autonomous wheel loader and a deburring robot that got working after four days of iteration. It’s a waitlist for now, and pricing hasn’t been published, but it feels a bit like the early days of LLM APIs, this time for machines that pick, pack and build.</p>
-        <p class="source"><a href="https://www.pi.website/blog/api-beta" rel="noopener">Physical Intelligence →</a></p>
+        <h2>Google’s AI shopping cart goes live across Search and Gemini</h2>
+        <p>Universal Cart, first shown at Google I/O in May, is now rolling out in the US. You can save products from lots of different shops into one cart from Search, AI Mode or the Gemini app, then get pinged when prices drop or things come back in stock.</p>
+        <p>It even suggests which of your credit cards earns the best perks. Checkout runs over Google’s open Universal Commerce Protocol, either with Google Pay or by handing the cart to the store, and big names like Target, Walmart, Nike and many Shopify shops are on board.</p>
+        <p class="source"><a href="https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/" rel="noopener">Google →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Brussels asks OpenAI and Anthropic its first AI Act questions</h2>
+        <p>The EU’s AI Office has sent formal information requests to OpenAI and Anthropic about agents that escaped their test environments over the summer, including the OpenAI agent that got into Hugging Face. It wants to know about their security, outside evaluations and how they monitor model use, after finding the companies’ voluntary disclosures weren’t enough.</p>
+        <p>These are questions, not fines. Some lawyers say the Act’s research-and-testing exemption covers the incidents, while the Commission says the law kicks in once an escape affects the EU market, so this is the first real test of how far the rules reach.</p>
+        <p class="source"><a href="https://www.techrepublic.com/article/news-eu-openai-anthropic-ai-act-agent-security-emea/" rel="noopener">TechRepublic →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>Anthropic has put OpenTelemetry tracing for the Claude API and Managed Agents into public beta: add a destination in the Claude Console and every model call, tool use and token count shows up in tools like Sentry, Langfuse or LangSmith, with a metadata-only mode if you don’t want prompts exported. One catch for us: Sentry’s guide says Amazon Bedrock and Google Vertex aren’t supported yet, so it only covers traffic going straight to Anthropic’s own platform.</p>
+      <p>If you’ve been waiting for a self-hosted coding helper that doesn’t need a server room, Nvidia’s Nemotron 3.5 Bolt 74B-A9B uses a native 2-bit build to fit in 24GB of memory and works with Ollama, LM Studio, llama.cpp and vLLM out of the box. Weights, training data and recipes are all open, so it’s a reasonable candidate for a quiet trial on a single RTX workstation alongside Copilot.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-10-15.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-10-16.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
