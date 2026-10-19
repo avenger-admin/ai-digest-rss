@@ -1,0 +1,57 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Tuesday’s skim: Anthropic sets aside a slice of the company for the public good, Washington tells federal agencies to rip out DeepSeek, Princeton maps how we should be testing AI agents, Jack Clark tells the IMF the singularity has started, and NextWork has a hands-on project for building your own agent harness.",
+  "hero": "media/2026-10-20.jpg",
+  "hero_alt": "Gradient title card reading “Checking the agents” for the 20 October 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Microsoft open-sourced Scope on 19 October, an MIT-licensed platform for evaluating AI coding agents. It drives GitHub Copilot CLI, Claude Code CLI and VS Code with Copilot on the same tasks, pins each run’s model, skills, MCP servers and extensions in versioned profiles, and scores the results against a tree of checks with an LLM judge. That’s a ready-made way to compare your Copilot rollout and Claude Code pilot on your own repos, or to test whether an AGENTS.md or skill change actually helps. Microsoft itself says to use repeated runs and human review rather than trusting the judge alone. Details: opensource.microsoft.com/blog/2026/10/19/introducing-scope-open-source-evaluation-for-ai-coding-agents/"
+  },
+  "items": [
+    {
+      "headline": "Anthropic puts 5% of its shares into a public benefit fund",
+      "body": [
+        "Anthropic said on 18 October it will commit 5% of its shares to a new Anthropic Public Benefit Fund, subject to stockholder approval, with the board able to add another 2% for every 50% rise in the company’s value above a set baseline. Counting its co-founders’ pledge to give away 80% of their equity and an employee donation match, it says roughly 20% of the company is now earmarked for the public good.",
+        "The fund is a wholly owned LLC rather than a charity, so it can give to nonprofits or pay money directly to people — Anthropic floats labour-market disruption from AI as one example. Its equity can’t be used for lobbying or political giving, and the governance details and valuation milestones are still to come."
+      ],
+      "source_label": "Anthropic →",
+      "source_url": "https://www.anthropic.com/news/public-benefit-fund"
+    },
+    {
+      "headline": "US orders DeepSeek out of federal civilian agencies",
+      "body": [
+        "The Department of Homeland Security made public an order that bars federal civilian agencies from buying DeepSeek products and requires them to remove DeepSeek software — plus third-party products built using DeepSeek — from their IT systems. The order quietly took effect in late July; it was filed publicly on 19 October and is due in the Federal Register today.",
+        "It doesn’t touch the military, intelligence agencies or private businesses. The bigger ripple is for vendors selling to US agencies, who now need to know whether a DeepSeek model sits under the hood — a sharp contrast to the weekend’s MIT-licensed Flash update that made DeepSeek so tempting to self-host."
+      ],
+      "source_label": "BBC →",
+      "source_url": "https://www.bbc.com/news/articles/cjkgeq0k1wevo"
+    },
+    {
+      "headline": "From the inbox: AI as Normal Technology on how we should be testing agents",
+      "body": [
+        "Sayash Kapoor and Arvind Narayanan’s group at Princeton, with collaborators from Stanford, the UK AI Security Institute and Brookings, published Emerging Trends in AI Agent Evaluation, a map of 33 trends across methods, research questions and who gets to evaluate.",
+        "Their core point: judging an agent means reading the whole trajectory, not just the final answer, because agents with tools can take shortcuts. It’s also getting expensive — some ExploitBench runs cost tens of thousands of dollars in credits — and lab results don’t always carry over to real work, as METR’s trial showing slower task completion with coding agents reminded everyone."
+      ],
+      "source_label": "AI as Normal Technology →",
+      "source_url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent"
+    },
+    {
+      "headline": "From the inbox: Import AI — Jack Clark tells the IMF the singularity has begun",
+      "body": [
+        "Anthropic co-founder Jack Clark shared the speech he gave at the IMF meeting in Bangkok on 17 October, arguing that 2026 brought convincing evidence that AI is starting to do science at the frontier. His examples include Humanity’s Last Exam jumping from 8% at launch to 67.7% for Claude Opus 5.5, and a theoretical-physics test where a model found errors in the experts’ own answer key.",
+        "His pitch to economists and policymakers: build the labs, robots and testing capacity to turn AI discoveries into real benefits, while exercising restraint in areas like biology and AI research itself. Love it or roll your eyes at it, it’s a clear read on how a frontier-lab insider sees the next few years."
+      ],
+      "source_label": "Import AI →",
+      "source_url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the"
+    },
+    {
+      "headline": "Hands-on pick: build your own agent harness with NextWork",
+      "body": [
+        "NextWork’s latest weekly release added two agent projects. Build a Custom Agent Harness has you write a TypeScript harness with tools, approvals and OpenRouter, so you can see exactly what happens between your prompt and the tools a coding agent runs.",
+        "Its sibling, Build a Resumable LangGraph Workflow, builds an incident workflow that pauses risky actions for human approval and picks up where it stopped. Both pair nicely with today’s theme of keeping agents on a short, inspectable leash."
+      ],
+      "source_label": "NextWork project →",
+      "source_url": "https://nextwork.ai/projects/fbd360ae-3944-42e5-8cc2-2a8a8d6a55b8"
+    }
+  ]
+}
