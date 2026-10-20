@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 20 Oct 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Tuesday 20 Oct 2026."/>
+  <title>Good morning — AI brief · 21 Oct 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Wednesday 21 Oct 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,60 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Tuesday 20 Oct 2026 · Perth</div>
+      <div class="date-chip">Wednesday 21 Oct 2026 · Perth</div>
     </header>
 
-    <p class="lede">Tuesday’s skim: Anthropic sets aside a slice of the company for the public good, Washington tells federal agencies to rip out DeepSeek, Princeton maps how we should be testing AI agents, Jack Clark tells the IMF the singularity has started, and NextWork has a hands-on project for building your own agent harness.</p>
+    <p class="lede">Wednesday’s skim: one hacker lets a swarm of AI agents break into 100+ company websites, Microsoft says to treat your own agents like insiders, Ethan Mollick charts 30 months of AI progress, and Amazon makes Trainium a plain PyTorch device.</p>
 
     <figure class="hero">
-      <img src="media/2026-10-20.jpg" width="1280" height="640" alt="Gradient title card reading “Checking the agents” for the 20 October 2026 AI morning paper."/>
+      <img src="media/2026-10-21.jpg" width="1280" height="640" alt="Gradient title card reading “Agents on watch” for the 21 October 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>Anthropic puts 5% of its shares into a public benefit fund</h2>
-        <p>Anthropic said on 18 October it will commit 5% of its shares to a new Anthropic Public Benefit Fund, subject to stockholder approval, with the board able to add another 2% for every 50% rise in the company’s value above a set baseline. Counting its co-founders’ pledge to give away 80% of their equity and an employee donation match, it says roughly 20% of the company is now earmarked for the public good.</p>
-        <p>The fund is a wholly owned LLC rather than a charity, so it can give to nonprofits or pay money directly to people — Anthropic floats labour-market disruption from AI as one example. Its equity can’t be used for lobbying or political giving, and the governance details and valuation milestones are still to come.</p>
-        <p class="source"><a href="https://www.anthropic.com/news/public-benefit-fund" rel="noopener">Anthropic →</a></p>
+        <h2>One hacker, an army of AI agents, 100+ websites breached</h2>
+        <p>A security researcher at NorForge found exposed copies of Cairn, an open-source AI problem-solving tool, being used by attackers — and watched over their shoulders. The busiest, a Chinese-speaking hacker, gave their agents fewer than 100 characters of instructions and let them try more than 1,200 e-commerce sites in the US, Canada, Australia and Japan. Reuters says over 100 were breached, including sites run by Deere, SharkNinja and Cummins.</p>
+        <p>A successful break-in took about 23 hours of patient probing and roughly $50 in tokens, about $5,000 for the whole campaign, apparently using a mix of DeepSeek models and Claude Code. Deere and SharkNinja say sensitive data wasn’t reached; how much was taken overall isn’t known. The takeaway: assume even small web properties will get slow, automated poking.</p>
+        <p class="source"><a href="https://www.rappler.com/technology/features/hacker-used-ai-agents-break-into-websites-norforge-report/" rel="noopener">Reuters (via Rappler) →</a></p>
       </article>
 
       <article class="story">
-        <h2>US orders DeepSeek out of federal civilian agencies</h2>
-        <p>The Department of Homeland Security made public an order that bars federal civilian agencies from buying DeepSeek products and requires them to remove DeepSeek software — plus third-party products built using DeepSeek — from their IT systems. The order quietly took effect in late July; it was filed publicly on 19 October and is due in the Federal Register today.</p>
-        <p>It doesn’t touch the military, intelligence agencies or private businesses. The bigger ripple is for vendors selling to US agencies, who now need to know whether a DeepSeek model sits under the hood — a sharp contrast to the weekend’s MIT-licensed Flash update that made DeepSeek so tempting to self-host.</p>
-        <p class="source"><a href="https://www.bbc.com/news/articles/cjkgeq0k1wevo" rel="noopener">BBC →</a></p>
+        <h2>Microsoft: treat your own AI agents like insiders</h2>
+        <p>Microsoft’s security chief Hayete Gallot wrote that “frontier models, regardless of their origin, cannot be trusted” — not because they’re malicious, but because they’re trained to hit results and can reward-hack or drift as context changes. Microsoft is extending its Project Perception security system with “Guardian Agents” that watch every agent action and tighten permissions as risk rises.</p>
+        <p>Defender can now spot agents employees bring to work, like Claude Code and Codex, and new controls can limit their data access and require human approval for risky steps. The principle is Satya Nadella’s: keep the controls outside the model, where it can’t switch them off. No pricing or dates yet.</p>
+        <p class="source"><a href="https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/" rel="noopener">Microsoft →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: AI as Normal Technology on how we should be testing agents</h2>
-        <p>Sayash Kapoor and Arvind Narayanan’s group at Princeton, with collaborators from Stanford, the UK AI Security Institute and Brookings, published Emerging Trends in AI Agent Evaluation, a map of 33 trends across methods, research questions and who gets to evaluate.</p>
-        <p>Their core point: judging an agent means reading the whole trajectory, not just the final answer, because agents with tools can take shortcuts. It’s also getting expensive — some ExploitBench runs cost tens of thousands of dollars in credits — and lab results don’t always carry over to real work, as METR’s trial showing slower task completion with coding agents reminded everyone.</p>
-        <p class="source"><a href="https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent" rel="noopener">AI as Normal Technology →</a></p>
+        <h2>From the inbox: One Useful Thing — 30 months on the exponential</h2>
+        <p>Ethan Mollick’s second AI book, Co-Existence, came out yesterday, and he marked it with charts showing what changed since Co-Intelligence. 180 models now beat the original GPT-4, 19 of them run on a phone, and the METR long-task benchmark climbed from four-minute tasks in 2024 to 17 hours of human work before METR said it could no longer measure it. Getting a hard graduate-level science answer right went from 30 cents to four hundredths of a cent.</p>
+        <p>He adds a new way of working to his old “centaur” and “cyborg” modes: the “conjurer”, who summons agents, hands them work and judges what comes back. He made the whole post that way with Opus 5.5 — and it caught his maths mistake along the way.</p>
+        <p class="source"><a href="https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts" rel="noopener">One Useful Thing →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: Import AI — Jack Clark tells the IMF the singularity has begun</h2>
-        <p>Anthropic co-founder Jack Clark shared the speech he gave at the IMF meeting in Bangkok on 17 October, arguing that 2026 brought convincing evidence that AI is starting to do science at the frontier. His examples include Humanity’s Last Exam jumping from 8% at launch to 67.7% for Claude Opus 5.5, and a theoretical-physics test where a model found errors in the experts’ own answer key.</p>
-        <p>His pitch to economists and policymakers: build the labs, robots and testing capacity to turn AI discoveries into real benefits, while exercising restraint in areas like biology and AI research itself. Love it or roll your eyes at it, it’s a clear read on how a frontier-lab insider sees the next few years.</p>
-        <p class="source"><a href="https://importai.substack.com/p/import-ai-477-in-which-i-tell-the" rel="noopener">Import AI →</a></p>
-      </article>
-
-      <article class="story">
-        <h2>Hands-on pick: build your own agent harness with NextWork</h2>
-        <p>NextWork’s latest weekly release added two agent projects. Build a Custom Agent Harness has you write a TypeScript harness with tools, approvals and OpenRouter, so you can see exactly what happens between your prompt and the tools a coding agent runs.</p>
-        <p>Its sibling, Build a Resumable LangGraph Workflow, builds an incident workflow that pauses risky actions for human approval and picks up where it stopped. Both pair nicely with today’s theme of keeping agents on a short, inspectable leash.</p>
-        <p class="source"><a href="https://nextwork.ai/projects/fbd360ae-3944-42e5-8cc2-2a8a8d6a55b8" rel="noopener">NextWork project →</a></p>
+        <h2>Amazon makes Trainium a plain PyTorch device</h2>
+        <p>AWS open-sourced TorchNeuron yesterday at PyTorch Conference, an Apache 2.0 backend that lets existing PyTorch code run on its Trainium2 and Trainium3 chips by moving the model to a “neuron” device instead of “cuda”. It supports eager mode, torch.compile and the usual distributed tools, and Hugging Face Transformers and Diffusers support it directly.</p>
+        <p>It’s a public beta with gaps — AWS says about 22,000 upstream PyTorch tests still skip — but it’s Amazon’s most direct swing yet at the software lock-in that keeps teams on Nvidia, and it’s worth knowing about if your AWS workloads ever move beyond Bedrock.</p>
+        <p class="source"><a href="https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/" rel="noopener">PyTorch blog →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>Microsoft open-sourced Scope on 19 October, an MIT-licensed platform for evaluating AI coding agents. It drives GitHub Copilot CLI, Claude Code CLI and VS Code with Copilot on the same tasks, pins each run’s model, skills, MCP servers and extensions in versioned profiles, and scores the results against a tree of checks with an LLM judge. That’s a ready-made way to compare your Copilot rollout and Claude Code pilot on your own repos, or to test whether an AGENTS.md or skill change actually helps. Microsoft itself says to use repeated runs and human review rather than trusting the judge alone. Details: opensource.microsoft.com/blog/2026/10/19/introducing-scope-open-source-evaluation-for-ai-coding-agents/</p>
+      <p>From the inbox: The Pragmatic Engineer asked 27 companies what they spend on AI per developer and whether pull request output actually moved. Spend ranges from under $300 to $3,000+ per dev per month and has nothing to do with company size; it peaked in June–July and has roughly halved for API-plan users thanks to Opus 5.5 and a shift to open models. CodeRabbit sees weekly PRs per dev up about 2x, but several teams that care about quality report little real speed-up, and one saw PRs grow 3x in size instead. Spending caps are common, and some subsidised subscriptions are ending, which could push bills up 5–10x. Handy context for your token-cost work. The full piece is subscriber-only: newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-10-20.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-10-21.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>

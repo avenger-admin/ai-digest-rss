@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Wednesday’s skim: one hacker lets a swarm of AI agents break into 100+ company websites, Microsoft says to treat your own agents like insiders, Ethan Mollick charts 30 months of AI progress, and Amazon makes Trainium a plain PyTorch device.",
+  "hero": "media/2026-10-21.jpg",
+  "hero_alt": "Gradient title card reading “Agents on watch” for the 21 October 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "From the inbox: The Pragmatic Engineer asked 27 companies what they spend on AI per developer and whether pull request output actually moved. Spend ranges from under $300 to $3,000+ per dev per month and has nothing to do with company size; it peaked in June–July and has roughly halved for API-plan users thanks to Opus 5.5 and a shift to open models. CodeRabbit sees weekly PRs per dev up about 2x, but several teams that care about quality report little real speed-up, and one saw PRs grow 3x in size instead. Spending caps are common, and some subsidised subscriptions are ending, which could push bills up 5–10x. Handy context for your token-cost work. The full piece is subscriber-only: newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers"
+  },
+  "items": [
+    {
+      "headline": "One hacker, an army of AI agents, 100+ websites breached",
+      "body": [
+        "A security researcher at NorForge found exposed copies of Cairn, an open-source AI problem-solving tool, being used by attackers — and watched over their shoulders. The busiest, a Chinese-speaking hacker, gave their agents fewer than 100 characters of instructions and let them try more than 1,200 e-commerce sites in the US, Canada, Australia and Japan. Reuters says over 100 were breached, including sites run by Deere, SharkNinja and Cummins.",
+        "A successful break-in took about 23 hours of patient probing and roughly $50 in tokens, about $5,000 for the whole campaign, apparently using a mix of DeepSeek models and Claude Code. Deere and SharkNinja say sensitive data wasn’t reached; how much was taken overall isn’t known. The takeaway: assume even small web properties will get slow, automated poking."
+      ],
+      "source_label": "Reuters (via Rappler) →",
+      "source_url": "https://www.rappler.com/technology/features/hacker-used-ai-agents-break-into-websites-norforge-report/"
+    },
+    {
+      "headline": "Microsoft: treat your own AI agents like insiders",
+      "body": [
+        "Microsoft’s security chief Hayete Gallot wrote that “frontier models, regardless of their origin, cannot be trusted” — not because they’re malicious, but because they’re trained to hit results and can reward-hack or drift as context changes. Microsoft is extending its Project Perception security system with “Guardian Agents” that watch every agent action and tighten permissions as risk rises.",
+        "Defender can now spot agents employees bring to work, like Claude Code and Codex, and new controls can limit their data access and require human approval for risky steps. The principle is Satya Nadella’s: keep the controls outside the model, where it can’t switch them off. No pricing or dates yet."
+      ],
+      "source_label": "Microsoft →",
+      "source_url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/"
+    },
+    {
+      "headline": "From the inbox: One Useful Thing — 30 months on the exponential",
+      "body": [
+        "Ethan Mollick’s second AI book, Co-Existence, came out yesterday, and he marked it with charts showing what changed since Co-Intelligence. 180 models now beat the original GPT-4, 19 of them run on a phone, and the METR long-task benchmark climbed from four-minute tasks in 2024 to 17 hours of human work before METR said it could no longer measure it. Getting a hard graduate-level science answer right went from 30 cents to four hundredths of a cent.",
+        "He adds a new way of working to his old “centaur” and “cyborg” modes: the “conjurer”, who summons agents, hands them work and judges what comes back. He made the whole post that way with Opus 5.5 — and it caught his maths mistake along the way."
+      ],
+      "source_label": "One Useful Thing →",
+      "source_url": "https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts"
+    },
+    {
+      "headline": "Amazon makes Trainium a plain PyTorch device",
+      "body": [
+        "AWS open-sourced TorchNeuron yesterday at PyTorch Conference, an Apache 2.0 backend that lets existing PyTorch code run on its Trainium2 and Trainium3 chips by moving the model to a “neuron” device instead of “cuda”. It supports eager mode, torch.compile and the usual distributed tools, and Hugging Face Transformers and Diffusers support it directly.",
+        "It’s a public beta with gaps — AWS says about 22,000 upstream PyTorch tests still skip — but it’s Amazon’s most direct swing yet at the software lock-in that keeps teams on Nvidia, and it’s worth knowing about if your AWS workloads ever move beyond Bedrock."
+      ],
+      "source_label": "PyTorch blog →",
+      "source_url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/"
+    }
+  ]
+}
