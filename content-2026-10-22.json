@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Thursday’s skim: DeepSeek opens up the engine behind its cheap API, OpenAI lands on Google Cloud, Claude spends 64 hours designing proteins against scorpion venom, and Latent Space on Claude Mods, a new way to shape Claude Code around how you work.",
+  "hero": "media/2026-10-22.jpg",
+  "hero_alt": "Gradient title card reading “Engines in the open” for the 22 October 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "The quiet theme in today’s DeepSeek story is caching. DeepSeek says 96% of the input tokens it serves are cache hits, and that’s what makes its margins work. OpenAI also just added optional 12-hour prompt caching to its API (the default stays 30 minutes), aimed at agents that keep resending the same long context. If you’re comparing providers for your token-cost work, cached-token pricing and how long caches live may matter more than headline per-token prices."
+  },
+  "items": [
+    {
+      "headline": "From the inbox: DeepSeek open-sources the engine behind its cheap API",
+      "body": [
+        "Timed for day one of PyTorch Conference, DeepSeek released DeepInfer under Apache 2.0: the inference software it says powers its V4.1-Flash service, running on Nvidia’s newest chips and Huawei’s Ascend 950. It shared eye-catching production numbers too: 155 trillion tokens a day from one cluster, a 96% cache hit rate, and about $38 of revenue per chip per hour at off-peak prices. Latent Space’s AINews works that out to inference margins of roughly 80%, though those are DeepSeek’s own figures and leave out plenty of costs.",
+        "It isn’t the whole recipe. The cache management and load balancing that make the service hum stay in-house for now. And the vLLM team, whose open-source engine DeepInfer started from, says it already gets within 6% of DeepInfer’s decode speed on the same hardware. Still, it’s a rare look inside how a big AI lab actually serves its models."
+      ],
+      "source_label": "Latent Space (AINews) →",
+      "source_url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "headline": "OpenAI’s models are coming to Google Cloud",
+      "body": [
+        "Old rivals, new partners: OpenAI says its GPT models will show up in Google Cloud’s model garden and in Google’s Antigravity coding tool in the coming weeks. That puts OpenAI on all three big US clouds, after Amazon started hosting its models in April once Microsoft’s exclusive licence ended.",
+        "It’s mostly a distribution play as OpenAI chases enterprise customers ahead of a hoped-for IPO. For teams that pick models by which cloud they already live on, the choice just got simpler."
+      ],
+      "source_label": "CNBC →",
+      "source_url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html"
+    },
+    {
+      "headline": "Claude spends 64 hours designing proteins against scorpion venom",
+      "body": [
+        "Scorpion stings kill more than 3,250 people a year, mostly children, and new treatments rarely pay back their cost. Anthropic and Citrini Research asked an internal Claude research model to design small proteins that latch onto dangerous scorpion toxins. Working mostly on its own for about 64 hours, it generated 318,484 designs, and lab partners tested 211 of them. Seventeen bound their target toxin well enough to count.",
+        "Anthropic is careful to say this isn’t an antivenom: none of the designs has been shown to neutralise venom in cells or animals yet. But it’s a striking example of an AI doing days of real lab-bound science, and all 211 designs and their data are being released for other researchers."
+      ],
+      "source_label": "Anthropic →",
+      "source_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+    },
+    {
+      "headline": "From the inbox: Latent Space on Claude Mods",
+      "body": [
+        "In a guest post, Dan McAteer walks through Claude Mods: small TypeScript or JavaScript plugins that run inside Claude Code and change what it shows you and when it interrupts you. Anthropic already builds some of Claude Code itself this way, including the mod that loads AGENTS.md. His favourite is the built-in “You Should Know” side agent, which caught that a file Claude was editing already had someone’s uncommitted work in it.",
+        "He’s honest about the downsides. His own “next steps” mod fired on 99 of 111 turns, each check costs about 5–6k tokens, and mods run with your full permissions and aren’t sandboxed, so read anyone else’s before installing. Handy reading alongside your Claude Code pilot."
+      ],
+      "source_label": "Latent Space →",
+      "source_url": "https://www.latent.space/p/claude-mods"
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 21 Oct 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Wednesday 21 Oct 2026."/>
+  <title>Good morning — AI brief · 22 Oct 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 22 Oct 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,53 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Wednesday 21 Oct 2026 · Perth</div>
+      <div class="date-chip">Thursday 22 Oct 2026 · Perth</div>
     </header>
 
-    <p class="lede">Wednesday’s skim: one hacker lets a swarm of AI agents break into 100+ company websites, Microsoft says to treat your own agents like insiders, Ethan Mollick charts 30 months of AI progress, and Amazon makes Trainium a plain PyTorch device.</p>
+    <p class="lede">Thursday’s skim: DeepSeek opens up the engine behind its cheap API, OpenAI lands on Google Cloud, Claude spends 64 hours designing proteins against scorpion venom, and Latent Space on Claude Mods, a new way to shape Claude Code around how you work.</p>
 
     <figure class="hero">
-      <img src="media/2026-10-21.jpg" width="1280" height="640" alt="Gradient title card reading “Agents on watch” for the 21 October 2026 AI morning paper."/>
+      <img src="media/2026-10-22.jpg" width="1280" height="640" alt="Gradient title card reading “Engines in the open” for the 22 October 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>One hacker, an army of AI agents, 100+ websites breached</h2>
-        <p>A security researcher at NorForge found exposed copies of Cairn, an open-source AI problem-solving tool, being used by attackers — and watched over their shoulders. The busiest, a Chinese-speaking hacker, gave their agents fewer than 100 characters of instructions and let them try more than 1,200 e-commerce sites in the US, Canada, Australia and Japan. Reuters says over 100 were breached, including sites run by Deere, SharkNinja and Cummins.</p>
-        <p>A successful break-in took about 23 hours of patient probing and roughly $50 in tokens, about $5,000 for the whole campaign, apparently using a mix of DeepSeek models and Claude Code. Deere and SharkNinja say sensitive data wasn’t reached; how much was taken overall isn’t known. The takeaway: assume even small web properties will get slow, automated poking.</p>
-        <p class="source"><a href="https://www.rappler.com/technology/features/hacker-used-ai-agents-break-into-websites-norforge-report/" rel="noopener">Reuters (via Rappler) →</a></p>
+        <h2>From the inbox: DeepSeek open-sources the engine behind its cheap API</h2>
+        <p>Timed for day one of PyTorch Conference, DeepSeek released DeepInfer under Apache 2.0: the inference software it says powers its V4.1-Flash service, running on Nvidia’s newest chips and Huawei’s Ascend 950. It shared eye-catching production numbers too: 155 trillion tokens a day from one cluster, a 96% cache hit rate, and about $38 of revenue per chip per hour at off-peak prices. Latent Space’s AINews works that out to inference margins of roughly 80%, though those are DeepSeek’s own figures and leave out plenty of costs.</p>
+        <p>It isn’t the whole recipe. The cache management and load balancing that make the service hum stay in-house for now. And the vLLM team, whose open-source engine DeepInfer started from, says it already gets within 6% of DeepInfer’s decode speed on the same hardware. Still, it’s a rare look inside how a big AI lab actually serves its models.</p>
+        <p class="source"><a href="https://www.latent.space/p/ainews-deepseek-deepinfer-open-source" rel="noopener">Latent Space (AINews) →</a></p>
       </article>
 
       <article class="story">
-        <h2>Microsoft: treat your own AI agents like insiders</h2>
-        <p>Microsoft’s security chief Hayete Gallot wrote that “frontier models, regardless of their origin, cannot be trusted” — not because they’re malicious, but because they’re trained to hit results and can reward-hack or drift as context changes. Microsoft is extending its Project Perception security system with “Guardian Agents” that watch every agent action and tighten permissions as risk rises.</p>
-        <p>Defender can now spot agents employees bring to work, like Claude Code and Codex, and new controls can limit their data access and require human approval for risky steps. The principle is Satya Nadella’s: keep the controls outside the model, where it can’t switch them off. No pricing or dates yet.</p>
-        <p class="source"><a href="https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/" rel="noopener">Microsoft →</a></p>
+        <h2>OpenAI’s models are coming to Google Cloud</h2>
+        <p>Old rivals, new partners: OpenAI says its GPT models will show up in Google Cloud’s model garden and in Google’s Antigravity coding tool in the coming weeks. That puts OpenAI on all three big US clouds, after Amazon started hosting its models in April once Microsoft’s exclusive licence ended.</p>
+        <p>It’s mostly a distribution play as OpenAI chases enterprise customers ahead of a hoped-for IPO. For teams that pick models by which cloud they already live on, the choice just got simpler.</p>
+        <p class="source"><a href="https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html" rel="noopener">CNBC →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: One Useful Thing — 30 months on the exponential</h2>
-        <p>Ethan Mollick’s second AI book, Co-Existence, came out yesterday, and he marked it with charts showing what changed since Co-Intelligence. 180 models now beat the original GPT-4, 19 of them run on a phone, and the METR long-task benchmark climbed from four-minute tasks in 2024 to 17 hours of human work before METR said it could no longer measure it. Getting a hard graduate-level science answer right went from 30 cents to four hundredths of a cent.</p>
-        <p>He adds a new way of working to his old “centaur” and “cyborg” modes: the “conjurer”, who summons agents, hands them work and judges what comes back. He made the whole post that way with Opus 5.5 — and it caught his maths mistake along the way.</p>
-        <p class="source"><a href="https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts" rel="noopener">One Useful Thing →</a></p>
+        <h2>Claude spends 64 hours designing proteins against scorpion venom</h2>
+        <p>Scorpion stings kill more than 3,250 people a year, mostly children, and new treatments rarely pay back their cost. Anthropic and Citrini Research asked an internal Claude research model to design small proteins that latch onto dangerous scorpion toxins. Working mostly on its own for about 64 hours, it generated 318,484 designs, and lab partners tested 211 of them. Seventeen bound their target toxin well enough to count.</p>
+        <p>Anthropic is careful to say this isn’t an antivenom: none of the designs has been shown to neutralise venom in cells or animals yet. But it’s a striking example of an AI doing days of real lab-bound science, and all 211 designs and their data are being released for other researchers.</p>
+        <p class="source"><a href="https://www.anthropic.com/research/claude-scorpion-toxin-binder-design" rel="noopener">Anthropic →</a></p>
       </article>
 
       <article class="story">
-        <h2>Amazon makes Trainium a plain PyTorch device</h2>
-        <p>AWS open-sourced TorchNeuron yesterday at PyTorch Conference, an Apache 2.0 backend that lets existing PyTorch code run on its Trainium2 and Trainium3 chips by moving the model to a “neuron” device instead of “cuda”. It supports eager mode, torch.compile and the usual distributed tools, and Hugging Face Transformers and Diffusers support it directly.</p>
-        <p>It’s a public beta with gaps — AWS says about 22,000 upstream PyTorch tests still skip — but it’s Amazon’s most direct swing yet at the software lock-in that keeps teams on Nvidia, and it’s worth knowing about if your AWS workloads ever move beyond Bedrock.</p>
-        <p class="source"><a href="https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/" rel="noopener">PyTorch blog →</a></p>
+        <h2>From the inbox: Latent Space on Claude Mods</h2>
+        <p>In a guest post, Dan McAteer walks through Claude Mods: small TypeScript or JavaScript plugins that run inside Claude Code and change what it shows you and when it interrupts you. Anthropic already builds some of Claude Code itself this way, including the mod that loads AGENTS.md. His favourite is the built-in “You Should Know” side agent, which caught that a file Claude was editing already had someone’s uncommitted work in it.</p>
+        <p>He’s honest about the downsides. His own “next steps” mod fired on 99 of 111 turns, each check costs about 5–6k tokens, and mods run with your full permissions and aren’t sandboxed, so read anyone else’s before installing. Handy reading alongside your Claude Code pilot.</p>
+        <p class="source"><a href="https://www.latent.space/p/claude-mods" rel="noopener">Latent Space →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>From the inbox: The Pragmatic Engineer asked 27 companies what they spend on AI per developer and whether pull request output actually moved. Spend ranges from under $300 to $3,000+ per dev per month and has nothing to do with company size; it peaked in June–July and has roughly halved for API-plan users thanks to Opus 5.5 and a shift to open models. CodeRabbit sees weekly PRs per dev up about 2x, but several teams that care about quality report little real speed-up, and one saw PRs grow 3x in size instead. Spending caps are common, and some subsidised subscriptions are ending, which could push bills up 5–10x. Handy context for your token-cost work. The full piece is subscriber-only: newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers</p>
+      <p>The quiet theme in today’s DeepSeek story is caching. DeepSeek says 96% of the input tokens it serves are cache hits, and that’s what makes its margins work. OpenAI also just added optional 12-hour prompt caching to its API (the default stays 30 minutes), aimed at agents that keep resending the same long context. If you’re comparing providers for your token-cost work, cached-token pricing and how long caches live may matter more than headline per-token prices.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-10-21.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-10-22.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
