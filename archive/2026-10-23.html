@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 23 Oct 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Friday 23 Oct 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Friday 23 Oct 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Friday’s skim: AI models help find a 14-year-old hole in PHP, Anthropic previews Claude Duet (an agent that messages you first), Anthropic outgrows Git at 30,000 merges a day, and a free coding model you can run on a laptop.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-10-23.jpg" width="1280" height="640" alt="Gradient title card reading “The big hardening” for the 23 October 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>From the inbox: AI helps find PHP2Shell, a 14-year-old hole in PHP</h2>
+        <p>A researcher at security firm Calif, working in OpenAI’s “Patch the Planet” programme, used GPT-5.6 Sol to find two serious memory bugs deep in PHP’s engine, the language behind WordPress, Drupal and roughly 70% of websites. Wiz found the same bugs independently with Gemini 4 Argon and GPT-5.6 Sol. Researchers showed remote takeover of WordPress, Drupal and Joomla without logging in, and fixes shipped on 21 October after about two months of quiet coordination, a little earlier than planned because details leaked.</p>
+        <p>Latent Space’s AINews notes that how scary it really is is up for some debate, but calls the coordinated response the developer community at its best. Its bigger point: expect at least a year of AI-found critical bugs, and treat it as the biggest security audit our software has ever had rather than blaming the messenger.</p>
+        <p class="source"><a href="https://www.latent.space/p/ainews-openais-patch-the-planet-program" rel="noopener">Latent Space (AINews) →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Anthropic previews Claude Duet, an agent that comes to you</h2>
+        <p>Claude Duet is a new app where Claude works as a proactive assistant. It sends a short morning brief from your connected apps, checks in every few hours, messages you only when something needs you, and keeps working on its own cloud computer with its own browser after you close the app. You talk to it by text or voice in one ongoing thread.</p>
+        <p>It runs on Claude Opus 5.5 and always shows you exactly what it’s about to do before it sends a message, pays, signs or deletes anything. For now it’s a waitlist preview for US Pro and Max users only, with no Team, Enterprise or Microsoft 365 support yet.</p>
+        <p class="source"><a href="https://claude.com/resources/articles/claude-duet" rel="noopener">Anthropic →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: Anthropic outgrew Git, so it built its own</h2>
+        <p>Gergely Orosz digs into a striking number: Anthropic went from about 2,500 merged code changes a day in May to over 30,000 a day by September, with engineers typically running 10 to 15 Claude agents each. Git, and hundreds of Git mirrors, couldn’t keep up with 25 million CI checkouts a day, so a team of seven built Scion, a closed-source system in Rust on Google Spanner and Cloud Storage, plus a new code review tool called Antique. The whole monorepo is now off Git.</p>
+        <p>There’s a twist: the creator of Meta’s open-source Mononoke server says Scion’s design was copied without credit, and Anthropic only added an attribution after the complaint. Orosz’s hunch is that very few companies will need to leave Git, but agent-scale code volume is coming for everyone’s CI.</p>
+        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-builds-its-own" rel="noopener">The Pragmatic Engineer →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Flint: a free coding model that runs on your laptop</h2>
+        <p>Recursive, the startup led by former Salesforce chief scientist Richard Socher, released Flint, a 40-billion-parameter coding model that uses only about 2.5 billion per word, so it runs at 125+ tokens a second on an M4 Pro MacBook Pro. It’s free on Hugging Face under the Apache 2.0 licence and works with Ollama, LM Studio, llama.cpp and vLLM.</p>
+        <p>The headline claim is that Recursive’s automated research system did much of the work of building it, in under four months. The benchmark numbers are Recursive’s own, and it admits Flint needs more guidance than the big paid assistants, but WIRED’s hands-on found it fast and capable.</p>
+        <p class="source"><a href="https://recursive.com/updates/introducing-recursive-flint" rel="noopener">Recursive →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>If anything at work runs PHP (WordPress, Drupal, Joomla, internal tools), it’s worth checking it’s on the fixed releases from 21 October: 8.5.12, 8.4.27, 8.3.36 or 8.2.35. And if your Copilot or Claude Code pilots ever hit the question of keeping code off third-party servers, Flint is a handy, free local option to try.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
