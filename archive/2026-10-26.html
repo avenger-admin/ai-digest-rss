@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 26 Oct 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Monday 26 Oct 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Monday 26 Oct 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Monday’s catch-up from the weekend: Kimi K3.1 Pro brings open weights within a whisker of the frontier, “Black October” turns into the internet’s biggest patch week, why AI has suddenly got good at maths, and an 11-hour build-your-own reasoning model course to code along with.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-10-26.jpg" width="1280" height="640" alt="Gradient title card reading “Open giants &amp; patch week” for the 26 October 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>From the inbox: Kimi K3.1 Pro nearly closes the open-weights gap</h2>
+        <p>Moonshot launched Kimi K3.1 Pro, a huge mixture-of-experts model (2.8 trillion parameters, about 104 billion used per word, 1-million-token context), and promises to publish the weights by 4 November. Independent tester Artificial Analysis puts it fourth on its Intelligence Index at 55, just behind Opus 5.5 at 58, and once the weights land it says the gap between the best open and best closed model shrinks from 12 points to three. Standard API pricing is $2 per million input tokens and $10 per million output, a third cheaper than K3.</p>
+        <p>Latent Space’s AINews adds the fine print: it uses more tokens per task, so cheaper tokens don’t always mean cheaper work, “open weights” isn’t the same as running it on your laptop (think terabytes, not gigabytes), and the launch was clouded by allegations of undisclosed paid promotion. Nathan Lambert also chews it over on this week’s Interconnects podcast.</p>
+        <p class="source"><a href="https://latent.space/p/ainews-kimi-31/" rel="noopener">Latent Space (AINews) →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: “Black October” and the great AI-found bug wave</h2>
+        <p>Within about 48 hours, a pile of critical disclosures landed together: PHP2Shell, a CVSS 10 GitLab flaw, a Node.js Brotli fix, a poisoned LiteLLM release, certificate-authority keys so weak one was reportedly the number 4, and Microsoft tying a ConnectWise supply-chain attack to a group using an open agentic pentest tool. Monthly CVEs have reportedly climbed from about 4,000 to about 15,000 since April.</p>
+        <p>It’s not all doom: several voices point out most of these bugs were found earlier and only disclosed now, mostly by defenders, and Anthropic says Claude helped machine-check security properties across more than 100 open-source libraries. Anthropic’s deputy CISO Jason Clinton’s advice is to fund the basics and hold on for about 18 months.</p>
+        <p class="source"><a href="https://latent.space/p/ainews-black-october/" rel="noopener">Latent Space (AINews) →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: why AI suddenly got good at maths</h2>
+        <p>This year AI models disproved Erdős’s 80-year-old unit distance conjecture, solved a string of other open problems and helped formalise Fermat’s Last Theorem. In a Latent Space guest essay, Ankit Maloo asks whether we can predict which problems they’ll crack next.</p>
+        <p>His idea: humans search breadth-first, trying many directions shallowly and dropping ideas that take months to pay off, while AI makes that slow work so cheap it can chase one line of attack deep, treating its own failed attempts as hints. It’s a nice lens on where to point these models, in maths and beyond.</p>
+        <p class="source"><a href="https://latent.space/p/ai-is-getting-good-at-math/" rel="noopener">Latent Space →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: build your own reasoning model, free on video</h2>
+        <p>Sebastian Raschka has released eight coding videos, more than 11 hours in total, that start from a pre-trained LLM and add evaluation, inference-time scaling, reinforcement learning and distillation in Python and PyTorch. It’s the companion to his Build a Reasoning Model (From Scratch) book and a sequel to last year’s Coding LLMs from the Ground Up course, though you don’t need that first.</p>
+        <p>He also has a tidy explanation of how the pieces fit: a reasoning model is the engine, and an agent harness like Copilot or Claude Code is the car built around it, handling context and tools. A good one to code along with if you want to really see what’s under the bonnet.</p>
+        <p class="source"><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener">Ahead of AI →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>If you run self-managed GitLab, GitLab disclosed a CVSS 10 flaw affecting releases back to 2014, fixed in 19.5.1. Node.js also shipped a fix for a remote-code-execution bug in its Brotli decompression, and LiteLLM 1.107.0 shipped with a password stealer, so it’s worth checking nothing internal pinned that version. Python folks are being advised to update pip, uv, certifi and system CA stores after the weak eMudhra certificate keys.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
