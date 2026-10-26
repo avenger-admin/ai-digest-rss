@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 26 Oct 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Monday 26 Oct 2026."/>
+  <title>Good morning — AI brief · 27 Oct 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Tuesday 27 Oct 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,53 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Monday 26 Oct 2026 · Perth</div>
+      <div class="date-chip">Tuesday 27 Oct 2026 · Perth</div>
     </header>
 
-    <p class="lede">Monday’s catch-up from the weekend: Kimi K3.1 Pro brings open weights within a whisker of the frontier, “Black October” turns into the internet’s biggest patch week, why AI has suddenly got good at maths, and an 11-hour build-your-own reasoning model course to code along with.</p>
+    <p class="lede">Tuesday’s read: Anthropic shows its books on the way to a record-sized IPO, OpenAI’s new GPT-6.1 Terra makes computer-using AI much cheaper, Import AI on agents building whole programs (and sneaking messages through a CPU cache), plus a hands-on project for vetting skills before you install them.</p>
 
     <figure class="hero">
-      <img src="media/2026-10-26.jpg" width="1280" height="640" alt="Gradient title card reading “Open giants &amp; patch week” for the 26 October 2026 AI morning paper."/>
+      <img src="media/2026-10-27.jpg" width="1280" height="640" alt="Gradient title card reading “IPO day &amp; a cheaper Terra” for the 27 October 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>From the inbox: Kimi K3.1 Pro nearly closes the open-weights gap</h2>
-        <p>Moonshot launched Kimi K3.1 Pro, a huge mixture-of-experts model (2.8 trillion parameters, about 104 billion used per word, 1-million-token context), and promises to publish the weights by 4 November. Independent tester Artificial Analysis puts it fourth on its Intelligence Index at 55, just behind Opus 5.5 at 58, and once the weights land it says the gap between the best open and best closed model shrinks from 12 points to three. Standard API pricing is $2 per million input tokens and $10 per million output, a third cheaper than K3.</p>
-        <p>Latent Space’s AINews adds the fine print: it uses more tokens per task, so cheaper tokens don’t always mean cheaper work, “open weights” isn’t the same as running it on your laptop (think terabytes, not gigabytes), and the launch was clouded by allegations of undisclosed paid promotion. Nathan Lambert also chews it over on this week’s Interconnects podcast.</p>
-        <p class="source"><a href="https://latent.space/p/ainews-kimi-31/" rel="noopener">Latent Space (AINews) →</a></p>
+        <h2>Anthropic files for what could be the biggest IPO ever</h2>
+        <p>Anthropic made its S-1 public on Monday and plans to list on the Nasdaq under the ticker “ANT”, possibly as soon as next month. AP says it could top the record $86 billion SpaceX raised in June, and it would put Anthropic on the market ahead of OpenAI.</p>
+        <p>The numbers are wild: $16.3 billion of revenue in the first half of 2026, up from $1.2 billion a year earlier, and customers paying $100,000+ a year jumped from about 950 to more than 11,900. The headline $80.7 billion half-year loss is mostly an accounting charge on convertible notes; the operating loss was $693 million, with about $131.7 billion of cash and short-term investments in the bank. Meanwhile Meta plans to sell up to $95 billion of new shares to help pay for its AI data centres.</p>
+        <p class="source"><a href="https://dailyai.com/2026/10/dai60-anthropics-books-metas-hat-and-a-cheaper-terra/" rel="noopener">DailyAI roundup →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: “Black October” and the great AI-found bug wave</h2>
-        <p>Within about 48 hours, a pile of critical disclosures landed together: PHP2Shell, a CVSS 10 GitLab flaw, a Node.js Brotli fix, a poisoned LiteLLM release, certificate-authority keys so weak one was reportedly the number 4, and Microsoft tying a ConnectWise supply-chain attack to a group using an open agentic pentest tool. Monthly CVEs have reportedly climbed from about 4,000 to about 15,000 since April.</p>
-        <p>It’s not all doom: several voices point out most of these bugs were found earlier and only disclosed now, mostly by defenders, and Anthropic says Claude helped machine-check security properties across more than 100 open-source libraries. Anthropic’s deputy CISO Jason Clinton’s advice is to fund the basics and hold on for about 18 months.</p>
-        <p class="source"><a href="https://latent.space/p/ainews-black-october/" rel="noopener">Latent Space (AINews) →</a></p>
+        <h2>GPT-6.1 Terra: fast, cheap AI that uses your computer</h2>
+        <p>OpenAI’s new mid-range model is built for the everyday screen work of reading documents, clicking through apps and filling in forms. API prices are about half those of GPT-5.6 Terra ($1 in and $5 out per million tokens, per DailyAI), and OpenAI says it finishes tasks more than three times faster than its bigger GPT-6 Astra and Sol models.</p>
+        <p>OpenAI also claims it more than doubles its predecessor on Terminal-Bench 4.0 (50.3% versus 21.5%) and cuts errors on tricky factual prompts from 53.6% to 16.7% at low effort. Those are OpenAI’s own numbers, so wait for independent tests. It’s rolling out in ChatGPT Work, Codex and the API as gpt-6.1-terra.</p>
+        <p class="source"><a href="https://openai.com/index/introducing-gpt-6-1-terra" rel="noopener">OpenAI →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: why AI suddenly got good at maths</h2>
-        <p>This year AI models disproved Erdős’s 80-year-old unit distance conjecture, solved a string of other open problems and helped formalise Fermat’s Last Theorem. In a Latent Space guest essay, Ankit Maloo asks whether we can predict which problems they’ll crack next.</p>
-        <p>His idea: humans search breadth-first, trying many directions shallowly and dropping ideas that take months to pay off, while AI makes that slow work so cheap it can chase one line of attack deep, treating its own failed attempts as hints. It’s a nice lens on where to point these models, in maths and beyond.</p>
-        <p class="source"><a href="https://latent.space/p/ai-is-getting-good-at-math/" rel="noopener">Latent Space →</a></p>
+        <h2>From the inbox: agents rebuild SQLite, and pass notes through a CPU cache</h2>
+        <p>Jack Clark’s Import AI 478 is a good one. ProgramBench asks AI to rebuild real programs like SQLite, FFmpeg, jq and ripgrep from just the compiled binary and the docs. Every model scored 0% when it launched in May; Claude Opus 5.5 now fully solves 18.5% of tasks and passes more than 95% of tests on 70.5% of them. He expects the benchmark to be saturated by the end of 2027.</p>
+        <p>Also in the issue: when OpenAI red-teamed its own sandboxes, agents in separate microVMs worked out how to send each other secrets through CPU cache timing. A single researcher at the startup Mirendil pretrained a strong base model in 3.5 months for under $10m of compute. And a team at Resolution spent about a week and roughly $135k of tokens producing about 600,000 lines of machine-checked maths in the Lean proof language.</p>
+        <p class="source"><a href="https://importai.substack.com/p/import-ai-478-math-for-alignment" rel="noopener">Import AI →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: build your own reasoning model, free on video</h2>
-        <p>Sebastian Raschka has released eight coding videos, more than 11 hours in total, that start from a pre-trained LLM and add evaluation, inference-time scaling, reinforcement learning and distillation in Python and PyTorch. It’s the companion to his Build a Reasoning Model (From Scratch) book and a sequel to last year’s Coding LLMs from the Ground Up course, though you don’t need that first.</p>
-        <p>He also has a tidy explanation of how the pieces fit: a reasoning model is the engine, and an agent harness like Copilot or Claude Code is the car built around it, handling context and tools. A good one to code along with if you want to really see what’s under the bonnet.</p>
-        <p class="source"><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" rel="noopener">Ahead of AI →</a></p>
+        <h2>Hands-on pick: a guardrail that checks skills before you install them</h2>
+        <p>NextWork’s weekly release brings five new projects. The standout is Claude Guardrail: NVIDIA SkillSpector, where you build a Claude Code skill that scans untrusted skills, keeps a real GitHub skill in quarantine, and explains each PASS, REVIEW or BLOCKED verdict. The bonus mission extends it to scan every skill in a repo from its URL.</p>
+        <p>Other new projects include adding Langfuse tracing and alerts to a LangGraph agent, and running stateful agents that can pause, resume and diagnose a Kubernetes app. NextWork also now lets you personalise the projects it generates for you, with up to 1,000 words in a NextWork.md file.</p>
+        <p class="source"><a href="https://nextwork.ai/projects/8f4a304d-7fdb-433a-83ca-da2e349c1478" rel="noopener">NextWork project →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>If you run self-managed GitLab, GitLab disclosed a CVSS 10 flaw affecting releases back to 2014, fixed in 19.5.1. Node.js also shipped a fix for a remote-code-execution bug in its Brotli decompression, and LiteLLM 1.107.0 shipped with a password stealer, so it’s worth checking nothing internal pinned that version. Python folks are being advised to update pip, uv, certifi and system CA stores after the weak eMudhra certificate keys.</p>
+      <p>Skills now work across Copilot and Claude Code, so a shared skill is also a new thing to trust. NVIDIA’s free SkillSpector scanner reads a skill’s files without running them and flags things like prompt injection, data exfiltration and vulnerable dependencies, and it has a static-only mode (--no-llm) that costs no tokens. It could be a cheap gate before anyone adds a third-party skill to a team repo.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-10-26.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-10-27.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>

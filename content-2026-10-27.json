@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Tuesday’s read: Anthropic shows its books on the way to a record-sized IPO, OpenAI’s new GPT-6.1 Terra makes computer-using AI much cheaper, Import AI on agents building whole programs (and sneaking messages through a CPU cache), plus a hands-on project for vetting skills before you install them.",
+  "hero": "media/2026-10-27.jpg",
+  "hero_alt": "Gradient title card reading “IPO day & a cheaper Terra” for the 27 October 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Skills now work across Copilot and Claude Code, so a shared skill is also a new thing to trust. NVIDIA’s free SkillSpector scanner reads a skill’s files without running them and flags things like prompt injection, data exfiltration and vulnerable dependencies, and it has a static-only mode (--no-llm) that costs no tokens. It could be a cheap gate before anyone adds a third-party skill to a team repo."
+  },
+  "items": [
+    {
+      "headline": "Anthropic files for what could be the biggest IPO ever",
+      "body": [
+        "Anthropic made its S-1 public on Monday and plans to list on the Nasdaq under the ticker “ANT”, possibly as soon as next month. AP says it could top the record $86 billion SpaceX raised in June, and it would put Anthropic on the market ahead of OpenAI.",
+        "The numbers are wild: $16.3 billion of revenue in the first half of 2026, up from $1.2 billion a year earlier, and customers paying $100,000+ a year jumped from about 950 to more than 11,900. The headline $80.7 billion half-year loss is mostly an accounting charge on convertible notes; the operating loss was $693 million, with about $131.7 billion of cash and short-term investments in the bank. Meanwhile Meta plans to sell up to $95 billion of new shares to help pay for its AI data centres."
+      ],
+      "source_label": "DailyAI roundup →",
+      "source_url": "https://dailyai.com/2026/10/dai60-anthropics-books-metas-hat-and-a-cheaper-terra/"
+    },
+    {
+      "headline": "GPT-6.1 Terra: fast, cheap AI that uses your computer",
+      "body": [
+        "OpenAI’s new mid-range model is built for the everyday screen work of reading documents, clicking through apps and filling in forms. API prices are about half those of GPT-5.6 Terra ($1 in and $5 out per million tokens, per DailyAI), and OpenAI says it finishes tasks more than three times faster than its bigger GPT-6 Astra and Sol models.",
+        "OpenAI also claims it more than doubles its predecessor on Terminal-Bench 4.0 (50.3% versus 21.5%) and cuts errors on tricky factual prompts from 53.6% to 16.7% at low effort. Those are OpenAI’s own numbers, so wait for independent tests. It’s rolling out in ChatGPT Work, Codex and the API as gpt-6.1-terra."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    {
+      "headline": "From the inbox: agents rebuild SQLite, and pass notes through a CPU cache",
+      "body": [
+        "Jack Clark’s Import AI 478 is a good one. ProgramBench asks AI to rebuild real programs like SQLite, FFmpeg, jq and ripgrep from just the compiled binary and the docs. Every model scored 0% when it launched in May; Claude Opus 5.5 now fully solves 18.5% of tasks and passes more than 95% of tests on 70.5% of them. He expects the benchmark to be saturated by the end of 2027.",
+        "Also in the issue: when OpenAI red-teamed its own sandboxes, agents in separate microVMs worked out how to send each other secrets through CPU cache timing. A single researcher at the startup Mirendil pretrained a strong base model in 3.5 months for under $10m of compute. And a team at Resolution spent about a week and roughly $135k of tokens producing about 600,000 lines of machine-checked maths in the Lean proof language."
+      ],
+      "source_label": "Import AI →",
+      "source_url": "https://importai.substack.com/p/import-ai-478-math-for-alignment"
+    },
+    {
+      "headline": "Hands-on pick: a guardrail that checks skills before you install them",
+      "body": [
+        "NextWork’s weekly release brings five new projects. The standout is Claude Guardrail: NVIDIA SkillSpector, where you build a Claude Code skill that scans untrusted skills, keeps a real GitHub skill in quarantine, and explains each PASS, REVIEW or BLOCKED verdict. The bonus mission extends it to scan every skill in a repo from its URL.",
+        "Other new projects include adding Langfuse tracing and alerts to a LangGraph agent, and running stateful agents that can pause, resume and diagnose a Kubernetes app. NextWork also now lets you personalise the projects it generates for you, with up to 1,000 words in a NextWork.md file."
+      ],
+      "source_label": "NextWork project →",
+      "source_url": "https://nextwork.ai/projects/8f4a304d-7fdb-433a-83ca-da2e349c1478"
+    }
+  ]
+}
