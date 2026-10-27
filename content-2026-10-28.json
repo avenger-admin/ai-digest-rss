@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Wednesday’s read: Google DeepMind’s Genie 4 builds whole worlds you can steer (with sound), OpenAI says its models knocked over a big assumption in computer science, Anthropic finds experts quietly follow their AI agent’s lead, and a lovely guide to coding with an agent fully offline.",
+  "hero": "media/2026-10-28.jpg",
+  "hero_alt": "Gradient title card reading “Worlds, proofs & who decides” for the 28 October 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Two things for the AI-assisted dev standards. First, Forward Future flags a Shandong University study of nearly 500 coding tasks where Claude Code and the much simpler mini-SWE-agent solved statistically the same share of tasks, but Claude Code started with over 16,000 tokens of context against 829, costing up to three times as much. Lean agent setups may be worth testing before heavy ones. Second, Anthropic’s judgment-call study below is a nice reminder for review guidance: when the agent picks between two reasonable options, ask people to write down their own choice first."
+  },
+  "items": [
+    {
+      "headline": "Genie 4: type a sentence and the world changes around you",
+      "body": [
+        "Google DeepMind’s new world model generates photorealistic, interactive scenes in real time that you walk through with keyboard controls, and now it makes its own sound too: wind, waves, music and even characters who talk back. You can steer it mid-scene in plain English, like changing the weather, moving the camera or dropping in a new person.",
+        "Gemini acts as the director, keeping the scene coherent and planning multi-step events, which DeepMind pitches as a way to test robots and agents in simulation. TechCrunch says scenes now hold together for about two minutes, double Genie 3. It’s with trusted testers now, then Google AI Ultra subscribers in Project Genie and early Gemini API partners."
+      ],
+      "source_label": "Google DeepMind →",
+      "source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    },
+    {
+      "headline": "OpenAI claims its AI disproved a 1999 computer-science assumption",
+      "body": [
+        "OpenAI says its internal models produced a disproof of the Exponential Time Hypothesis, the widely held belief that hard problems like 3-SAT can’t be solved meaningfully faster than brute force. It has published the write-up and a machine-checked Lean proof, alongside results touching the Kakeya conjecture and four-dimensional quantum field theories.",
+        "It’s a big claim and nothing is peer-reviewed yet. Complexity theorists Russell Impagliazzo, Ramamohan Paturi and Ryan Williams are leading outside review, and if it holds, a lot of theory built on that assumption would need revisiting (it wouldn’t settle P vs NP)."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+    },
+    {
+      "headline": "Experts go with their AI agent’s lean 86% of the time",
+      "body": [
+        "Anthropic gave 50 professional analysts a realistic stats task in Claude Code, but secretly set each agent to favour one of two reasonable options on each decision by coin flip. The agents argued honestly, yet analysts went with the agent’s lean 86% of the time, where 50% would mean no influence.",
+        "The striking part: 77% later justified their choices with the agent’s own arguments, sometimes word for word, but only 15% mentioned the agent, and most still felt the call was their own. Anthropic frames it as a caution about quietly handing judgment to AI."
+      ],
+      "source_label": "Anthropic research →",
+      "source_url": "https://www.anthropic.com/research/agents-judgment-calls"
+    },
+    {
+      "headline": "From the inbox: coding from the Himalayas with an offline agent",
+      "body": [
+        "A fun, practical Latent Space guest post from an engineer in the Himalayan foothills who wanted to keep coding when the internet drops. The setup is OpenCode (an open-source terminal coding agent) talking to Qwen3.5 9B running locally in Ollama, with web tools blocked and permission prompts on before any edit or command.",
+        "He walks through checking it really is offline, then has the agent find and fix a bug with the tests. Small local models do trip up (it guessed pytest when the project used unittest), so his tip is to put the exact test command in your prompt. Also in the inbox: Latent Space chats with Anthropic about how they ship Claude using Claude, and Pragmatic Engineer asks whether an “AI SRE” has ever really covered on-call (subscriber deep dive)."
+      ],
+      "source_label": "Latent Space →",
+      "source_url": "https://latent.space/p/offline-coding/"
+    }
+  ]
+}
