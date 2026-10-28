@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Thursday’s read: AI agent swarms machine-check the longest proof in maths, Cloudflare explains how one model briefly leaked other customers’ data, a tougher coding test asks whether a maintainer would actually merge the agent’s PR, and Latent Space on why agents keep picking Supabase.",
+  "hero": "media/2026-10-29.jpg",
+  "hero_alt": "Gradient title card reading “Proofs, leaks & mergeable code” for the 29 October 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "FrontierCode 2.0 grades agents the way a reviewer would: tests, scope discipline, style and fit with the codebase, with any blocking miss scoring zero. That’s a handy model for judging Copilot or Claude Code output internally, rather than leaning on pass/fail tests alone. And if anyone on the Bedrock side self-hosts inference, Cloudflare’s write-up below is a crisp checklist item: make sure the engine’s memory pool really fits the context length you advertise."
+  },
+  "items": [
+    {
+      "headline": "AI agents machine-check “the enormous theorem” in 24 days",
+      "body": [
+        "Axiom has released the first complete computer-checked proof of the Classification of Finite Simple Groups, the “periodic table” of symmetry whose original proof runs to roughly 15,000 pages across 500-plus papers by about 100 mathematicians. Engineers and mathematicians directed swarms of dozens of AI agents, producing about 43.1 million lines of Lean, where every logical step is checked by the computer.",
+        "The fun part: formalising it surfaced 34 noteworthy deviations from the published record, the biggest in an argument for the Unbalanced Group Theorem, which needed an alternative route. Axiom says it will share the full errata list with group theorists, and the proof is public on GitHub with an interactive proof map."
+      ],
+      "source_label": "Axiom →",
+      "source_url": "https://axiommath.ai/research/the-enormous-theorem-formalized/"
+    },
+    {
+      "headline": "Cloudflare: very long prompts got other customers’ data back",
+      "body": [
+        "Cloudflare published a candid post-mortem on its GLM-5.3 Workers AI model. It advertised a 1,048,576-token context window, but the GPU memory pool only held 681,280 tokens, and a bug in the open-source SGLang engine meant over-long prompts weren’t rejected cleanly. The model then answered while reading leftover cache from earlier requests.",
+        "In total 155 responses between 27 August and 9 September included other users’ data. A security researcher reported it, Cloudflare had it offline within 40 minutes of declaring an incident and fixed the same day, and found no sign of deliberate exploitation. SGLang has a matching post: anyone running it in split prefill/decode mode should upgrade to v0.5.22 or later."
+      ],
+      "source_label": "Cloudflare blog →",
+      "source_url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+    },
+    {
+      "headline": "Would a maintainer merge it? A harder test for coding agents",
+      "body": [
+        "Cognition (the Devin folks) launched FrontierCode 2.0: 132 private tasks built by open-source maintainers who spent 40+ hours each, now with security patches, performance work and bigger changes. An agent’s PR scores zero if it misses any blocking requirement, so it rewards thoroughness and design, not just green tests. Top scores currently sit below 50%.",
+        "It’s now a big chunk of Artificial Analysis’s new Intelligence Index v5. From the inbox, Nathan Lambert’s Interconnects has a thoughtful take on that update: single-number leaderboards hold a lot of power, private test sets cut cheating but ask for more trust, and he’d like to see more indices with different biases."
+      ],
+      "source_label": "Cognition →",
+      "source_url": "https://cognition.com/blog/frontier-code-2.0"
+    },
+    {
+      "headline": "From the inbox: why agents love Supabase",
+      "body": [
+        "Latent Space sat down with Supabase founders Paul Copplestone and Ant Wilson. swyx says frontier models almost all pick Supabase first when building an app backend, and the episode digs into why: Docker-free local setup, declarative schemas kept in Git (he calls it a Terraform moment for the database), and new compute that runs right beside the database.",
+        "The founders say they now launch about five million databases a month, and that agent-driven signups convert better because the agent carries people all the way to a working setup. Also in Latent Space’s AINews: Anthropic hiring manager Felix Reiseberg says he has stopped giving traditional coding interviews, arguing “hunger beats tenure”."
+      ],
+      "source_label": "Latent Space →",
+      "source_url": "https://www.latent.space/p/supabase"
+    }
+  ]
+}
