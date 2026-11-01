@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 30 Oct 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Friday 30 Oct 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Friday 30 Oct 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Friday’s read: Google’s Gemini 4 Carbon tops the leaderboards but starts with cyber defenders only, GitHub’s Copilot Fusion now picks and mixes models for you, a close read of Anthropic’s S-1 numbers, and a sneaky counting test that trips up the frontier models.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-10-30.jpg" width="1280" height="640" alt="Gradient title card reading “Carbon, Fusion &amp; a decoy test” for the 30 October 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>Gemini 4 Carbon takes the top spot, but you can’t use it yet</h2>
+        <p>Just two weeks after Argon, Google DeepMind announced Gemini 4 Carbon, built for long, multi-step engineering work and cyber defence. It ranks #1 on the Artificial Analysis Intelligence Index v5 at 59, and leads security tests for finding bugs (88.2% on SEC-bench Pro) and patching them (71.0% on CWE-bench). Google says its teams have watched it keep at a hard bug for days.</p>
+        <p>Access starts with a small group of cyber defenders through Google’s Fairwind Program, with developers promised “as soon as possible”. From the inbox, Latent Space’s AINews adds some useful nuance: on coding agents it still sits a few points behind Claude Code with Opus 5.5, and its hallucination rate rose from Argon’s 4% to 11%, though that’s still among the lowest measured.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" rel="noopener">Google →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>GitHub Copilot Fusion: let Copilot choose the model</h2>
+        <p>Announced at GitHub Universe and now generally available, Copilot Fusion is a model-picker option that decides which model, or mix of models, handles each prompt. Sometimes one model just does the job; sometimes a cheaper model drafts and a check decides whether to escalate; sometimes one model drafts while others critique it. You pick an effort level (Standard, High or Max) instead of a model.</p>
+        <p>GitHub also published its Octoverse report the same day: by September more than 40% of pull requests started as a draft from an agent, up from 17% in March, which works out to about 110 million in September alone.</p>
+        <p class="source"><a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/" rel="noopener">GitHub changelog →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: what Anthropic’s 421-page S-1 reveals</h2>
+        <p>Understanding AI’s Kai Williams read the whole IPO filing so we don’t have to. The headline: Anthropic’s finances are stronger than expected, with revenue jumping from $4.7 billion in Q1 2026 to $11.6 billion in Q2, its first-ever operating profit, and more cash at the end of June than any non-bank company except Google and Berkshire Hathaway.</p>
+        <p>The open question is the slowdown since: media reports put Q3 revenue at $16.8 billion, still huge growth but slower, against hundreds of billions of dollars already committed to compute. Is demand for Claude Code nearing saturation, or just catching its breath? (The full post is partly paywalled.)</p>
+        <p class="source"><a href="https://www.understandingai.org/p/anthropics-financials-are-surprisingly" rel="noopener">Understanding AI →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: can AI count bottles if the box says “24”?</h2>
+        <p>Latent Space’s Richard MacManus covers DecoyCount, a new benchmark from Elorian and Mercor with 1,660 real photos full of traps: six bottles in a pack printed “24”, mirrors that double the count, lookalike objects. Every frontier model tested scored under 50%, with GPT-6 Astra best at 43.17%.</p>
+        <p>The fun twist from the paper: telling the model the rule (“don’t count reflections”) lifts accuracy by 12 to 22 points, and more capable models or bigger thinking budgets often make that gap wider, not smaller. Elorian says its new visual reasoning model, Glimpse, scored 50.48% in a single internal run.</p>
+        <p class="source"><a href="https://latent.space/p/elorian/" rel="noopener">Latent Space →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>Copilot Fusion is the one to try: with Copilot org-wide, it’s a model-picker option rather than a new tool, and GitHub says Fusion Max lands within two points of Claude Code with Opus 5.5 Max at about half the cost per task. That’s right on the token-cost question, so it could be worth a small side-by-side against your current default model before anyone writes it into a standard. GitHub’s own docs explain when it adds extra model calls (and AI credits) and when it doesn’t.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 29 Oct 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 29 Oct 2026."/>
+  <title>Good morning — AI brief · 30 Oct 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Friday 30 Oct 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,53 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Thursday 29 Oct 2026 · Perth</div>
+      <div class="date-chip">Friday 30 Oct 2026 · Perth</div>
     </header>
 
-    <p class="lede">Thursday’s read: AI agent swarms machine-check the longest proof in maths, Cloudflare explains how one model briefly leaked other customers’ data, a tougher coding test asks whether a maintainer would actually merge the agent’s PR, and Latent Space on why agents keep picking Supabase.</p>
+    <p class="lede">Friday’s read: Google’s Gemini 4 Carbon tops the leaderboards but starts with cyber defenders only, GitHub’s Copilot Fusion now picks and mixes models for you, a close read of Anthropic’s S-1 numbers, and a sneaky counting test that trips up the frontier models.</p>
 
     <figure class="hero">
-      <img src="media/2026-10-29.jpg" width="1280" height="640" alt="Gradient title card reading “Proofs, leaks &amp; mergeable code” for the 29 October 2026 AI morning paper."/>
+      <img src="media/2026-10-30.jpg" width="1280" height="640" alt="Gradient title card reading “Carbon, Fusion &amp; a decoy test” for the 30 October 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>AI agents machine-check “the enormous theorem” in 24 days</h2>
-        <p>Axiom has released the first complete computer-checked proof of the Classification of Finite Simple Groups, the “periodic table” of symmetry whose original proof runs to roughly 15,000 pages across 500-plus papers by about 100 mathematicians. Engineers and mathematicians directed swarms of dozens of AI agents, producing about 43.1 million lines of Lean, where every logical step is checked by the computer.</p>
-        <p>The fun part: formalising it surfaced 34 noteworthy deviations from the published record, the biggest in an argument for the Unbalanced Group Theorem, which needed an alternative route. Axiom says it will share the full errata list with group theorists, and the proof is public on GitHub with an interactive proof map.</p>
-        <p class="source"><a href="https://axiommath.ai/research/the-enormous-theorem-formalized/" rel="noopener">Axiom →</a></p>
+        <h2>Gemini 4 Carbon takes the top spot, but you can’t use it yet</h2>
+        <p>Just two weeks after Argon, Google DeepMind announced Gemini 4 Carbon, built for long, multi-step engineering work and cyber defence. It ranks #1 on the Artificial Analysis Intelligence Index v5 at 59, and leads security tests for finding bugs (88.2% on SEC-bench Pro) and patching them (71.0% on CWE-bench). Google says its teams have watched it keep at a hard bug for days.</p>
+        <p>Access starts with a small group of cyber defenders through Google’s Fairwind Program, with developers promised “as soon as possible”. From the inbox, Latent Space’s AINews adds some useful nuance: on coding agents it still sits a few points behind Claude Code with Opus 5.5, and its hallucination rate rose from Argon’s 4% to 11%, though that’s still among the lowest measured.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" rel="noopener">Google →</a></p>
       </article>
 
       <article class="story">
-        <h2>Cloudflare: very long prompts got other customers’ data back</h2>
-        <p>Cloudflare published a candid post-mortem on its GLM-5.3 Workers AI model. It advertised a 1,048,576-token context window, but the GPU memory pool only held 681,280 tokens, and a bug in the open-source SGLang engine meant over-long prompts weren’t rejected cleanly. The model then answered while reading leftover cache from earlier requests.</p>
-        <p>In total 155 responses between 27 August and 9 September included other users’ data. A security researcher reported it, Cloudflare had it offline within 40 minutes of declaring an incident and fixed the same day, and found no sign of deliberate exploitation. SGLang has a matching post: anyone running it in split prefill/decode mode should upgrade to v0.5.22 or later.</p>
-        <p class="source"><a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/" rel="noopener">Cloudflare blog →</a></p>
+        <h2>GitHub Copilot Fusion: let Copilot choose the model</h2>
+        <p>Announced at GitHub Universe and now generally available, Copilot Fusion is a model-picker option that decides which model, or mix of models, handles each prompt. Sometimes one model just does the job; sometimes a cheaper model drafts and a check decides whether to escalate; sometimes one model drafts while others critique it. You pick an effort level (Standard, High or Max) instead of a model.</p>
+        <p>GitHub also published its Octoverse report the same day: by September more than 40% of pull requests started as a draft from an agent, up from 17% in March, which works out to about 110 million in September alone.</p>
+        <p class="source"><a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/" rel="noopener">GitHub changelog →</a></p>
       </article>
 
       <article class="story">
-        <h2>Would a maintainer merge it? A harder test for coding agents</h2>
-        <p>Cognition (the Devin folks) launched FrontierCode 2.0: 132 private tasks built by open-source maintainers who spent 40+ hours each, now with security patches, performance work and bigger changes. An agent’s PR scores zero if it misses any blocking requirement, so it rewards thoroughness and design, not just green tests. Top scores currently sit below 50%.</p>
-        <p>It’s now a big chunk of Artificial Analysis’s new Intelligence Index v5. From the inbox, Nathan Lambert’s Interconnects has a thoughtful take on that update: single-number leaderboards hold a lot of power, private test sets cut cheating but ask for more trust, and he’d like to see more indices with different biases.</p>
-        <p class="source"><a href="https://cognition.com/blog/frontier-code-2.0" rel="noopener">Cognition →</a></p>
+        <h2>From the inbox: what Anthropic’s 421-page S-1 reveals</h2>
+        <p>Understanding AI’s Kai Williams read the whole IPO filing so we don’t have to. The headline: Anthropic’s finances are stronger than expected, with revenue jumping from $4.7 billion in Q1 2026 to $11.6 billion in Q2, its first-ever operating profit, and more cash at the end of June than any non-bank company except Google and Berkshire Hathaway.</p>
+        <p>The open question is the slowdown since: media reports put Q3 revenue at $16.8 billion, still huge growth but slower, against hundreds of billions of dollars already committed to compute. Is demand for Claude Code nearing saturation, or just catching its breath? (The full post is partly paywalled.)</p>
+        <p class="source"><a href="https://www.understandingai.org/p/anthropics-financials-are-surprisingly" rel="noopener">Understanding AI →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: why agents love Supabase</h2>
-        <p>Latent Space sat down with Supabase founders Paul Copplestone and Ant Wilson. swyx says frontier models almost all pick Supabase first when building an app backend, and the episode digs into why: Docker-free local setup, declarative schemas kept in Git (he calls it a Terraform moment for the database), and new compute that runs right beside the database.</p>
-        <p>The founders say they now launch about five million databases a month, and that agent-driven signups convert better because the agent carries people all the way to a working setup. Also in Latent Space’s AINews: Anthropic hiring manager Felix Reiseberg says he has stopped giving traditional coding interviews, arguing “hunger beats tenure”.</p>
-        <p class="source"><a href="https://www.latent.space/p/supabase" rel="noopener">Latent Space →</a></p>
+        <h2>From the inbox: can AI count bottles if the box says “24”?</h2>
+        <p>Latent Space’s Richard MacManus covers DecoyCount, a new benchmark from Elorian and Mercor with 1,660 real photos full of traps: six bottles in a pack printed “24”, mirrors that double the count, lookalike objects. Every frontier model tested scored under 50%, with GPT-6 Astra best at 43.17%.</p>
+        <p>The fun twist from the paper: telling the model the rule (“don’t count reflections”) lifts accuracy by 12 to 22 points, and more capable models or bigger thinking budgets often make that gap wider, not smaller. Elorian says its new visual reasoning model, Glimpse, scored 50.48% in a single internal run.</p>
+        <p class="source"><a href="https://latent.space/p/elorian/" rel="noopener">Latent Space →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>FrontierCode 2.0 grades agents the way a reviewer would: tests, scope discipline, style and fit with the codebase, with any blocking miss scoring zero. That’s a handy model for judging Copilot or Claude Code output internally, rather than leaning on pass/fail tests alone. And if anyone on the Bedrock side self-hosts inference, Cloudflare’s write-up below is a crisp checklist item: make sure the engine’s memory pool really fits the context length you advertise.</p>
+      <p>Copilot Fusion is the one to try: with Copilot org-wide, it’s a model-picker option rather than a new tool, and GitHub says Fusion Max lands within two points of Claude Code with Opus 5.5 Max at about half the cost per task. That’s right on the token-cost question, so it could be worth a small side-by-side against your current default model before anyone writes it into a standard. GitHub’s own docs explain when it adds extra model calls (and AI credits) and when it doesn’t.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-10-29.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-10-30.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
