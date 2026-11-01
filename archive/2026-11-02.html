@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 2 Nov 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Monday 2 Nov 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Monday 2 Nov 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Happy Monday! The weekend’s AI news had a strong security flavour: a fake Claude Code extension slipped into Cursor’s marketplace, Gergely Orosz and Nathan Lambert both took stock of AI’s “Black October” of vulnerabilities, Mistral put a trillion-parameter model up for download, and OpenAI is pooling ChatGPT and Codex usage from December.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-11-02.jpg" width="1280" height="640" alt="Gradient title card reading “Patches, Le Chonk &amp; one shared pool” for the 2 November 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>A fake Claude Code extension sat in Cursor’s marketplace for about 11 hours</h2>
+        <p>On 29 October a tampered copy of Anthropic’s Claude Code extension (versions 2.1.312 and 2.1.313, for macOS and Windows) was served from Cursor’s VS Code extension marketplace between about 2:27am and 1:35pm Pacific time. Anthropic didn’t build it. It tried to add an attacker’s SSH key labelled svc-telemetry, open a reverse SSH tunnel, set itself up to keep running, and report host details.</p>
+        <p>Cursor says that on most machines the SSH step failed without admin rights, and the attacker’s server has been taken offline. Microsoft confirmed the Visual Studio Marketplace and the npm package were never affected. Cursor pulled the extension, rebuilt the marketplace and published a check script and cleanup steps.</p>
+        <p class="source"><a href="https://cursor.com/blog/claude-code-extension-security-notice" rel="noopener">Cursor security notice →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: is it time to rethink software security because of AI?</h2>
+        <p>In a free issue of The Pulse, the Pragmatic Engineer’s Gergely Orosz rounds up “a month’s worth of security breaches in a single day”. The standout: a certificate authority, eMudhra, whose supposedly 384-bit private keys turned out to be single-digit numbers, one of them literally “4”. There was also the PHP2Shell flaw, which a security team found with OpenAI’s GPT-5.6 Sol before attackers did, though exploits still started hours before the fix, plus a Railway leak of customer secrets.</p>
+        <p>His takeaway: AI makes finding and exploiting bugs easier for everyone, so expect automated patching, always-on security monitoring and defenders using AI themselves to become the norm, and for security to cost more.</p>
+        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-time-to-rethink-software" rel="noopener">The Pragmatic Engineer →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: Nathan Lambert asks if he was wrong about open models</h2>
+        <p>A few weeks ago Interconnects argued that if Claude Mythos had leaked as open weights, the world would have been “more or less fine”. After “Black October”, Nathan Lambert revisits that take honestly: he mostly stands by it but says he’s nervous, and that “fine” undersells the expensive, forced update the software industry now faces.</p>
+        <p>His bigger point is that closed models seem to be behind more of the recent hacks than open ones, and that cyber is a society-wide problem AI labs can’t solve alone. A thoughtful counterweight to the doom headlines.</p>
+        <p class="source"><a href="https://www.interconnects.ai/p/was-i-wrong-about-open-models-and" rel="noopener">Interconnects →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Mistral’s “Le Chonk” is now open weights</h2>
+        <p>Mistral released the weights of Mistral Large 4, a 1-trillion-parameter model that reads text and images, uses about 49 billion parameters per token and has a 1M-token context. Three more weeks of training since the preview lifted its Terminal-Bench 4.0 coding score from 28% to 41%, which The Next Web notes is just ahead of GLM-5.3.</p>
+        <p>It’s on Hugging Face under a modified MIT licence: free to use and fine-tune commercially, unless you’re selling it as a hosted model service. The API price is $0.70 per million input tokens and $2.10 per million output tokens, which is very cheap for a model in this class.</p>
+        <p class="source"><a href="https://mistral.ai/news/mistral-large-4-oss/" rel="noopener">Mistral →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>ChatGPT and Codex will share one usage allowance from December</h2>
+        <p>OpenAI updated its help centre on Saturday: from December, Plus, Pro and Business plans will draw ChatGPT and Codex from one token-based allowance, as ChatGPT’s agentic Work features fold into regular chat. Bigger models and harder tasks use more of it, quick Instant chats don’t count, and Settings, then Usage, shows what’s left.</p>
+        <p>OpenAI says most people shouldn’t hit resets more often than now, but it hasn’t published per-plan amounts yet. It’s one more sign that the big vendors are moving to token-metered budgets for agent work.</p>
+        <p class="source"><a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" rel="noopener">OpenAI Help Center →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>With Claude Code in pilot, it’s worth a two-minute check that nobody on the pilot installed or updated the Claude Code extension in Cursor on 29 October (US Pacific time, which was the evening of the 29th into the early hours of the 30th in Perth). Only versions 2.1.312 and 2.1.313 from Cursor’s own marketplace were affected; VS Code’s marketplace and the npm CLI weren’t. Cursor’s notice has a one-line check for the planted SSH key, and notes that uninstalling alone doesn’t remove it.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
