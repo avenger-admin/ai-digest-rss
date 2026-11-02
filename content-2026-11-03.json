@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Tuesday! DeepSeek open-sourced a coding agent that picks up work from team chats, SemiAnalysis launched a brutal new benchmark where the best model scores just 12%, Import AI found that agents still struggle when the clock keeps ticking, and PyTorch now runs natively on Google’s TPUs.",
+  "hero": "media/2026-11-03.jpg",
+  "hero_alt": "Gradient title card reading “Chat-watching agents & a 12% benchmark” for the 3 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "DeepSeek’s Super-Agent design notes are a handy read for anyone shaping how agents should pick up work in a team: it only acts when an approved person asks or a team-written rule allows it, starts in an observe-only mode, and keeps permissions in the host rather than the prompt. One caution if anyone wants to try it: its workers run commands without approval as the operator’s own OS user, so DeepSeek recommends a separate account."
+  },
+  "items": [
+    {
+      "headline": "DeepSeek open-sources Super-Agent, a coding agent that takes work from team chats",
+      "body": [
+        "DeepSeek put dsh-superagent on GitHub under an MIT licence. It watches one GitHub repository (and optionally Feishu, ByteDance’s work chat), turns requests from approved people into tickets, works each one in its own session and folder, and replies in the original thread, often with a pull request. A small web panel lists whatever needs a human.",
+        "Its guiding rule is to “take as little human attention as possible, and give as much value as possible”. DeepSeek is clear that this is a research prototype, not an official product, and that the public version differs from what it uses internally. Bloomberg reports it’s aimed squarely at Claude Code."
+      ],
+      "source_label": "GitHub: deepseek-ai/dsh-superagent-prototype →",
+      "source_url": "https://github.com/deepseek-ai/dsh-superagent-prototype/"
+    },
+    {
+      "headline": "GDPx: a new benchmark where the best AI agent scores 12%",
+      "body": [
+        "SemiAnalysis launched GDPx, 206 long, expert-level tasks across 11 high-value domains like chip design, cybersecurity, biology, finance, law and software engineering. Each task can run for up to eight hours in the model’s own harness, such as Claude Code, Codex or Antigravity.",
+        "Claude Opus 5.5 leads at 12.0%, then Gemini 4 Carbon at 10.9% (for about a third of Opus’s cost per task) and GPT-6 Astra at 9.6%. On finance and legal, almost every model scored zero. These are SemiAnalysis’s own runs and domain choices, but it’s a nice reality check on “agents can do expert work” headlines."
+      ],
+      "source_label": "SemiAnalysis →",
+      "source_url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
+    },
+    {
+      "headline": "From the inbox: AI agents still struggle when the clock keeps ticking",
+      "body": [
+        "This week’s Import AI from Jack Clark leads with Realtime-Bench, 50 game and web tasks (think buying tickets before they sell out) where acting late means failing. With a real wall clock, the best model, GPT-6 Astra, passed only 36%. Pause the clock and strong reasoning models get to 70–80%.",
+        "Jack also covers Google DeepMind’s Genie 4, a world model that turns a photo or drawing into an interactive scene with sound, physics and characters you can steer by typing, with Gemini 3.8 Flash planning in the loop. It’s a research preview for trusted testers for now."
+      ],
+      "source_label": "Import AI →",
+      "source_url": "https://importai.substack.com/p/import-ai-479-spacewar-low-latency"
+    },
+    {
+      "headline": "PyTorch now runs natively on Google TPUs with TorchTPU",
+      "body": [
+        "Google and Meta open-sourced TorchTPU at PyTorch Conference 2026. It’s a proper PyTorch backend for TPUs, so porting can be as simple as swapping .to(\"cuda\") for .to(\"tpu\"), with eager mode for debugging and torch.compile for speed.",
+        "It already works with Hugging Face, vLLM, SGLang, TorchTitan and Ray, and Google now recommends it over the older PyTorch/XLA. That gives teams a more realistic alternative to GPUs for training and serving open models."
+      ],
+      "source_label": "PyTorch blog →",
+      "source_url": "https://pytorch.org/blog/introducing-torchtpu/"
+    }
+  ]
+}
