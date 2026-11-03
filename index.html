@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 3 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Tuesday 3 Nov 2026."/>
+  <title>Good morning — AI brief · 4 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Wednesday 4 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,53 +14,60 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Tuesday 3 Nov 2026 · Perth</div>
+      <div class="date-chip">Wednesday 4 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Tuesday! DeepSeek open-sourced a coding agent that picks up work from team chats, SemiAnalysis launched a brutal new benchmark where the best model scores just 12%, Import AI found that agents still struggle when the clock keeps ticking, and PyTorch now runs natively on Google’s TPUs.</p>
+    <p class="lede">Happy Wednesday! Anthropic open-sourced a way to prove which model actually wrote an answer, its updated IPO filing shows just how hungry AI is for compute, OpenAI had GPT-6 help design a real gadget, and a Pragmatic Engineer essay counts what an AI-native job really looks like.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-03.jpg" width="1280" height="640" alt="Gradient title card reading “Chat-watching agents &amp; a 12% benchmark” for the 3 November 2026 AI morning paper."/>
+      <img src="media/2026-11-04.jpg" width="1280" height="640" alt="Gradient title card reading “Proving which model answered” for the 4 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>DeepSeek open-sources Super-Agent, a coding agent that takes work from team chats</h2>
-        <p>DeepSeek put dsh-superagent on GitHub under an MIT licence. It watches one GitHub repository (and optionally Feishu, ByteDance’s work chat), turns requests from approved people into tickets, works each one in its own session and folder, and replies in the original thread, often with a pull request. A small web panel lists whatever needs a human.</p>
-        <p>Its guiding rule is to “take as little human attention as possible, and give as much value as possible”. DeepSeek is clear that this is a research prototype, not an official product, and that the public version differs from what it uses internally. Bloomberg reports it’s aimed squarely at Claude Code.</p>
-        <p class="source"><a href="https://github.com/deepseek-ai/dsh-superagent-prototype/" rel="noopener">GitHub: deepseek-ai/dsh-superagent-prototype →</a></p>
+        <h2>Anthropic open-sources FlashProve, a way to prove which model wrote an answer</h2>
+        <p>How do you know the answer you got really came from the model you paid for, and not a cheaper one swapped in? Anthropic’s new research prototype, FlashProve, lets a provider publish a short fingerprint of a model’s weights without revealing them, then attach a cryptographic proof to each reply. Anyone can check that proof on an ordinary CPU in about 17 seconds.</p>
+        <p>For now it runs on Meta’s open Llama 4 Maverick, not Claude, and making the proofs takes roughly 70 to 95 times the GPU time of just running the model. Anthropic says it’s sharing intermediate progress so others can build on it, and the code is on GitHub.</p>
+        <p class="source"><a href="https://www.anthropic.com/research/provable-inference" rel="noopener">Anthropic research →</a></p>
       </article>
 
       <article class="story">
-        <h2>GDPx: a new benchmark where the best AI agent scores 12%</h2>
-        <p>SemiAnalysis launched GDPx, 206 long, expert-level tasks across 11 high-value domains like chip design, cybersecurity, biology, finance, law and software engineering. Each task can run for up to eight hours in the model’s own harness, such as Claude Code, Codex or Antigravity.</p>
-        <p>Claude Opus 5.5 leads at 12.0%, then Gemini 4 Carbon at 10.9% (for about a third of Opus’s cost per task) and GPT-6 Astra at 9.6%. On finance and legal, almost every model scored zero. These are SemiAnalysis’s own runs and domain choices, but it’s a nice reality check on “agents can do expert work” headlines.</p>
-        <p class="source"><a href="https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities" rel="noopener">SemiAnalysis →</a></p>
+        <h2>Anthropic’s updated IPO filing: $17 billion a quarter, and a giant compute bill</h2>
+        <p>Anthropic’s amended S-1 adds its September quarter: revenue of about $17 billion, roughly 12 times a year earlier, but an operating loss of $567 million after a profit the quarter before. The filing blames $5 billion of short-notice compute, which costs much more than its long-term contracts, plus $2 billion of non-cash charges.</p>
+        <p>It also puts a number on its commitments for the first time: about $895 billion, nearly all compute and infrastructure, with around $448 billion due before the end of 2030. And it warns that its next models may soon meet its own safety policy’s bar for “dramatically accelerated progress attributable to AI”.</p>
+        <p class="source"><a href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html" rel="noopener">CNBC →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: AI agents still struggle when the clock keeps ticking</h2>
-        <p>This week’s Import AI from Jack Clark leads with Realtime-Bench, 50 game and web tasks (think buying tickets before they sell out) where acting late means failing. With a real wall clock, the best model, GPT-6 Astra, passed only 36%. Pause the clock and strong reasoning models get to 70–80%.</p>
-        <p>Jack also covers Google DeepMind’s Genie 4, a world model that turns a photo or drawing into an interactive scene with sound, physics and characters you can steer by typing, with Gemini 3.8 Flash planning in the loop. It’s a research preview for trusted testers for now.</p>
-        <p class="source"><a href="https://importai.substack.com/p/import-ai-479-spacewar-low-latency" rel="noopener">Import AI →</a></p>
+        <h2>OpenAI had GPT-6 Astra design a physical gadget, start to finish</h2>
+        <p>OpenAI shared how its models now help with CAD, circuit boards, simulations and manufacturing drawings. As a test, two staff had Astra design a little device for talking to Codex, including the look, the enclosure, the circuit board and the firmware, with no direct human edits, in under a week as a side project. A manufacturer built prototypes within a month.</p>
+        <p>OpenAI is upfront that it still took several review rounds, because Astra didn’t reliably allow for the factory’s tolerances and assembly needs. Its hardware teams’ model usage has grown 23-fold since February, and it’s inviting engineering firms to work with it.</p>
+        <p class="source"><a href="https://openai.com/index/accelerating-engineering-for-the-physical-world" rel="noopener">OpenAI →</a></p>
       </article>
 
       <article class="story">
-        <h2>PyTorch now runs natively on Google TPUs with TorchTPU</h2>
-        <p>Google and Meta open-sourced TorchTPU at PyTorch Conference 2026. It’s a proper PyTorch backend for TPUs, so porting can be as simple as swapping .to(&quot;cuda&quot;) for .to(&quot;tpu&quot;), with eager mode for debugging and torch.compile for speed.</p>
-        <p>It already works with Hugging Face, vLLM, SGLang, TorchTitan and Ray, and Google now recommends it over the older PyTorch/XLA. That gives teams a more realistic alternative to GPUs for training and serving open models.</p>
-        <p class="source"><a href="https://pytorch.org/blog/introducing-torchtpu/" rel="noopener">PyTorch blog →</a></p>
+        <h2>From the inbox: an engineer who went from 20 PRs a month to 200</h2>
+        <p>The Pragmatic Engineer published the winner of its $10,000 essay challenge. Neil Kakkar compares four years at PostHog with eight months at Tano, an AI-native startup, and backs it with data: about 11 times more merged PRs, no human code reviews for experienced engineers, and a median time to merge under an hour.</p>
+        <p>The honest bit is the cost. He describes constant context switching, losing track of what teammates are doing, and feeling drained by 3pm until he learned to pace himself and leave his laptop (and his agents) at work overnight. Gergely Orosz adds that across the industry, PR output is up about twofold on average.</p>
+        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing" rel="noopener">The Pragmatic Engineer →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Hands-on pick: make an AI triage tool you can actually trust</h2>
+        <p>NextWork’s weekly release brings seven new projects, plus NextWork Proof, which records your browser and terminal while you build and turns it into a portfolio page. The standout for us is Engineer Reliable AI Solutions: you fix a support-ticket triage service that uses Gemini, adding repeatable AI evaluations and automated checks.</p>
+        <p>Along the way you stop Gemini from lowering a ticket’s priority, let a person’s call override the AI, and use GitHub Actions to block any change that breaks your tests. It’s a nice small-scale version of putting guardrails around AI in production.</p>
+        <p class="source"><a href="https://nextwork.ai/projects/8f437714-0223-4f44-8b12-5b717b58a3d8" rel="noopener">NextWork project →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>DeepSeek’s Super-Agent design notes are a handy read for anyone shaping how agents should pick up work in a team: it only acts when an approved person asks or a team-written rule allows it, starts in an observe-only mode, and keeps permissions in the host rather than the prompt. One caution if anyone wants to try it: its workers run commands without approval as the operator’s own OS user, so DeepSeek recommends a separate account.</p>
+      <p>Neil Kakkar’s essay (item 4) is a useful conversation starter for AI-assisted SDLC standards: when agents write most of the code, the bottleneck moves to review, shared context and the people themselves. His team’s fix was an AI review agent on every PR that gets a new rule each time something breaks, plus AGENTS.md files so others can pick up an area. He also notes that at API rates his own usage would top $8,000 a month, so token budgets matter.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-03.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-04.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>

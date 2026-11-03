@@ -1,0 +1,57 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Wednesday! Anthropic open-sourced a way to prove which model actually wrote an answer, its updated IPO filing shows just how hungry AI is for compute, OpenAI had GPT-6 help design a real gadget, and a Pragmatic Engineer essay counts what an AI-native job really looks like.",
+  "hero": "media/2026-11-04.jpg",
+  "hero_alt": "Gradient title card reading “Proving which model answered” for the 4 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Neil Kakkar’s essay (item 4) is a useful conversation starter for AI-assisted SDLC standards: when agents write most of the code, the bottleneck moves to review, shared context and the people themselves. His team’s fix was an AI review agent on every PR that gets a new rule each time something breaks, plus AGENTS.md files so others can pick up an area. He also notes that at API rates his own usage would top $8,000 a month, so token budgets matter."
+  },
+  "items": [
+    {
+      "headline": "Anthropic open-sources FlashProve, a way to prove which model wrote an answer",
+      "body": [
+        "How do you know the answer you got really came from the model you paid for, and not a cheaper one swapped in? Anthropic’s new research prototype, FlashProve, lets a provider publish a short fingerprint of a model’s weights without revealing them, then attach a cryptographic proof to each reply. Anyone can check that proof on an ordinary CPU in about 17 seconds.",
+        "For now it runs on Meta’s open Llama 4 Maverick, not Claude, and making the proofs takes roughly 70 to 95 times the GPU time of just running the model. Anthropic says it’s sharing intermediate progress so others can build on it, and the code is on GitHub."
+      ],
+      "source_label": "Anthropic research →",
+      "source_url": "https://www.anthropic.com/research/provable-inference"
+    },
+    {
+      "headline": "Anthropic’s updated IPO filing: $17 billion a quarter, and a giant compute bill",
+      "body": [
+        "Anthropic’s amended S-1 adds its September quarter: revenue of about $17 billion, roughly 12 times a year earlier, but an operating loss of $567 million after a profit the quarter before. The filing blames $5 billion of short-notice compute, which costs much more than its long-term contracts, plus $2 billion of non-cash charges.",
+        "It also puts a number on its commitments for the first time: about $895 billion, nearly all compute and infrastructure, with around $448 billion due before the end of 2030. And it warns that its next models may soon meet its own safety policy’s bar for “dramatically accelerated progress attributable to AI”."
+      ],
+      "source_label": "CNBC →",
+      "source_url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
+    },
+    {
+      "headline": "OpenAI had GPT-6 Astra design a physical gadget, start to finish",
+      "body": [
+        "OpenAI shared how its models now help with CAD, circuit boards, simulations and manufacturing drawings. As a test, two staff had Astra design a little device for talking to Codex, including the look, the enclosure, the circuit board and the firmware, with no direct human edits, in under a week as a side project. A manufacturer built prototypes within a month.",
+        "OpenAI is upfront that it still took several review rounds, because Astra didn’t reliably allow for the factory’s tolerances and assembly needs. Its hardware teams’ model usage has grown 23-fold since February, and it’s inviting engineering firms to work with it."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
+    },
+    {
+      "headline": "From the inbox: an engineer who went from 20 PRs a month to 200",
+      "body": [
+        "The Pragmatic Engineer published the winner of its $10,000 essay challenge. Neil Kakkar compares four years at PostHog with eight months at Tano, an AI-native startup, and backs it with data: about 11 times more merged PRs, no human code reviews for experienced engineers, and a median time to merge under an hour.",
+        "The honest bit is the cost. He describes constant context switching, losing track of what teammates are doing, and feeling drained by 3pm until he learned to pace himself and leave his laptop (and his agents) at work overnight. Gergely Orosz adds that across the industry, PR output is up about twofold on average."
+      ],
+      "source_label": "The Pragmatic Engineer →",
+      "source_url": "https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing"
+    },
+    {
+      "headline": "Hands-on pick: make an AI triage tool you can actually trust",
+      "body": [
+        "NextWork’s weekly release brings seven new projects, plus NextWork Proof, which records your browser and terminal while you build and turns it into a portfolio page. The standout for us is Engineer Reliable AI Solutions: you fix a support-ticket triage service that uses Gemini, adding repeatable AI evaluations and automated checks.",
+        "Along the way you stop Gemini from lowering a ticket’s priority, let a person’s call override the AI, and use GitHub Actions to block any change that breaks your tests. It’s a nice small-scale version of putting guardrails around AI in production."
+      ],
+      "source_label": "NextWork project →",
+      "source_url": "https://nextwork.ai/projects/8f437714-0223-4f44-8b12-5b717b58a3d8"
+    }
+  ]
+}
