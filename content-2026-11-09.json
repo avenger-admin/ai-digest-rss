@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Monday! Anthropic explains how Claude “dreams” to clean up its own memory, Thinking Machines’ Inkling 2 Small lands with open weights promised soon, Latent Space goes inside Stanford’s course on AI-native engineering, and NVIDIA has an open-source scanner that checks agent skills before you install them.",
+  "hero": "media/2026-11-09.jpg",
+  "hero_alt": "Gradient title card reading “Agents that tidy their memory” for the 9 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Two of today’s stories touch things you already use. Anthropic’s memory post notes that Claude Code only loads the first 200 lines or 25 KB of MEMORY.md, and that longer instruction files reduce adherence, so short, index-style memory and instruction files pay off. And if your teams are starting to share agent skills, NVIDIA’s SkillSpector gives you a quick way to scan a SKILL.md folder before anyone installs it."
+  },
+  "items": [
+    {
+      "headline": "Claude learns to “dream” its memory back into shape",
+      "body": [
+        "Anthropic published a detailed look at how agent memory works, including dreaming: an offline pass where Claude re-reads past session transcripts, checks its own notes against them, fixes mistakes, merges duplicates and builds linked wiki-style pages. In one fun example, Claude playing Pokémon had written down the wrong location for a PokéCenter; dreaming caught the error, and it went on to reach Cerulean City.",
+        "Developers can try it as a research preview in Claude Managed Agents, where a dream reads a memory store plus 1 to 100 sessions and writes a reorganised copy, leaving the original untouched so you can review it first."
+      ],
+      "source_label": "Anthropic →",
+      "source_url": "https://www.anthropic.com/research/components-of-agent-memory"
+    },
+    {
+      "headline": "Thinking Machines ships Inkling 2 Small",
+      "body": [
+        "Mira Murati’s Thinking Machines Lab released Inkling 2 Small, a 594B-parameter mixture-of-experts model with 17B active per token, image input and a big jump in agentic coding. It scores 31 on the Artificial Analysis Intelligence Index and costs $0.30 in and $1.00 out per million tokens on the lab’s Tinker platform.",
+        "Weights are closed for now; the lab plans an Apache 2.0 release after external safety testing and red-teaming. It’s refreshingly candid about limits too: it’s not the most succinct communicator and doesn’t always pick the right tool in codebases with lots of skills."
+      ],
+      "source_label": "Thinking Machines →",
+      "source_url": "https://thinkingmachines.ai/news/inkling-2-small/"
+    },
+    {
+      "headline": "From the inbox: how Stanford teaches AI-native engineering",
+      "body": [
+        "Latent Space sat down with Mihail Eric, who teaches Stanford’s CS146S and leads AI at Monaco. Students could one-shot last year’s homework with an agent, so now part of the coursework is contributing to a real open-source project and getting the patch reviewed by its maintainer: the agent writes the code, but you still have to learn whether the change is wanted and what it might break.",
+        "Two keepers: Mihail’s rule of thumb, “You buy to learn, and you build to keep,” and an exercise you can borrow, using Geoffrey Litt’s explain-diff skill to quiz yourself on a patch your agent just wrote. The CS146S syllabus is public if you want to follow along."
+      ],
+      "source_label": "Latent Space →",
+      "source_url": "https://latent.space/p/cs146s/"
+    },
+    {
+      "headline": "Tool pick: NVIDIA’s SkillSpector checks skills before you install them",
+      "body": [
+        "Agent skills run with a lot of implicit trust, and NVIDIA’s research found 26.1% of a 31,132-skill sample had vulnerabilities and 5.2% looked likely malicious. SkillSpector is its open-source (Apache 2.0) scanner: point it at a skill folder, a single SKILL.md, a zip or a Git URL and it returns a 0–100 risk score with findings.",
+        "It checks 71 patterns across things like prompt injection, data exfiltration and MCP tool poisoning, never runs the skill itself, and has a --no-llm mode if you want to keep file contents on your machine."
+      ],
+      "source_label": "NVIDIA on GitHub →",
+      "source_url": "https://github.com/NVIDIA/SkillSpector"
+    }
+  ]
+}

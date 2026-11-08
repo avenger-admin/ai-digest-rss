@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 6 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Friday 6 Nov 2026."/>
+  <title>Good morning — AI brief · 9 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Monday 9 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,60 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Friday 6 Nov 2026 · Perth</div>
+      <div class="date-chip">Monday 9 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Friday! OpenAI’s new cyber model is better at finding bugs without wandering off-target, Google’s video model is generally available with longer clips and a lower price, Timothy B. Lee borrows a robotics idea to explain why AI progress feels so uneven, a Pragmatic Engineer chat digs into scaling Slack and GitHub while keeping judgment human, and NextWork has a Bedrock project that builds an AWS health agent.</p>
+    <p class="lede">Happy Monday! Anthropic explains how Claude “dreams” to clean up its own memory, Thinking Machines’ Inkling 2 Small lands with open weights promised soon, Latent Space goes inside Stanford’s course on AI-native engineering, and NVIDIA has an open-source scanner that checks agent skills before you install them.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-06.jpg" width="1280" height="640" alt="Gradient title card reading “Agents that stay in scope” for the 6 November 2026 AI morning paper."/>
+      <img src="media/2026-11-09.jpg" width="1280" height="640" alt="Gradient title card reading “Agents that tidy their memory” for the 9 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>OpenAI’s GPT-6 Cyber finds more bugs, and stays in bounds</h2>
-        <p>OpenAI launched GPT-6 Cyber, a cybersecurity model trained to find and validate exploitable vulnerabilities while sticking to the scope researchers set. On ExploitGym it scored 48.5%, up from 32.1% for GPT-5.6 Cyber, and in alignment tests it avoided out-of-scope services in 99.93% of runs without its deployment prompt, and 100% with it.</p>
-        <p>OpenAI says researchers used it to develop 948 privilege-escalation exploits in Linux and find 81 previously unknown high-severity Firefox bugs, with Mozilla shipping fixes for many of them. Access starts with approved Daybreak Red customers via the API and Codex.</p>
-        <p class="source"><a href="https://openai.com/index/introducing-gpt-6-cyber" rel="noopener">OpenAI →</a></p>
+        <h2>Claude learns to “dream” its memory back into shape</h2>
+        <p>Anthropic published a detailed look at how agent memory works, including dreaming: an offline pass where Claude re-reads past session transcripts, checks its own notes against them, fixes mistakes, merges duplicates and builds linked wiki-style pages. In one fun example, Claude playing Pokémon had written down the wrong location for a PokéCenter; dreaming caught the error, and it went on to reach Cerulean City.</p>
+        <p>Developers can try it as a research preview in Claude Managed Agents, where a dream reads a memory store plus 1 to 100 sessions and writes a reorganised copy, leaving the original untouched so you can review it first.</p>
+        <p class="source"><a href="https://www.anthropic.com/research/components-of-agent-memory" rel="noopener">Anthropic →</a></p>
       </article>
 
       <article class="story">
-        <h2>Google’s Gemini Omni 1.2 Flash is generally available</h2>
-        <p>Gemini Omni 1.2 Flash is now generally available on the Gemini API and Google Cloud. Clips go up to 15 seconds (from 10), you can edit the same clip in a multi-turn chat instead of starting over, and 720p video is $0.07 per second — about 30% less than Omni 1.1 Flash.</p>
-        <p>Google says reference following is stronger for products and characters, drafts can start at 360p or 720p and upscale later, and outputs carry a SynthID watermark. It’s also rolling into Flow, Google Vids, Ads, and the Gemini app for AI Ultra subscribers.</p>
-        <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/" rel="noopener">Google →</a></p>
+        <h2>Thinking Machines ships Inkling 2 Small</h2>
+        <p>Mira Murati’s Thinking Machines Lab released Inkling 2 Small, a 594B-parameter mixture-of-experts model with 17B active per token, image input and a big jump in agentic coding. It scores 31 on the Artificial Analysis Intelligence Index and costs $0.30 in and $1.00 out per million tokens on the lab’s Tinker platform.</p>
+        <p>Weights are closed for now; the lab plans an Apache 2.0 release after external safety testing and red-teaming. It’s refreshingly candid about limits too: it’s not the most succinct communicator and doesn’t always pick the right tool in codebases with lots of skills.</p>
+        <p class="source"><a href="https://thinkingmachines.ai/news/inkling-2-small/" rel="noopener">Thinking Machines →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: why AI progress feels jagged</h2>
-        <p>In Understanding AI, Timothy B. Lee borrows the robotics idea of the sim-to-real gap to explain why models can leap ahead in programming, maths and cybersecurity while everyday professions still look mostly the same. Tasks you can faithfully simulate improve fast and cheap; messy real-world work doesn’t.</p>
-        <p>Walking works in sim because the floor doesn’t fight back; hammering a nail often doesn’t, because tiny physics errors break the transfer. Lee’s point for white-collar work is that lots of valuable jobs are more like hammering than chess — hard to put in a clean training loop — so don’t expect 2027 to suddenly look like sci-fi just because benchmarks keep rising.</p>
-        <p class="source"><a href="https://www.understandingai.org/p/this-robotics-concept-helps-explain" rel="noopener">Understanding AI →</a></p>
+        <h2>From the inbox: how Stanford teaches AI-native engineering</h2>
+        <p>Latent Space sat down with Mihail Eric, who teaches Stanford’s CS146S and leads AI at Monaco. Students could one-shot last year’s homework with an agent, so now part of the coursework is contributing to a real open-source project and getting the patch reviewed by its maintainer: the agent writes the code, but you still have to learn whether the change is wanted and what it might break.</p>
+        <p>Two keepers: Mihail’s rule of thumb, “You buy to learn, and you build to keep,” and an exercise you can borrow, using Geoffrey Litt’s explain-diff skill to quiz yourself on a patch your agent just wrote. The CS146S syllabus is public if you want to follow along.</p>
+        <p class="source"><a href="https://latent.space/p/cs146s/" rel="noopener">Latent Space →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: scaling Slack and GitHub with Maude Lemaire</h2>
-        <p>The Pragmatic Engineer’s new episode with Maude Lemaire covers nearly eight years scaling Slack’s backend, database pain at GitHub’s Rails monolith, and a stretch improving time-to-first-token at Cursor. The war stories are great on their own — custom emoji capped at 23 to avoid thundering herds, a homemade load tester for half a million WebSockets — but the AI bit is the keepers.</p>
-        <p>For foundational platform work, Maude personally verifies everything she gets from an LLM before she builds on it. Judgment stays human; the model is a helper, not the decision-maker.</p>
-        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude" rel="noopener">Pragmatic Engineer →</a></p>
-      </article>
-
-      <article class="story">
-        <h2>Hands-on pick: build an AI DevOps health agent on AWS</h2>
-        <p>If you want a practical Bedrock project this weekend, NextWork’s Build an AI DevOps Health Agent on AWS has you deploy an AgentCore harness that writes boto3 in a code interpreter, reads your account with least-privilege IAM, and returns a severity-rated health report. CloudWatch traces show every decision and line of code.</p>
-        <p>It’s a clean fit if you’re already on Bedrock: read-only by default, optional secret mission to write a risk-scored JSON report to S3, then tear it all down with agentcore destroy so you don’t leave spend running.</p>
-        <p class="source"><a href="https://nextwork.ai/projects/c685fee8-2c05-46c2-a006-bf9079abb034" rel="noopener">NextWork project →</a></p>
+        <h2>Tool pick: NVIDIA’s SkillSpector checks skills before you install them</h2>
+        <p>Agent skills run with a lot of implicit trust, and NVIDIA’s research found 26.1% of a 31,132-skill sample had vulnerabilities and 5.2% looked likely malicious. SkillSpector is its open-source (Apache 2.0) scanner: point it at a skill folder, a single SKILL.md, a zip or a Git URL and it returns a 0–100 risk score with findings.</p>
+        <p>It checks 71 patterns across things like prompt injection, data exfiltration and MCP tool poisoning, never runs the skill itself, and has a --no-llm mode if you want to keep file contents on your machine.</p>
+        <p class="source"><a href="https://github.com/NVIDIA/SkillSpector" rel="noopener">NVIDIA on GitHub →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>Two threads today land on the same habit: don’t trust an agent just because it sounds capable. OpenAI’s GPT-6 Cyber story is as much about staying inside the scope you set as it is about finding vulnerabilities. And in the Pragmatic Engineer episode, Maude Lemaire’s rule of thumb for foundational work is simple — personally verify anything an LLM hands you before you build on it.</p>
+      <p>Two of today’s stories touch things you already use. Anthropic’s memory post notes that Claude Code only loads the first 200 lines or 25 KB of MEMORY.md, and that longer instruction files reduce adherence, so short, index-style memory and instruction files pay off. And if your teams are starting to share agent skills, NVIDIA’s SkillSpector gives you a quick way to scan a SKILL.md folder before anyone installs it.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-06.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-09.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
