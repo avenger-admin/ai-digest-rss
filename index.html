@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 9 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Monday 9 Nov 2026."/>
+  <title>Good morning — AI brief · 10 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Tuesday 10 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,53 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Monday 9 Nov 2026 · Perth</div>
+      <div class="date-chip">Tuesday 10 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Monday! Anthropic explains how Claude “dreams” to clean up its own memory, Thinking Machines’ Inkling 2 Small lands with open weights promised soon, Latent Space goes inside Stanford’s course on AI-native engineering, and NVIDIA has an open-source scanner that checks agent skills before you install them.</p>
+    <p class="lede">Happy Tuesday! Anthropic’s Claude Fable 5.2 is out (and cheaper), Ethan Mollick spent weeks with it and calls it “almost AGI”, Meta shipped a tiny 10-cent model built for the grunt work agents do all day, and an AI research system proved a quantum computing conjecture that had been open since 2008.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-09.jpg" width="1280" height="640" alt="Gradient title card reading “Agents that tidy their memory” for the 9 November 2026 AI morning paper."/>
+      <img src="media/2026-11-10.jpg" width="1280" height="640" alt="Gradient title card reading “Almost AGI, and a tiny new workhorse” for the 10 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>Claude learns to “dream” its memory back into shape</h2>
-        <p>Anthropic published a detailed look at how agent memory works, including dreaming: an offline pass where Claude re-reads past session transcripts, checks its own notes against them, fixes mistakes, merges duplicates and builds linked wiki-style pages. In one fun example, Claude playing Pokémon had written down the wrong location for a PokéCenter; dreaming caught the error, and it went on to reach Cerulean City.</p>
-        <p>Developers can try it as a research preview in Claude Managed Agents, where a dream reads a memory store plus 1 to 100 sessions and writes a reorganised copy, leaving the original untouched so you can review it first.</p>
-        <p class="source"><a href="https://www.anthropic.com/research/components-of-agent-memory" rel="noopener">Anthropic →</a></p>
+        <h2>Claude Fable 5.2 lands, faster and 20% cheaper</h2>
+        <p>Anthropic released Claude Fable 5.2 and its gated twin Mythos 5.2 yesterday, pitched at the hardest coding, reasoning and long-running agent work. In testing they formalised the proof of Fermat’s Last Theorem in 30 hours, solved two open problems in black-hole physics and designed three working electronic devices from scratch.</p>
+        <p>Fable 5.2 is available to everyone on the API, Bedrock, Google Cloud and Microsoft Foundry, with a 1M-token context, up to 30% faster output and a lower price of $8 in and $40 out per million tokens. There’s also an optional fast mode that’s up to 2.5 times quicker at double the price.</p>
+        <p class="source"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" rel="noopener">Anthropic →</a></p>
       </article>
 
       <article class="story">
-        <h2>Thinking Machines ships Inkling 2 Small</h2>
-        <p>Mira Murati’s Thinking Machines Lab released Inkling 2 Small, a 594B-parameter mixture-of-experts model with 17B active per token, image input and a big jump in agentic coding. It scores 31 on the Artificial Analysis Intelligence Index and costs $0.30 in and $1.00 out per million tokens on the lab’s Tinker platform.</p>
-        <p>Weights are closed for now; the lab plans an Apache 2.0 release after external safety testing and red-teaming. It’s refreshingly candid about limits too: it’s not the most succinct communicator and doesn’t always pick the right tool in codebases with lots of skills.</p>
-        <p class="source"><a href="https://thinkingmachines.ai/news/inkling-2-small/" rel="noopener">Thinking Machines →</a></p>
+        <h2>From the inbox: Ethan Mollick on “Jagged AGI”</h2>
+        <p>One Useful Thing got early access to Fable 5.2 and threw everything at it: it hacked a little USB keyboard into a six-game console, drafted a business plan that would impress an MBA class, rebuilt W. H. Auden’s famously brutal 1941 literature course as a website, and built a site of 450+ code-drawn 3D worlds linked by portals.</p>
+        <p>The fun twist is where it fell short. Asked to “polish” the worlds, the agents built themselves a bureaucracy: an 87,500-word rule book with 204 sections that slowed new worlds from hundreds a day to about a dozen. Mollick’s verdict is “almost AGI”: the model checks facts well but rarely notices when its own work is too long, too repetitive or no fun.</p>
+        <p class="source"><a href="https://www.oneusefulthing.org/p/fable-52-and-jagged-agi" rel="noopener">One Useful Thing →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: how Stanford teaches AI-native engineering</h2>
-        <p>Latent Space sat down with Mihail Eric, who teaches Stanford’s CS146S and leads AI at Monaco. Students could one-shot last year’s homework with an agent, so now part of the coursework is contributing to a real open-source project and getting the patch reviewed by its maintainer: the agent writes the code, but you still have to learn whether the change is wanted and what it might break.</p>
-        <p>Two keepers: Mihail’s rule of thumb, “You buy to learn, and you build to keep,” and an exercise you can borrow, using Geoffrey Litt’s explain-diff skill to quiz yourself on a patch your agent just wrote. The CS146S syllabus is public if you want to follow along.</p>
-        <p class="source"><a href="https://latent.space/p/cs146s/" rel="noopener">Latent Space →</a></p>
+        <h2>Meta’s Muse Ember: a 10-cent model for agent busywork</h2>
+        <p>Meta Superintelligence Labs released Muse Ember, its smallest and cheapest model, built for the small, repeated steps agents take all day: tool calls, coding subtasks, routing, extraction and long-document parsing. It costs $0.10 in and $0.50 out per million tokens, takes text, images, audio and video, and has a 1M-token context.</p>
+        <p>Meta says it matches Claude Haiku 5.5’s best score at about a third of the cost. The intended pattern is “Muse Wonder plans, Muse Ember handles the volume.”</p>
+        <p class="source"><a href="https://research.meta.ai/blog/muse-ember" rel="noopener">Meta →</a></p>
       </article>
 
       <article class="story">
-        <h2>Tool pick: NVIDIA’s SkillSpector checks skills before you install them</h2>
-        <p>Agent skills run with a lot of implicit trust, and NVIDIA’s research found 26.1% of a 31,132-skill sample had vulnerabilities and 5.2% looked likely malicious. SkillSpector is its open-source (Apache 2.0) scanner: point it at a skill folder, a single SKILL.md, a zip or a Git URL and it returns a 0–100 risk score with findings.</p>
-        <p>It checks 71 patterns across things like prompt injection, data exfiltration and MCP tool poisoning, never runs the skill itself, and has a --no-llm mode if you want to keep file contents on your machine.</p>
-        <p class="source"><a href="https://github.com/NVIDIA/SkillSpector" rel="noopener">NVIDIA on GitHub →</a></p>
+        <h2>From the inbox: an AI proves a 2008 quantum conjecture</h2>
+        <p>Import AI’s latest leads with Physical Superintelligence, an AI science startup whose research system, running a non-public Anthropic model, proved the Aaronson–Ambainis conjecture about when quantum computers can be exponentially faster than ordinary ones. It had a complete proof on day three of the run, checked step by step in the Lean proof assistant, and then improved the result twice.</p>
+        <p>The same issue has a fun detour into a 2016 NASA paper arguing a self-growing robot industry on the Moon could be bootstrapped from just 12 to 41 tonnes of launched hardware, plus Meta’s Tactus sensing glove for recording how hands really grip things.</p>
+        <p class="source"><a href="https://importai.substack.com/p/import-ai-480-self-sustaining-space" rel="noopener">Import AI →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>Two of today’s stories touch things you already use. Anthropic’s memory post notes that Claude Code only loads the first 200 lines or 25 KB of MEMORY.md, and that longer instruction files reduce adherence, so short, index-style memory and instruction files pay off. And if your teams are starting to share agent skills, NVIDIA’s SkillSpector gives you a quick way to scan a SKILL.md folder before anyone installs it.</p>
+      <p>Fable 5.2 is already on Amazon Bedrock as anthropic.claude-fable-5-2, but Anthropic itself says to start most coding work on Opus 5.5 and step up to Fable only for the genuinely hard, long-running jobs, which is a handy line for keeping token spend sane. Meta’s Muse Ember points the same way from the other end: let a big model plan and a cheap one do the repetitive steps.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-09.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-10.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
