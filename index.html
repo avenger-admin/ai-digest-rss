@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 11 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Wednesday 11 Nov 2026."/>
+  <title>Good morning — AI brief · 12 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 12 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,60 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Wednesday 11 Nov 2026 · Perth</div>
+      <div class="date-chip">Thursday 12 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Wednesday! Google’s Gemini 4 Carbon is out for everyone, DeepMind used it to mathematically prove Signal’s encryption code is sound, Claude picked up a spreadsheet and a whiteboard, and the AI as Normal Technology crew launched a new lab. Plus a hands-on project that routes easy coding tasks to cheaper models.</p>
+    <p class="lede">Happy Thursday! AWS let thousands of AI agents build a free local copy of its cloud without a human writing a line, Google shipped a tiny model that just makes decisions, and DeepMind’s new DNA model looks inside individual cells. Plus Last Week in AI is back with a five-week catch-up, led by Anthropic’s IPO.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-11.jpg" width="1280" height="640" alt="Gradient title card reading “Carbon for everyone, and Signal, proven” for the 11 November 2026 AI morning paper."/>
+      <img src="media/2026-11-12.jpg" width="1280" height="640" alt="Gradient title card reading “Agents built AWS a cloud on your laptop” for the 12 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>Gemini 4 Carbon is now open to everyone</h2>
-        <p>Two weeks after giving it only to cybersecurity defenders, Google has released Gemini 4 Carbon, its strongest model, to paying developers, businesses and Google AI Ultra subscribers. It’s built for the really hard stuff: long multi-step coding and debugging, deep research and big agent workflows. Google says it ranks #1 on CursorBench 4.0 at less than half the cost per task of the next best outside model.</p>
-        <p>It costs $2 in and $10 out per million tokens until 30 November, then $4 and $20. Google Antigravity also gets a preview of /swarm, which turns one prompt into a team of agents you can watch working in real time. Google still suggests Gemini 4 Argon for most everyday work.</p>
-        <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" rel="noopener">Google →</a></p>
+        <h2>AI agents built AWS a free cloud you can run on your laptop</h2>
+        <p>AWS has released AWS Emulator, a free local stand-in for more than 200 AWS services. You point the AWS CLI or SDKs at it and your tests (or your coding agent) can create DynamoDB tables, queues and the rest without deploying anything. It’s written in Rust, runs on Linux or in Docker on Mac and Windows, and there’s even an agent skill to set it up for you.</p>
+        <p>The twist is how it was made: three teams of autonomous agents write tests against real AWS, find mismatches, and fix them, and AWS says its engineers haven’t written or reviewed any of the code. A separate security agent reviews every change. It doesn’t check IAM permissions the way real AWS does, so don’t use it to test security, and it’s public domain (CC0) on GitHub.</p>
+        <p class="source"><a href="https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/" rel="noopener">AWS News Blog →</a></p>
       </article>
 
       <article class="story">
-        <h2>AI agents prove Signal’s encryption code is secure</h2>
-        <p>Google DeepMind’s new AlphaProof Code mathematically proved key security properties of libsignal, the code behind the Signal protocol that protects chats in Signal, Google Messages and WhatsApp. Humans and AI agreed what to prove, then Carbon-powered agents wrote about 6.5 million lines of Lean proof, each checked by machine, in about four weeks instead of the years this kind of work usually takes.</p>
-        <p>As a sanity check, they put two old, already-fixed bugs back in, and the system correctly showed those versions were insecure. It covers one-to-one messaging rather than the whole app, and the proofs are public for others to build on.</p>
-        <p class="source"><a href="https://deepmind.google/blog/introducing-alphaproof-code/" rel="noopener">Google DeepMind →</a></p>
+        <h2>Google’s new model doesn’t write, it decides</h2>
+        <p>The Gemini Decisions API, powered by a new model called Gemini Decision 1, answers closed questions instead of generating text: yes/no checks, multiple choice from up to 255 options, and rubric scores. You can ask up to 1,000 questions about one input (text, images, audio, video or PDFs) in a single call and get back probabilities and confidence scores in about 150 to 250 milliseconds.</p>
+        <p>It costs $0.10 per million input tokens and nothing for output, and Google pitches it for the small branching calls inside agents, like picking a tool, routing to a model or checking a policy. Low-confidence answers can be sent to a person or a bigger model. There’s a free tier in Google AI Studio, and it’s already listed on OpenRouter.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" rel="noopener">Google →</a></p>
       </article>
 
       <article class="story">
-        <h2>Claude gets Sheets, Whiteboards and Meetings</h2>
-        <p>At an event in San Francisco, Anthropic launched Claude Sheets and Claude Whiteboards in beta on all paid plans. Sheets builds working spreadsheets from a prompt (tabs, formulas, dropdowns, charts), highlights each edit Claude makes, and exports to Excel or CSV. Claude Data (previously Dashboards) is now generally available too.</p>
-        <p>There’s also Claude Meetings for Team and Enterprise, which joins video calls and starts on tasks while people are still talking. Together it looks a lot like Anthropic’s own office suite.</p>
-        <p class="source"><a href="https://claude.com/resources/articles/sheets-whiteboards-data" rel="noopener">Anthropic →</a></p>
+        <h2>AlphaGenome 2 reads DNA one cell type at a time</h2>
+        <p>Google DeepMind’s AlphaGenome 2 predicts how small changes in DNA affect specific kinds of cells, like particular heart muscle or immune cells, rather than averaging across a whole tissue. It was trained on more than 100 million individual cell profiles across 68 tissues, and on one immune-cell benchmark it found nearly twice as many causal variants as the original model (30% versus 16%).</p>
+        <p>Scientists can also feed it their own single-cell data, say from a disease state, and get predictions without retraining. Nature reports it reproduced parts of a recent bowel-disease discovery without anyone lifting a pipette. It’s free for non-commercial research through the AlphaGenome API.</p>
+        <p class="source"><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" rel="noopener">Google DeepMind →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: the “missing quadrant” in how we think about AI</h2>
-        <p>Arvind Narayanan, Sayash Kapoor and Rishi Bommasani from AI as Normal Technology are starting STABL, a non-profit lab studying how AI actually changes society. Their pitch is a simple 2×2: one camp thinks superintelligence will sweep every obstacle aside, the other treats today’s institutions as fixed and tries to hold AI back.</p>
-        <p>STABL wants the overlooked corner: take AI seriously and take the bottlenecks seriously, then ask how to fix them. Their example is medicine, where AI might speed up drug discovery but clinical trials still take years, so the real question is how to make testing faster and safer.</p>
-        <p class="source"><a href="https://www.normaltech.ai/p/the-missing-quadrant-in-responses" rel="noopener">AI as Normal Technology →</a></p>
-      </article>
-
-      <article class="story">
-        <h2>Hands-on pick: build a model router for Claude Code</h2>
-        <p>NextWork’s latest weekly release adds a project that builds a Claude Code skill to pick the right model for each task. It uses TypeSafe’s Jev to recommend Haiku or Sonnet, stops vague or risky jobs for a human to check, and then hands approved work to the chosen model.</p>
-        <p>You’ll need Claude Code plus an OpenRouter or TypeSafe key that can call Jev. The same changelog also adds sharing for private projects and NextWork Proof recording on Windows.</p>
-        <p class="source"><a href="https://nextwork.ai/projects/e315e12d-76d8-4a62-b4a7-19bdcf42878c" rel="noopener">NextWork project →</a></p>
+        <h2>From the inbox: Last Week in AI catches up on five big weeks</h2>
+        <p>Andrey from Last Week in AI is back from a break with a bumper recap. The headline is Anthropic’s IPO: 825 million shares at $70 to $78, which would value it at up to about $1.4 trillion, with trading on Nasdaq under ANT planned for around 19 November. That’s well below the $2 trillion it reportedly hoped for in October, after a post-midterm market drop and Ramp data showing business AI token spending barely grew in August and September.</p>
+        <p>Also in the round-up: Nvidia’s board is investigating reports that a Chinese intelligence operation targeted CEO Jensen Huang, OpenAI raised more money at a $1.25 trillion valuation, and Anthropic warned it may be getting close to AI that can meaningfully improve itself.</p>
+        <p class="source"><a href="https://lastweekin.ai/p/last-week-month-in-ai-347-nvidias" rel="noopener">Last Week in AI →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>Two small things point the same way on cost: Google says to keep Gemini 4 Argon for most coding and save Carbon for the hardest jobs, and today’s NextWork project builds a router that sends routine tasks to Haiku and only escalates when it needs to. Both fit nicely with keeping token spend sensible.</p>
+      <p>Two cheap wins line up nicely today. AWS Emulator lets you and your coding agents test against AWS locally with no account and no bill, and the Gemini Decisions API handles the small yes/no and routing calls inside agents for $0.10 per million input tokens with no output charge. Both are easy ways to cut token and cloud spend in an agent workflow.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-11.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-12.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>

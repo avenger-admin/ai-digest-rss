@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 12 Nov 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 12 Nov 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Thursday 12 Nov 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Happy Thursday! AWS let thousands of AI agents build a free local copy of its cloud without a human writing a line, Google shipped a tiny model that just makes decisions, and DeepMind’s new DNA model looks inside individual cells. Plus Last Week in AI is back with a five-week catch-up, led by Anthropic’s IPO.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-11-12.jpg" width="1280" height="640" alt="Gradient title card reading “Agents built AWS a cloud on your laptop” for the 12 November 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>AI agents built AWS a free cloud you can run on your laptop</h2>
+        <p>AWS has released AWS Emulator, a free local stand-in for more than 200 AWS services. You point the AWS CLI or SDKs at it and your tests (or your coding agent) can create DynamoDB tables, queues and the rest without deploying anything. It’s written in Rust, runs on Linux or in Docker on Mac and Windows, and there’s even an agent skill to set it up for you.</p>
+        <p>The twist is how it was made: three teams of autonomous agents write tests against real AWS, find mismatches, and fix them, and AWS says its engineers haven’t written or reviewed any of the code. A separate security agent reviews every change. It doesn’t check IAM permissions the way real AWS does, so don’t use it to test security, and it’s public domain (CC0) on GitHub.</p>
+        <p class="source"><a href="https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/" rel="noopener">AWS News Blog →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Google’s new model doesn’t write, it decides</h2>
+        <p>The Gemini Decisions API, powered by a new model called Gemini Decision 1, answers closed questions instead of generating text: yes/no checks, multiple choice from up to 255 options, and rubric scores. You can ask up to 1,000 questions about one input (text, images, audio, video or PDFs) in a single call and get back probabilities and confidence scores in about 150 to 250 milliseconds.</p>
+        <p>It costs $0.10 per million input tokens and nothing for output, and Google pitches it for the small branching calls inside agents, like picking a tool, routing to a model or checking a policy. Low-confidence answers can be sent to a person or a bigger model. There’s a free tier in Google AI Studio, and it’s already listed on OpenRouter.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" rel="noopener">Google →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>AlphaGenome 2 reads DNA one cell type at a time</h2>
+        <p>Google DeepMind’s AlphaGenome 2 predicts how small changes in DNA affect specific kinds of cells, like particular heart muscle or immune cells, rather than averaging across a whole tissue. It was trained on more than 100 million individual cell profiles across 68 tissues, and on one immune-cell benchmark it found nearly twice as many causal variants as the original model (30% versus 16%).</p>
+        <p>Scientists can also feed it their own single-cell data, say from a disease state, and get predictions without retraining. Nature reports it reproduced parts of a recent bowel-disease discovery without anyone lifting a pipette. It’s free for non-commercial research through the AlphaGenome API.</p>
+        <p class="source"><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" rel="noopener">Google DeepMind →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: Last Week in AI catches up on five big weeks</h2>
+        <p>Andrey from Last Week in AI is back from a break with a bumper recap. The headline is Anthropic’s IPO: 825 million shares at $70 to $78, which would value it at up to about $1.4 trillion, with trading on Nasdaq under ANT planned for around 19 November. That’s well below the $2 trillion it reportedly hoped for in October, after a post-midterm market drop and Ramp data showing business AI token spending barely grew in August and September.</p>
+        <p>Also in the round-up: Nvidia’s board is investigating reports that a Chinese intelligence operation targeted CEO Jensen Huang, OpenAI raised more money at a $1.25 trillion valuation, and Anthropic warned it may be getting close to AI that can meaningfully improve itself.</p>
+        <p class="source"><a href="https://lastweekin.ai/p/last-week-month-in-ai-347-nvidias" rel="noopener">Last Week in AI →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a look at work</strong>
+      <p>Two cheap wins line up nicely today. AWS Emulator lets you and your coding agents test against AWS locally with no account and no bill, and the Gemini Decisions API handles the small yes/no and routing calls inside agents for $0.10 per million input tokens with no output charge. Both are easy ways to cut token and cloud spend in an agent workflow.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>

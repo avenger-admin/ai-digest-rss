@@ -1,0 +1,48 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Thursday! AWS let thousands of AI agents build a free local copy of its cloud without a human writing a line, Google shipped a tiny model that just makes decisions, and DeepMind’s new DNA model looks inside individual cells. Plus Last Week in AI is back with a five-week catch-up, led by Anthropic’s IPO.",
+  "hero": "media/2026-11-12.jpg",
+  "hero_alt": "Gradient title card reading “Agents built AWS a cloud on your laptop” for the 12 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Two cheap wins line up nicely today. AWS Emulator lets you and your coding agents test against AWS locally with no account and no bill, and the Gemini Decisions API handles the small yes/no and routing calls inside agents for $0.10 per million input tokens with no output charge. Both are easy ways to cut token and cloud spend in an agent workflow."
+  },
+  "items": [
+    {
+      "headline": "AI agents built AWS a free cloud you can run on your laptop",
+      "body": [
+        "AWS has released AWS Emulator, a free local stand-in for more than 200 AWS services. You point the AWS CLI or SDKs at it and your tests (or your coding agent) can create DynamoDB tables, queues and the rest without deploying anything. It’s written in Rust, runs on Linux or in Docker on Mac and Windows, and there’s even an agent skill to set it up for you.",
+        "The twist is how it was made: three teams of autonomous agents write tests against real AWS, find mismatches, and fix them, and AWS says its engineers haven’t written or reviewed any of the code. A separate security agent reviews every change. It doesn’t check IAM permissions the way real AWS does, so don’t use it to test security, and it’s public domain (CC0) on GitHub."
+      ],
+      "source_label": "AWS News Blog →",
+      "source_url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
+    },
+    {
+      "headline": "Google’s new model doesn’t write, it decides",
+      "body": [
+        "The Gemini Decisions API, powered by a new model called Gemini Decision 1, answers closed questions instead of generating text: yes/no checks, multiple choice from up to 255 options, and rubric scores. You can ask up to 1,000 questions about one input (text, images, audio, video or PDFs) in a single call and get back probabilities and confidence scores in about 150 to 250 milliseconds.",
+        "It costs $0.10 per million input tokens and nothing for output, and Google pitches it for the small branching calls inside agents, like picking a tool, routing to a model or checking a policy. Low-confidence answers can be sent to a person or a bigger model. There’s a free tier in Google AI Studio, and it’s already listed on OpenRouter."
+      ],
+      "source_label": "Google →",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+      "headline": "AlphaGenome 2 reads DNA one cell type at a time",
+      "body": [
+        "Google DeepMind’s AlphaGenome 2 predicts how small changes in DNA affect specific kinds of cells, like particular heart muscle or immune cells, rather than averaging across a whole tissue. It was trained on more than 100 million individual cell profiles across 68 tissues, and on one immune-cell benchmark it found nearly twice as many causal variants as the original model (30% versus 16%).",
+        "Scientists can also feed it their own single-cell data, say from a disease state, and get predictions without retraining. Nature reports it reproduced parts of a recent bowel-disease discovery without anyone lifting a pipette. It’s free for non-commercial research through the AlphaGenome API."
+      ],
+      "source_label": "Google DeepMind →",
+      "source_url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+    },
+    {
+      "headline": "From the inbox: Last Week in AI catches up on five big weeks",
+      "body": [
+        "Andrey from Last Week in AI is back from a break with a bumper recap. The headline is Anthropic’s IPO: 825 million shares at $70 to $78, which would value it at up to about $1.4 trillion, with trading on Nasdaq under ANT planned for around 19 November. That’s well below the $2 trillion it reportedly hoped for in October, after a post-midterm market drop and Ramp data showing business AI token spending barely grew in August and September.",
+        "Also in the round-up: Nvidia’s board is investigating reports that a Chinese intelligence operation targeted CEO Jensen Huang, OpenAI raised more money at a $1.25 trillion valuation, and Anthropic warned it may be getting close to AI that can meaningfully improve itself."
+      ],
+      "source_label": "Last Week in AI →",
+      "source_url": "https://lastweekin.ai/p/last-week-month-in-ai-347-nvidias"
+    }
+  ]
+}
