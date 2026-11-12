@@ -1,0 +1,57 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Friday! OpenRouter measured what MCP servers really cost in tokens (spoiler: a lot), incident.io opened its books on AI spend per engineer, and Runway gave robot builders a free, open-weight brain. Plus a lawsuit asking a court to pause new frontier models, and an airline that won’t let AI agents buy your tickets.",
+  "hero": "media/2026-11-13.jpg",
+  "hero_alt": "Gradient title card reading “The token bill hiding in your agent’s toolbox” for the 13 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "The two top stories make a neat pair for anyone setting AI coding standards. On one GitHub task, the gh CLI used about 1,400 input tokens where the GitHub MCP server used about 59,000, and incident.io cut spend per engineer from roughly $4,500 to $1,600 a month mostly by moving to a cheaper model. Preferring CLIs and skills over heavy MCP setups, and measuring cost per pull request by team, look like easy wins."
+  },
+  "items": [
+    {
+      "headline": "MCP, CLI or skill? One costs 40 times more tokens",
+      "body": [
+        "OpenRouter ran the same GitHub task three ways on Claude Sonnet 5.5: with the gh command-line tool, with a gh skill, and with GitHub’s MCP server. All three got the right answer, but the CLI used 1,421 input tokens, the skill 3,315, and the MCP server 59,417. Just loading the server’s 46 default tool descriptions adds about 19,400 tokens to every request, and one bulky tool result cost about 20,400 on its own.",
+        "Their Tool Search feature, which loads tool descriptions only when needed, cut the up-front cost to under 600 tokens and halved the total on Sonnet, though it actually raised it on Haiku. They include a small script so you can measure your own servers before deciding."
+      ],
+      "source_label": "OpenRouter →",
+      "source_url": "https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/"
+    },
+    {
+      "headline": "From the inbox: what incident.io really spends on AI",
+      "body": [
+        "Gergely Orosz’s Pragmatic Engineer shared unusually detailed numbers from incident.io. AI spend peaked at over $300K in July, about $4,500 per engineer a month mostly on Opus 5, and has since dropped to around $1,600 after the switch to Opus 5.5. Nearly 80% of production PRs now include agent-written code, PRs with no human reviewer rose from 12% to 43%, and incidents per 1,000 PRs fell 60%.",
+        "The productivity picture is more modest than the hype: the median engineer ships only about 10% more PRs than two years ago, while tenured engineers ship about 70% more. New joiners are asked to hold off on AI for their first month, because heavy early use led to weaker performance later."
+      ],
+      "source_label": "The Pragmatic Engineer →",
+      "source_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-details-of-incidentios"
+    },
+    {
+      "headline": "Runway opens up Praxis-1, a robot brain anyone can use",
+      "body": [
+        "Runway, best known for AI video, has released Praxis-1 with open weights under the Apache 2.0 licence, including for commercial use. It’s a 27-billion-parameter model that predicts both video and robot actions, and it tops NVIDIA’s RoboLab-120 leaderboard at 46.2% success across 1,200 episodes.",
+        "The idea is that learning from huge amounts of ordinary video gives a robot a head start before any fine-tuning. Weights and code are on Hugging Face and GitHub, and it runs on anything from data-centre GPUs down to an RTX 5090 or NVIDIA’s Jetson Thor on the robot itself."
+      ],
+      "source_label": "Runway →",
+      "source_url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+    },
+    {
+      "headline": "Advocacy groups ask a court to pause new AI models",
+      "body": [
+        "A coalition of online safety and consumer groups has sued Anthropic, Google, Meta, OpenAI and SpaceXSI in San Francisco Superior Court, asking a judge to stop them developing or deploying new models. The filing points to documented cyberattacks and other harms involving AI, and to the companies’ own warnings about catastrophic risk.",
+        "It’s a long shot legally, but it lands the same week Anthropic heads toward its IPO and a US Federal Reserve governor warned that AI investment could trigger a market correction."
+      ],
+      "source_label": "AP News →",
+      "source_url": "https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba"
+    },
+    {
+      "headline": "United says AI agents can look, but you have to book",
+      "body": [
+        "United Airlines is restricting AI bots’ access to its website and app and updating its booking rules. Assistants can still show you flight options, but you’ll need to finish the purchase yourself.",
+        "United’s reasons are personal data exposure, accidental bookings or account changes, misuse of frequent-flyer miles, and aviation rules like confirming your checked bag has no dangerous goods. It’s an early sign of how businesses may push back on agents that act for customers."
+      ],
+      "source_label": "CNBC →",
+      "source_url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html"
+    }
+  ]
+}
