@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 13 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Friday 13 Nov 2026."/>
+  <title>Good morning — AI brief · 16 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Monday 16 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,60 +14,53 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Friday 13 Nov 2026 · Perth</div>
+      <div class="date-chip">Monday 16 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Friday! OpenRouter measured what MCP servers really cost in tokens (spoiler: a lot), incident.io opened its books on AI spend per engineer, and Runway gave robot builders a free, open-weight brain. Plus a lawsuit asking a court to pause new frontier models, and an airline that won’t let AI agents buy your tickets.</p>
+    <p class="lede">Happy Monday! Google’s new speedy Gemini 4 Hydrogen teams up with its big sibling to save tokens, ChatGPT agents can now pay for things (with your fingerprint), and Nathan Lambert asks what happens to open-source AI now that Jensen Huang has left Nvidia. Plus a cosy weekend explainer on how LLMs know word order.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-13.jpg" width="1280" height="640" alt="Gradient title card reading “The token bill hiding in your agent’s toolbox” for the 13 November 2026 AI morning paper."/>
+      <img src="media/2026-11-16.jpg" width="1280" height="640" alt="Gradient title card reading “Fast model, big model, one team” for the 16 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>MCP, CLI or skill? One costs 40 times more tokens</h2>
-        <p>OpenRouter ran the same GitHub task three ways on Claude Sonnet 5.5: with the gh command-line tool, with a gh skill, and with GitHub’s MCP server. All three got the right answer, but the CLI used 1,421 input tokens, the skill 3,315, and the MCP server 59,417. Just loading the server’s 46 default tool descriptions adds about 19,400 tokens to every request, and one bulky tool result cost about 20,400 on its own.</p>
-        <p>Their Tool Search feature, which loads tool descriptions only when needed, cut the up-front cost to under 600 tokens and halved the total on Sonnet, though it actually raised it on Haiku. They include a small script so you can measure your own servers before deciding.</p>
-        <p class="source"><a href="https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/" rel="noopener">OpenRouter →</a></p>
+        <h2>Gemini 4 Hydrogen: the fast one that works with the smart one</h2>
+        <p>Google released Gemini 4 Hydrogen on Thursday, a quick, cheaper model for everyday coding and agent work at $1.50 per million input tokens and $7.50 per million output, with a 1-million-token context and four thinking levels. Google says it scores 57% on Terminal-Bench 4.1, more than triple Gemini 3.8 Flash.</p>
+        <p>The fun part is Orchestrator in Google’s Antigravity coding tool: Gemini 4 Carbon plans and untangles the hard bits, Hydrogen writes the edits and runs the tests, and they hand work back and forth mid-task. Google reports near-Carbon success while using 24% less quota and finishing 19% faster. It’s rolling out to AI Ultra subscribers first.</p>
+        <p class="source"><a href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/" rel="noopener">Google Antigravity blog →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: what incident.io really spends on AI</h2>
-        <p>Gergely Orosz’s Pragmatic Engineer shared unusually detailed numbers from incident.io. AI spend peaked at over $300K in July, about $4,500 per engineer a month mostly on Opus 5, and has since dropped to around $1,600 after the switch to Opus 5.5. Nearly 80% of production PRs now include agent-written code, PRs with no human reviewer rose from 12% to 43%, and incidents per 1,000 PRs fell 60%.</p>
-        <p>The productivity picture is more modest than the hype: the median engineer ships only about 10% more PRs than two years ago, while tenured engineers ship about 70% more. New joiners are asked to hold off on AI for their first month, because heavy early use led to weaker performance later.</p>
-        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-details-of-incidentios" rel="noopener">The Pragmatic Engineer →</a></p>
+        <h2>ChatGPT Wallet lets agents shop, with a fingerprint on every buy</h2>
+        <p>OpenAI launched ChatGPT Wallet on Friday, built with American Express, Mastercard and Visa. Your ChatGPT “dot” agent can find and check out an item, but you review the merchant, items and total first and approve each purchase with Face ID or a fingerprint.</p>
+        <p>The agent never sees your real card: the payment network issues a stand-in token for each purchase, and your usual card rewards and dispute protections still apply. It’s US-only for Pro subscribers for now. Interesting timing, the same week United said agents can browse its flights but not book them.</p>
+        <p class="source"><a href="https://openai.com/index/introducing-chatgpt-wallet/" rel="noopener">OpenAI →</a></p>
       </article>
 
       <article class="story">
-        <h2>Runway opens up Praxis-1, a robot brain anyone can use</h2>
-        <p>Runway, best known for AI video, has released Praxis-1 with open weights under the Apache 2.0 licence, including for commercial use. It’s a 27-billion-parameter model that predicts both video and robot actions, and it tops NVIDIA’s RoboLab-120 leaderboard at 46.2% success across 1,200 episodes.</p>
-        <p>The idea is that learning from huge amounts of ordinary video gives a robot a head start before any fine-tuning. Weights and code are on Hugging Face and GitHub, and it runs on anything from data-centre GPUs down to an RTX 5090 or NVIDIA’s Jetson Thor on the robot itself.</p>
-        <p class="source"><a href="https://runway.com/news/company-news/praxis-1-is-now-available" rel="noopener">Runway →</a></p>
+        <h2>From the inbox: open-source AI without Jensen</h2>
+        <p>In Interconnects, Nathan Lambert calls Jensen Huang’s resignation as Nvidia CEO “a major setback” for US open models. Jensen had been funding open-weight work heavily and, as Lambert puts it, using his clout to head off sloppy regulation, and Lambert expects that money to dry up while Nvidia steadies itself.</p>
+        <p>His bigger point is that the US still lacks a truly frontier open-model lab. Thinking Machines’ Inkling 2 Small is the best Western open-weight model in a while, he says, but still well behind China’s Kimi K3.1 Pro, and the movement now needs new champions, perhaps from the big cloud companies.</p>
+        <p class="source"><a href="https://www.interconnects.ai/p/open-source-ai-without-jensen" rel="noopener">Interconnects →</a></p>
       </article>
 
       <article class="story">
-        <h2>Advocacy groups ask a court to pause new AI models</h2>
-        <p>A coalition of online safety and consumer groups has sued Anthropic, Google, Meta, OpenAI and SpaceXSI in San Francisco Superior Court, asking a judge to stop them developing or deploying new models. The filing points to documented cyberattacks and other harms involving AI, and to the companies’ own warnings about catastrophic risk.</p>
-        <p>It’s a long shot legally, but it lands the same week Anthropic heads toward its IPO and a US Federal Reserve governor warned that AI investment could trigger a market correction.</p>
-        <p class="source"><a href="https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba" rel="noopener">AP News →</a></p>
-      </article>
-
-      <article class="story">
-        <h2>United says AI agents can look, but you have to book</h2>
-        <p>United Airlines is restricting AI bots’ access to its website and app and updating its booking rules. Assistants can still show you flight options, but you’ll need to finish the purchase yourself.</p>
-        <p>United’s reasons are personal data exposure, accidental bookings or account changes, misuse of frequent-flyer miles, and aviation rules like confirming your checked bag has no dangerous goods. It’s an early sign of how businesses may push back on agents that act for customers.</p>
-        <p class="source"><a href="https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html" rel="noopener">CNBC →</a></p>
+        <h2>From the inbox: how does an LLM know which word came first?</h2>
+        <p>Sebastian Raschka’s Ahead of AI has a weekend deep dive on positional embeddings, the trick that tells a transformer where each token sits in a sentence. He walks from GPT-2’s learned positions to RoPE, the method most models use today, with diagrams, a little maths and a small PyTorch implementation.</p>
+        <p>The final section surveys what 2026’s open-weight models actually do. RoPE is still king and probably will be through 2027, but Inkling has borrowed a learned relative position bias from Google’s older T5, and some models now skip RoPE in certain layers. He warns it’s a technical read and says the next post will be lighter.</p>
+        <p class="source"><a href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings" rel="noopener">Ahead of AI →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
       <strong>Worth a look at work</strong>
-      <p>The two top stories make a neat pair for anyone setting AI coding standards. On one GitHub task, the gh CLI used about 1,400 input tokens where the GitHub MCP server used about 59,000, and incident.io cut spend per engineer from roughly $4,500 to $1,600 a month mostly by moving to a cheaper model. Preferring CLIs and skills over heavy MCP setups, and measuring cost per pull request by team, look like easy wins.</p>
+      <p>Two quick ones. Anthropic’s docs list claude-sonnet-4-5-20250929 for retirement on 30 November on Anthropic-run platforms (replacement: claude-sonnet-5-5); Amazon Bedrock sets its own schedule, so it’s worth checking the Bedrock dates for any production app still pinned to Sonnet 4.5. And Google’s Orchestrator result (near-top-model success with 24% less quota) is another nudge toward “big model plans, small model types” for keeping agent token bills down.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-13.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-16.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
