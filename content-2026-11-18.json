@@ -1,0 +1,57 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Wednesday! OpenAI ships GPT-6.2 Astra and Sol, physicists tell Understanding AI what it’s like when the calculations get cheap, a giant benchmark finds most coding-agent spend goes on failed runs, the Pragmatic Engineer explains when to leave the big labs’ APIs, and Microsoft kicks off an AI Transparency Initiative at Ignite.",
+  "hero": "media/2026-11-18.jpg",
+  "hero_alt": "Gradient title card reading “When the maths gets cheap” for the 18 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth a look at work",
+    "body": "Two of today’s stories point the same way for token budgets: the FrontierHarness benchmark found the harness alone can make the same model 2–5× pricier per passing task, and most waste came from agents confidently declaring “done” when the tests said otherwise. Cheap wins: add a verify-before-finish step to agent workflows, compare harnesses on your own private task set when you switch models, and look at routing simple requests to cheaper models (the trick behind Uber’s roughly 50% per-token saving, per the Pragmatic Engineer)."
+  },
+  "items": [
+    {
+      "headline": "OpenAI releases GPT-6.2 Astra and GPT-6.2 Sol",
+      "body": [
+        "OpenAI shipped updates to its top two models on Tuesday. GPT-6.2 Astra is pitched as better at slides, spreadsheets and documents that “read less like AI”, and better at coding in existing codebases, with early testers reporting cleaner code and more focused tests. API pricing is $8 per million input tokens and $40 output for Astra, and $2 / $10 for the cheaper Sol.",
+        "The notable footnote: Astra is the first model OpenAI has released that it rates “High” for AI self-improvement under its Preparedness Framework, roughly like giving every OpenAI researcher an extra capable research engineer. It launches with tighter cyber safeguards, which OpenAI admits will also block some legitimate security testing."
+      ],
+      "source_label": "OpenAI →",
+      "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+      "headline": "From the inbox: physicists grapple with AI that can do the maths",
+      "body": [
+        "Dan Kagan-Kans, writing for Understanding AI, spoke with seven theoretical physicists. Suvrat Raju built a benchmark of 50 unpublished, day-long research problems; by the time it was finished, GPT-6 Astra got 49 right for under $3 each, and even caught subtle errors in the human answer key. The benchmark was saturated before release, and there won’t be a version two.",
+        "Others are running agents around the clock: one Harvard physicist counted 20 sessions on his machine mid-interview. Submissions to arXiv’s high-energy theory section are up about 30% this year (the biggest jump in two decades was 8%). The open worry is for students, who used to build intuition by grinding through exactly the calculations AI now does."
+      ],
+      "source_label": "Understanding AI →",
+      "source_url": "https://www.understandingai.org/p/i-spoke-to-seven-physics-experts"
+    },
+    {
+      "headline": "27,280 coding-agent runs: most of the money went on failures",
+      "body": [
+        "Runta and Baseten ran 22 coding-agent harnesses against five open-weight models on 62 terminal tasks, burning about 83 billion tokens. 64.5% of the estimated inference spend went to runs that didn’t pass, and around three in four failures ended with the agent confidently reporting success rather than timing out.",
+        "The model drives most of the cost, but with the model fixed the priciest harness cost 1.9 to 4.9 times as much per pass as the cheapest, and spending more didn’t buy a higher pass rate. Their advice: when you change models, consider changing harnesses too, and cut steps, because every step resends the whole context. (Worth noting it ran on Runta’s own runtime.)"
+      ],
+      "source_label": "Runta →",
+      "source_url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/"
+    },
+    {
+      "headline": "From the inbox: when to leave the frontier labs’ APIs",
+      "body": [
+        "The Pragmatic Engineer’s Gergely Orosz and Ivan Klaric have a practical deep dive on inference engineering for everyday software teams. The usual trigger for moving to an independent inference provider is cost, since a frontier model is often overkill for simple requests and a prompt-aware “smart router” can send those to something cheaper. Control over latency and models that won’t change under you comes next.",
+        "Handy gotchas: providers serving the “same” model can differ on context length caps, quantisation and default temperature, so run your own evals before switching, and keep an LLM gateway with fallback because inference providers go down too. This one is for paid subscribers, so the free email only shows a preview."
+      ],
+      "source_label": "The Pragmatic Engineer →",
+      "source_url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers"
+    },
+    {
+      "headline": "Microsoft launches an AI Transparency Initiative at Ignite",
+      "body": [
+        "Satya Nadella used his Ignite keynote to announce a push, with more than 40 organisations including Accenture, Adobe, KPMG, Mastercard and Volvo Cars, toward open standards for verifying what AI models and agents actually did. The guiding idea: agents can’t be the only source of truth about their own behaviour, so evidence of identity, intent and actions should be checkable against independent records.",
+        "Microsoft says the work will flow into Foundry and Copilot, with the evidence portable across model providers. Same day, New York’s Attorney General set up a new AI safety enforcement unit ahead of the state’s RAISE Act taking effect on 1 January."
+      ],
+      "source_label": "Microsoft →",
+      "source_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-organizations-across-industries-launch-ai-transparency-initiative-to-strengthen-enterprise-trust-in-ai-models-and-agents/"
+    }
+  ]
+}
