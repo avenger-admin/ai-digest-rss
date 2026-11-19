@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 20 Nov 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Friday 20 Nov 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Friday 20 Nov 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Happy Friday! Anthropic’s first day on the Nasdaq was a rollercoaster that still finished well up, Google opens Genie 4’s playable worlds to Ultra subscribers, OpenAI shows its models tuning real AMD chips and fixing ChatGPT’s own slowdowns, and the Pragmatic Engineer walks through what an AI-powered hack actually looks like.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-11-20.jpg" width="1280" height="640" alt="Gradient title card reading “ANT’s first day” for the 20 November 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>Anthropic’s first day on the Nasdaq: a big pop, then a calmer close</h2>
+        <p>Anthropic shares opened at $111.50, about 34% above the $83 IPO price, briefly touched around $115, then settled to close at $97.17, up 17%. CNBC puts the fully diluted market cap around $1.8 trillion, making it the seventh most valuable US company, and more than 846 million shares changed hands, beating SpaceX’s opening-day volume.</p>
+        <p>The wider market wasn’t in a party mood, though. The Nasdaq fell about 2.3% and the S&amp;P 500 notched a sixth straight losing session, so Reuters’ read was that the debut didn’t revive the broader AI trade.</p>
+        <p class="source"><a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html" rel="noopener">CNBC →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Genie 4 lets you reshape AI worlds while you walk around in them</h2>
+        <p>Google DeepMind has opened Genie 4 to eligible Google AI Ultra subscribers in Project Genie. You generate an interactive world, then type new prompts mid-session to change the weather, drop in a character or redirect the action, and for the first time it comes with real-time native audio, from ambient sound to characters who talk.</p>
+        <p>There’s also a conversational agent to help you build a world, and a community gallery to explore and remix other people’s. Google is upfront that object permanence and physics can still drift over longer sessions. Pro members can join the waitlist.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/" rel="noopener">Google →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>OpenAI’s models found up to 14% gains in AMD’s GPU designs</h2>
+        <p>OpenAI says its models rewrote the hardware description code (SystemVerilog RTL) for AMD’s flagship GPU and found up to 14% improvement in power, performance and area against heavily optimised baselines, with each change checked using Synopsys tools. OpenAI calls it roughly a year of progress in under five months, and AMD has already put some changes into a design sent for manufacturing.</p>
+        <p>AMD also verified single-digit gains on key blocks of its next flagship CPU. Next up is GPT-Synopsys, a specialised model trained to drive chip-design tools the way expert engineers do.</p>
+        <p class="source"><a href="https://openai.com/index/advancing-chip-design-with-our-models/" rel="noopener">OpenAI →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>How OpenAI uses Codex agents to keep ChatGPT fast</h2>
+        <p>OpenAI shared its “Performance Factory”: when a performance alert fires, a Codex agent investigates, writes up its findings, and proposes a fix for an engineer to review. After the fix ships, another agent checks whether performance is back to baseline.</p>
+        <p>In just over three months it tracked more than 1,700 investigations and found the root cause in over 600, about 17 automated investigations a day. It’s a nice, concrete example of agents doing the unglamorous on-call grind with a human still approving the change.</p>
+        <p class="source"><a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/" rel="noopener">OpenAI →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: what an AI-powered hack actually looks like</h2>
+        <p>In a free issue of The Pulse, Gergely Orosz unpacks Railway’s postmortem of a recent breach in which the attacker likely used “abliterated” AI models (ones with the safeguards stripped out) to chase customers’ AI provider keys. Within hours of grabbing Railway’s monorepo, the attacker had worked out a path to the keys, and came back probing the same night after being evicted.</p>
+        <p>The defensive lessons are practical: Railway had stored hashes of customer secrets, so it could send them to AI providers for instant revocation without exposing the keys, and it now runs every build in its own throwaway VM. Gergely also notes a frustrating imbalance: attackers use unrestricted models while mainstream defensive models often refuse security work.</p>
+        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from-132" rel="noopener">The Pragmatic Engineer →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a quick check at work</strong>
+      <p>Microsoft’s agent-framework Python package had two poisoned releases (1.26.1 and 1.26.2) on PyPI on 17 November US time. They were pulled within about an hour, but anything that installed them ran a credential stealer on every Python start, including in CI where it tried to grab GitHub Actions OIDC tokens. We’re mostly TypeScript, so odds are low, but if any Python experiments or pipelines use it, pin 1.26.0 and rotate secrets on anything that pulled the bad versions. GitHub advisory: GHSA-764m-3ppc-5m73.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
