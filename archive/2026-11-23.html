@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 23 Nov 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Monday 23 Nov 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Monday 23 Nov 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Happy Monday! The weekend’s big story is maths: a Claude-assisted proof of the Riemann Hypothesis has now been certified by the Lean community. Plus a rough end to the week for AI stocks, nearly a thousand AI agents running their own research journal, and Gemini learning to drive your Mac.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-11-23.jpg" width="1280" height="640" alt="Gradient title card reading “Riemann, solved?” for the 23 November 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>The Riemann Hypothesis: a Claude-assisted proof is now certified</h2>
+        <p>On Friday, Anthropic mathematician Levent Alpöge said he had used Claude to prove the Riemann Hypothesis. It’s the 1859 conjecture about the hidden pattern in the prime numbers, and arguably the most famous open problem in maths. He released the proof as Lean code rather than a traditional paper. Since then, independent mathematicians including MIT’s Andrew Sutherland have recompiled it, a “comparator run” has checked it doesn’t quietly redefine anything, and the Lean and Mathlib communities say they “certify that both the statement and the proof … are correct.”</p>
+        <p>Sutherland put the chance that anything is fishy at “approximately zero.” Scientific American has been updating its story as each check landed.</p>
+        <p class="source"><a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/" rel="noopener">Scientific American →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: correct but unreadable, or readable but maybe wrong?</h2>
+        <p>Latent Space’s AINews points out the strange twist. Within hours of Alpöge’s announcement, Alessandro Masullo released his own 940-page, entirely human proof-in-progress, the result of 12 years’ work. The AI-assisted proof is about 1.3GB of Lean, or roughly 250,000 page-equivalents, so no human will ever read all of it. The human proof is one people can follow, but it still has reported problems.</p>
+        <p>Alpöge also explained why he only published Lean: posting a “massive unreadable travesty of slop” felt wrong. In his words, “Claude flew, and danced, and sparkled near that finish line.”</p>
+        <p class="source"><a href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/" rel="noopener">Latent Space →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>From the inbox: Anthropic’s IPO glow fades as AI stocks hit a correction</h2>
+        <p>Last Week in AI’s recap: after its 17% first-day pop, Anthropic (ANT) closed about 9% lower on Friday, only just above its $83 offer price. The wider market had a harder time. The Nasdaq fell 5.3% on Friday and wiped out its 2026 gains, and both the S&amp;P 500 and the Nasdaq closed more than 10% below their record highs, which makes it an official correction.</p>
+        <p>Chip names led the slide. Nvidia fell 13% after Reuters reported an SEC inquiry into its accounting, on top of the fallout from Jensen Huang’s resignation, and AMD and Micron dropped by similar amounts.</p>
+        <p class="source"><a href="https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction" rel="noopener">Last Week in AI →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>936 AI agents ran their own preprint server and invented peer review</h2>
+        <p>Over 12 weeks, 35 human-run labs set 936 research agents loose in an experiment called Agent AlphaXiv. The agents exchanged 9,500 messages across 229 chat rooms and published 936 studies, from machine learning to solar physics. Along the way they set up their own Journal of Agent Research, with blind AI reviewers.</p>
+        <p>A Science reporter was allowed to eavesdrop for the final month. The chatter was often hard to follow, but the agents really did critique, apologise to, and build on each other’s work. It’s a fascinating early look at what automated science might look like.</p>
+        <p class="source"><a href="https://www.science.org/content/article/exclusive-i-got-eavesdrop-ai-agents-doing-science-it-was-eye-opening" rel="noopener">Science →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Gemini on the Mac can now use your apps for you</h2>
+        <p>Google’s Gemini app for Mac has computer use. Give it permission and it can click, type, scroll and navigate menus across your desktop apps to finish multi-step jobs, like pulling receipts out of Downloads and filling in an expense report. It works in an isolated background window with a live preview, so you can keep using your Mac while it runs.</p>
+        <p>For now it needs an Apple Silicon Mac on macOS Sequoia or later, US English, and a personal Google AI Plus, Pro or Ultra account. You can allow or block specific apps.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/" rel="noopener">Google →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>Worth a quick look for the Claude Code pilot</strong>
+      <p>Claude Code has an experimental Code Mode: rather than making tool calls one at a time and reading every result, Claude writes a short JavaScript snippet that chains them (find the file, edit it, run the tests) and only reads back what it needs. Fewer round trips should mean fewer tokens, which makes it worth a small trial for the pilot. It’s off by default and may change; turn it on with CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 (v2.1.323 or later). Docs: code.claude.com/docs/en/code-mode.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>
