@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 23 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Monday 23 Nov 2026."/>
+  <title>Good morning — AI brief · 24 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Tuesday 24 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,60 +14,60 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Monday 23 Nov 2026 · Perth</div>
+      <div class="date-chip">Tuesday 24 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Monday! The weekend’s big story is maths: a Claude-assisted proof of the Riemann Hypothesis has now been certified by the Lean community. Plus a rough end to the week for AI stocks, nearly a thousand AI agents running their own research journal, and Gemini learning to drive your Mac.</p>
+    <p class="lede">Happy Tuesday! Google DeepMind set teams of Gemini agents loose on quantum algorithms and came back with machine-checked wins. Jensen Huang is back running Nvidia, and the inbox brings a test of whether AI scientists know when they’re unsure, plus two good long reads on the big AI arguments of the year.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-23.jpg" width="1280" height="640" alt="Gradient title card reading “Riemann, solved?” for the 23 November 2026 AI morning paper."/>
+      <img src="media/2026-11-24.jpg" width="1280" height="640" alt="Gradient title card reading “Agents go quantum” for the 24 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>The Riemann Hypothesis: a Claude-assisted proof is now certified</h2>
-        <p>On Friday, Anthropic mathematician Levent Alpöge said he had used Claude to prove the Riemann Hypothesis. It’s the 1859 conjecture about the hidden pattern in the prime numbers, and arguably the most famous open problem in maths. He released the proof as Lean code rather than a traditional paper. Since then, independent mathematicians including MIT’s Andrew Sutherland have recompiled it, a “comparator run” has checked it doesn’t quietly redefine anything, and the Lean and Mathlib communities say they “certify that both the statement and the proof … are correct.”</p>
-        <p>Sutherland put the chance that anything is fishy at “approximately zero.” Scientific American has been updating its story as each check landed.</p>
-        <p class="source"><a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/" rel="noopener">Scientific American →</a></p>
+        <h2>Gemini agent teams find faster quantum algorithms, and prove they work</h2>
+        <p>Google DeepMind gave separate teams of Gemini 4 agents some well-known quantum algorithms and asked them to make them cheaper. Every few hours the teams met at a “virtual conference” to trade and argue about ideas. Every improvement had to be proved correct in Lean, the formal theorem prover, before it counted, because circuits this big can’t be tested on today’s hardware.</p>
+        <p>The targets included fusion energy, chemistry and enzyme simulations. The headline result is a circuit roughly 290× cheaper than the baseline. DeepMind is open-sourcing the Lean library, the problem specs and the verified solutions on GitHub. Coming right after the Lean-certified Riemann proof, it’s quite a week for AI plus formal maths.</p>
+        <p class="source"><a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" rel="noopener">Google DeepMind →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: correct but unreadable, or readable but maybe wrong?</h2>
-        <p>Latent Space’s AINews points out the strange twist. Within hours of Alpöge’s announcement, Alessandro Masullo released his own 940-page, entirely human proof-in-progress, the result of 12 years’ work. The AI-assisted proof is about 1.3GB of Lean, or roughly 250,000 page-equivalents, so no human will ever read all of it. The human proof is one people can follow, but it still has reported problems.</p>
-        <p>Alpöge also explained why he only published Lean: posting a “massive unreadable travesty of slop” felt wrong. In his words, “Claude flew, and danced, and sparkled near that finish line.”</p>
-        <p class="source"><a href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/" rel="noopener">Latent Space →</a></p>
+        <h2>Jensen Huang is back as Nvidia’s CEO</h2>
+        <p>Following on from last week’s turmoil, Nvidia’s board voted unanimously to reinstate Jensen Huang as president, CEO and board director, effective immediately. The board says it received input from senior levels of the US government and is confident his return “poses no national security risk.” Colette Kress goes back to being CFO full time.</p>
+        <p>The independent investigation into reports that Huang was the target of a foreign intelligence effort will carry on. Nvidia has also set up a board committee to oversee export-control and national-security risk, and is hiring a new chief compliance officer.</p>
+        <p class="source"><a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director" rel="noopener">NVIDIA Newsroom →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: Anthropic’s IPO glow fades as AI stocks hit a correction</h2>
-        <p>Last Week in AI’s recap: after its 17% first-day pop, Anthropic (ANT) closed about 9% lower on Friday, only just above its $83 offer price. The wider market had a harder time. The Nasdaq fell 5.3% on Friday and wiped out its 2026 gains, and both the S&amp;P 500 and the Nasdaq closed more than 10% below their record highs, which makes it an official correction.</p>
-        <p>Chip names led the slide. Nvidia fell 13% after Reuters reported an SEC inquiry into its accounting, on top of the fallout from Jensen Huang’s resignation, and AMD and Micron dropped by similar amounts.</p>
-        <p class="source"><a href="https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction" rel="noopener">Last Week in AI →</a></p>
+        <h2>From the inbox: can an AI scientist admit it isn’t sure?</h2>
+        <p>Import AI highlights a Lawrence Livermore paper with a lovely line: “An agent that reports a confident wrong number is worse than one that reports honest uncertainty.” Their SciResearch-Eval benchmark gives an agent a real lab-style task, measuring a material’s thermal properties, and a simulator that may secretly be wrong. The agent has to design its own experiments and report its answers with 95% confidence ranges.</p>
+        <p>When the simulator was missing real physics, only the strongest frontier models stayed reliable at default settings. Others got there only with maximum reasoning turned on. Jack Clark’s framing question for the issue: “Could the scientific method be emergent?”</p>
+        <p class="source"><a href="https://importai.substack.com/p/import-ai-482-huawei-kernel-benchmarks" rel="noopener">Import AI →</a></p>
       </article>
 
       <article class="story">
-        <h2>936 AI agents ran their own preprint server and invented peer review</h2>
-        <p>Over 12 weeks, 35 human-run labs set 936 research agents loose in an experiment called Agent AlphaXiv. The agents exchanged 9,500 messages across 229 chat rooms and published 936 studies, from machine learning to solar physics. Along the way they set up their own Journal of Agent Research, with blind AI reviewers.</p>
-        <p>A Science reporter was allowed to eavesdrop for the final month. The chatter was often hard to follow, but the agents really did critique, apologise to, and build on each other’s work. It’s a fascinating early look at what automated science might look like.</p>
-        <p class="source"><a href="https://www.science.org/content/article/exclusive-i-got-eavesdrop-ai-agents-doing-science-it-was-eye-opening" rel="noopener">Science →</a></p>
+        <h2>From the inbox: the five biggest AI debates, argued both ways</h2>
+        <p>Timothy B. Lee (Understanding AI) and Derek Thompson are back with their Thanksgiving playbook, this time as a pro and con for each of the five big arguments of the year: should the US sell chips to China, is recursive self-improvement coming in 2027, is AI a bubble, is a “cyber-pocalypse” coming, and will AI destroy millions of jobs?</p>
+        <p>It’s written so you can “argue forcefully with your uncle” or help him make his argument better. Each side gets its best case, which makes it a great catch-up on where the conversation stands.</p>
+        <p class="source"><a href="https://www.understandingai.org/p/the-five-most-important-debates-in" rel="noopener">Understanding AI →</a></p>
       </article>
 
       <article class="story">
-        <h2>Gemini on the Mac can now use your apps for you</h2>
-        <p>Google’s Gemini app for Mac has computer use. Give it permission and it can click, type, scroll and navigate menus across your desktop apps to finish multi-step jobs, like pulling receipts out of Downloads and filling in an expense report. It works in an isolated background window with a live preview, so you can keep using your Mac while it runs.</p>
-        <p>For now it needs an Apple Silicon Mac on macOS Sequoia or later, US English, and a personal Google AI Plus, Pro or Ultra account. You can allow or block specific apps.</p>
-        <p class="source"><a href="https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/" rel="noopener">Google →</a></p>
+        <h2>From the inbox: consulting isn’t a “thin wrapper” on intelligence</h2>
+        <p>AI as Normal Technology (Sayash Kapoor with Rod Moshtagi, a former PwC senior associate) tests the idea that AI will wipe out knowledge work, using management consulting as the example. Their argument is that clients pay for more than analysis. They also pay for judgment, coordination, credibility and accountability, and AI is weakest at those.</p>
+        <p>They also argue that, like business computing and the web before it, AI is creating new consulting work, such as organisational change and cyber defence. The catch is that firms have to adapt: build expertise clients don’t have, work alongside the AI labs, and stay neutral across model providers.</p>
+        <p class="source"><a href="https://www.normaltech.ai/p/management-consulting-is-not-a-thin" rel="noopener">AI as Normal Technology →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
-      <strong>Worth a quick look for the Claude Code pilot</strong>
-      <p>Claude Code has an experimental Code Mode: rather than making tool calls one at a time and reading every result, Claude writes a short JavaScript snippet that chains them (find the file, edit it, run the tests) and only reads back what it needs. Fewer round trips should mean fewer tokens, which makes it worth a small trial for the pilot. It’s off by default and may change; turn it on with CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 (v2.1.323 or later). Docs: code.claude.com/docs/en/code-mode.</p>
+      <strong>A token-cost note for the Copilot and Claude Code work</strong>
+      <p>Import AI covers a new Huawei kernel-tuning benchmark, AscendGYM, that ran models inside Claude Code, Codex and OpenCode. Opus 5 scored best overall and Claude Code gave the best absolute results, but the authors say Opus 5 was “more token hungry” while GPT-5.6 was “more token efficient”. It’s one benchmark, but it’s a handy reminder that the harness and the model both affect cost as well as quality.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-23.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-24.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
