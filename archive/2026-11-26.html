@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Good morning — AI brief · 26 Nov 2026 (archive)</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 26 Nov 2026."/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <p class="kicker">Morning paper · archive</p>
+        <h1>Good morning — AI brief</h1>
+      </div>
+      <div class="date-chip">Thursday 26 Nov 2026 · Perth</div>
+    </header>
+
+    <p class="lede">Happy Thursday! OpenAI has posted a bold maths claim about how fast computers can ever multiply matrices, and the Model Context Protocol turns two with new tricks in Claude and a big vote of confidence from Google Workspace. There’s also a 5.9 GB coding model you can run on your own machine, and a safety debate that has moved from AI labs into US politics.</p>
+
+    <figure class="hero">
+      <img src="../media/2026-11-26.jpg" width="1280" height="640" alt="Gradient title card reading “Nine fourths” for the 26 November 2026 AI morning paper."/>
+    </figure>
+
+    <section class="stories" aria-label="Today’s stories">
+      <article class="story">
+        <h2>OpenAI claims it has settled how fast matrices can ever be multiplied</h2>
+        <p>Multiplying two n×n matrices the schoolbook way takes about n³ steps, and ever since Strassen’s famous trick, mathematicians have asked how far that can be pushed down. A new OpenAI preprint dated 24 November claims the answer is exactly n to the power of 9/4, over every field. It proves a matching lower bound, so any such arithmetic circuit needs at least about n^(9/4)/2 multiplications or divisions. That pairs with a 9/4 upper bound OpenAI posted in October, which other researchers have since extended to every field.</p>
+        <p>If it holds up, the long-hoped-for exponent of 2 is off the table. For now it’s a preprint, and commentators are framing it as a result to watch “if independently validated”. Even so, it’s a striking addition to a run of AI-driven maths claims this month.</p>
+        <p class="source"><a href="https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026" rel="noopener">OpenAI (GitHub) →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>MCP turns two: servers can now ship skills and run long jobs in Claude</h2>
+        <p>To mark two years of the Model Context Protocol, Anthropic launched Skills over MCP in public beta. MCP servers can now publish step-by-step skills alongside their tools, and Claude loads a skill only when it needs it, which keeps context use low. Shopify, HubSpot and Atlassian are early users. Tasks also reached general availability, so a server can run long jobs in the background while Claude keeps working. So did Elicitation, which lets a server pause and ask you to confirm something, as Supabase does before running destructive SQL.</p>
+        <p>File Uploads, which will let Claude pass PDFs, spreadsheets and images to a server without filling up the context window, is “rolling out soon”. All of these are part of the open MCP spec, so any compatible client can use them, not just Claude.</p>
+        <p class="source"><a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more" rel="noopener">Claude →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>Google will make AI agents use MCP to reach Gmail and Drive</h2>
+        <p>Google’s Workspace MCP servers and the official Workspace CLI are now generally available. The MCP servers cover Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks, and the CLI is for terminal-based agents such as Claude Code and Codex. The bigger news is a new rule. AI agents must use MCP to access Workspace data instead of calling the REST APIs directly, with technical enforcement starting 1 February 2027.</p>
+        <p>Google says this means every agent call is checked against an organisation’s permissions and data-loss-prevention rules, with audit logs and user confirmations built in. It also says the approach uses fewer tokens than pulling raw data line by line. There’s a free Standard tier with published rate limits, and a paid Scaled tier for heavier use that starts billing on 1 April 2027.</p>
+        <p class="source"><a href="https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html" rel="noopener">Google Workspace Updates →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>A 5.9 GB coding model that runs on your own machine</h2>
+        <p>PrismML released Ternary Bonsai 2.5 27B, a heavily compressed version of Qwen3.8 27B that still fits in 5.9 GB. It’s built for agentic coding and multi-step tool use on private files. It scores 75.6 on SWE-bench Verified, close to the full-size base model’s 80.6 and well up from 60.8 for the previous Bonsai. PrismML says it also finishes tasks in fewer turns and with fewer tokens.</p>
+        <p>The weights are available under the Apache 2.0 licence. It runs on NVIDIA and Intel GPUs via llama.cpp and on Macs via MLX. PrismML quotes about 204 tokens per second on a consumer RTX 4090. All the benchmark numbers come from PrismML itself, but it’s a notable step for keeping coding agents and sensitive code on your own hardware.</p>
+        <p class="source"><a href="https://prismml.com/news/bonsai-2-5-27b" rel="noopener">PrismML →</a></p>
+      </article>
+
+      <article class="story">
+        <h2>AI safety fears move from the labs into US politics</h2>
+        <p>More than two dozen sources told Axios that, after recent breakthroughs, some employees at OpenAI and Anthropic increasingly worry that future frontier models can’t be safely released. Some think it’s a fixable technical problem, and others think the labs should stop training new models entirely. Senators Mark Kelly, Brian Schatz and Chris Van Hollen called for immediate action, and Bernie Sanders called for a pause on advanced AI development.</p>
+        <p>Anthropic CEO Dario Amodei also pushed back on a separate Axios story, writing that he does not believe we should “surrender human free will” to AI and that AI must be governed through democratic processes. Axios says both companies have acknowledged safety challenges and signalled they’re willing to slow parts of development or deployment.</p>
+        <p class="source"><a href="https://www.axios.com/2026/11/25/democrats-ai-safety-restrictions-openai-anthropic-axios" rel="noopener">Axios →</a></p>
+      </article>
+    </section>
+
+    <aside class="callout" aria-label="Quick tip">
+      <strong>A note for the Claude Code pilot: MCP is becoming the front door</strong>
+      <p>Two of today’s stories point the same way. Skills over MCP is now in public beta in Claude Code. It’s on by default for Pro, Max and Ultra, Team plans need an admin to switch it on, and Enterprise is “coming soon”. Separately, Google will require AI agents to reach Workspace data through MCP or its CLI from 1 February 2027, and pitches that partly on lower token costs. If you’re deciding where internal tools and guidance should live for agents, MCP servers look like a safer bet than one-off integrations.</p>
+    </aside>
+
+    <footer class="footer">
+      <span>Published for Spinal Frontier</span>
+      <span><a href="../">Back to today</a> · <a href="./">Archives</a></span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Good morning — AI brief · 25 Nov 2026</title>
-  <meta name="description" content="Spinal Frontier morning AI brief for Wednesday 25 Nov 2026."/>
+  <title>Good morning — AI brief · 26 Nov 2026</title>
+  <meta name="description" content="Spinal Frontier morning AI brief for Thursday 26 Nov 2026."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,60 +14,60 @@
         <p class="kicker">Morning paper</p>
         <h1>Good morning — AI brief</h1>
       </div>
-      <div class="date-chip">Wednesday 25 Nov 2026 · Perth</div>
+      <div class="date-chip">Thursday 26 Nov 2026 · Perth</div>
     </header>
 
-    <p class="lede">Happy Wednesday! OpenAI says GPT-6 can design new proteins with nothing but reasoning and code, and DeepMind has a new test of whether models get the easy stuff right every single time. Personal AI agents are spreading to new countries, Anthropic asked 58 companies where AI is actually paying off, and the inbox brings honest essays from engineers on a year of AI writing the code.</p>
+    <p class="lede">Happy Thursday! OpenAI has posted a bold maths claim about how fast computers can ever multiply matrices, and the Model Context Protocol turns two with new tricks in Claude and a big vote of confidence from Google Workspace. There’s also a 5.9 GB coding model you can run on your own machine, and a safety debate that has moved from AI labs into US politics.</p>
 
     <figure class="hero">
-      <img src="media/2026-11-25.jpg" width="1280" height="640" alt="Gradient title card reading “Proteins by prompt” for the 25 November 2026 AI morning paper."/>
+      <img src="media/2026-11-26.jpg" width="1280" height="640" alt="Gradient title card reading “Nine fourths” for the 26 November 2026 AI morning paper."/>
     </figure>
 
     <section class="stories" aria-label="Today’s stories">
       <article class="story">
-        <h2>GPT-6 designs new proteins using only reasoning and code</h2>
-        <p>OpenAI says its GPT-6 models can design new protein shapes and the amino-acid sequences that make them, without calling specialised biology models to generate the designs. An internal research model matched or beat specialised tools on many design tasks, and researchers could steer it in plain English, for example by saying where a protein should attach.</p>
-        <p>In lab tests with Onava, proteins based on GPT-6.2’s designs showed signs of binding to five targets, and redesigned antibodies kept binding. One caveat from OpenAI: specialised models still helped supply sequences and pick which candidates to test. The full details are in a preprint.</p>
-        <p class="source"><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" rel="noopener">OpenAI →</a></p>
+        <h2>OpenAI claims it has settled how fast matrices can ever be multiplied</h2>
+        <p>Multiplying two n×n matrices the schoolbook way takes about n³ steps, and ever since Strassen’s famous trick, mathematicians have asked how far that can be pushed down. A new OpenAI preprint dated 24 November claims the answer is exactly n to the power of 9/4, over every field. It proves a matching lower bound, so any such arithmetic circuit needs at least about n^(9/4)/2 multiplications or divisions. That pairs with a 9/4 upper bound OpenAI posted in October, which other researchers have since extended to every field.</p>
+        <p>If it holds up, the long-hoped-for exponent of 2 is off the table. For now it’s a preprint, and commentators are framing it as a result to watch “if independently validated”. Even so, it’s a striking addition to a run of AI-driven maths claims this month.</p>
+        <p class="source"><a href="https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026" rel="noopener">OpenAI (GitHub) →</a></p>
       </article>
 
       <article class="story">
-        <h2>Humanity’s First Exam: can a model get the easy stuff right every time?</h2>
-        <p>Most benchmarks measure the hardest thing a model can do. Google DeepMind’s new Humanity’s First Exam measures something different: whether a model answers simple, everyday questions, and small variations of them, correctly every single time. It has 544 basic text and image prompts across 20 foundational skills. One example asks for the colour of the third letter of each word in a neon sign.</p>
-        <p>DeepMind says frontier models have improved a lot on it over the past six months. There’s a live leaderboard on Kaggle, and a three-week competition running until 15 December asks people to submit everyday questions that today’s models still get wrong.</p>
-        <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/" rel="noopener">Google →</a></p>
+        <h2>MCP turns two: servers can now ship skills and run long jobs in Claude</h2>
+        <p>To mark two years of the Model Context Protocol, Anthropic launched Skills over MCP in public beta. MCP servers can now publish step-by-step skills alongside their tools, and Claude loads a skill only when it needs it, which keeps context use low. Shopify, HubSpot and Atlassian are early users. Tasks also reached general availability, so a server can run long jobs in the background while Claude keeps working. So did Elicitation, which lets a server pause and ask you to confirm something, as Supabase does before running destructive SQL.</p>
+        <p>File Uploads, which will let Claude pass PDFs, spreadsheets and images to a server without filling up the context window, is “rolling out soon”. All of these are part of the open MCP spec, so any compatible client can use them, not just Claude.</p>
+        <p class="source"><a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more" rel="noopener">Claude →</a></p>
       </article>
 
       <article class="story">
-        <h2>Personal AI agents launch in more countries</h2>
-        <p>Meta’s Muse agent is now available in the UK. You give it a task in its app or in WhatsApp and it carries it out. It asks before it sends an email or buys something, can’t see your passwords or card details, and each user gets their own cloud computer to work in. It launches with UK partners including Marks &amp; Spencer, ASOS, Currys and easyJet, and it’s free, with paid plans for more usage.</p>
-        <p>In China, ByteDance’s Doubao team opened an invite-only beta of Xiaodou, a standalone personal assistant it calls experimental, joining Tencent and Meta in the race to build agents for everyday life.</p>
-        <p class="source"><a href="https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/" rel="noopener">Meta →</a></p>
+        <h2>Google will make AI agents use MCP to reach Gmail and Drive</h2>
+        <p>Google’s Workspace MCP servers and the official Workspace CLI are now generally available. The MCP servers cover Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks, and the CLI is for terminal-based agents such as Claude Code and Codex. The bigger news is a new rule. AI agents must use MCP to access Workspace data instead of calling the REST APIs directly, with technical enforcement starting 1 February 2027.</p>
+        <p>Google says this means every agent call is checked against an organisation’s permissions and data-loss-prevention rules, with audit logs and user confirmations built in. It also says the approach uses fewer tokens than pulling raw data line by line. There’s a free Standard tier with published rate limits, and a paid Scaled tier for heavier use that starts billing on 1 April 2027.</p>
+        <p class="source"><a href="https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html" rel="noopener">Google Workspace Updates →</a></p>
       </article>
 
       <article class="story">
-        <h2>Anthropic asked 58 companies where AI actually pays off</h2>
-        <p>Anthropic’s economists held 66 interviews with 58 of its enterprise customers, covering nearly 300 uses of AI. Most of the value came from doing more, not from cutting costs. The biggest wins came where companies changed how they work by redesigning processes, merging roles and letting more people own workflows, rather than just adding AI to the old way.</p>
-        <p>On jobs, they found very few layoffs driven by AI. Many companies said they were hiring less, though, and using fewer contractors, especially offshore ones. Anthropic says that could be an early warning for outsourced business services. The bottlenecks they heard about include experts resisting AI and steps like code review that don’t speed up.</p>
-        <p class="source"><a href="https://www.anthropic.com/research/working-with-ai" rel="noopener">Anthropic →</a></p>
+        <h2>A 5.9 GB coding model that runs on your own machine</h2>
+        <p>PrismML released Ternary Bonsai 2.5 27B, a heavily compressed version of Qwen3.8 27B that still fits in 5.9 GB. It’s built for agentic coding and multi-step tool use on private files. It scores 75.6 on SWE-bench Verified, close to the full-size base model’s 80.6 and well up from 60.8 for the previous Bonsai. PrismML says it also finishes tasks in fewer turns and with fewer tokens.</p>
+        <p>The weights are available under the Apache 2.0 licence. It runs on NVIDIA and Intel GPUs via llama.cpp and on Macs via MLX. PrismML quotes about 204 tokens per second on a consumer RTX 4090. All the benchmark numbers come from PrismML itself, but it’s a notable step for keeping coding agents and sensitive code on your own hardware.</p>
+        <p class="source"><a href="https://prismml.com/news/bonsai-2-5-27b" rel="noopener">PrismML →</a></p>
       </article>
 
       <article class="story">
-        <h2>From the inbox: a year of AI writing the code, in engineers’ own words</h2>
-        <p>The Pragmatic Engineer is sharing winners from its essay contest on how building software has changed now that AI writes most of the code. Anton Zaides, an engineering manager at HoneyBook, describes how his team moved from careful two-person reviews to vibe-coded frontends and optional reviews. His output went from about one PR a week to more than 20, but the codebase ended up “full of duplications.”</p>
-        <p>Other winners cover solo builders (“I’m a 100x engineer now!”) and Granola’s Jacob Bartlett on the new core skills of agentic engineering. Their shared conclusion is that agents can write the code, but engineers still have to understand it. The post also links to 40 more essays.</p>
-        <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge" rel="noopener">The Pragmatic Engineer →</a></p>
+        <h2>AI safety fears move from the labs into US politics</h2>
+        <p>More than two dozen sources told Axios that, after recent breakthroughs, some employees at OpenAI and Anthropic increasingly worry that future frontier models can’t be safely released. Some think it’s a fixable technical problem, and others think the labs should stop training new models entirely. Senators Mark Kelly, Brian Schatz and Chris Van Hollen called for immediate action, and Bernie Sanders called for a pause on advanced AI development.</p>
+        <p>Anthropic CEO Dario Amodei also pushed back on a separate Axios story, writing that he does not believe we should “surrender human free will” to AI and that AI must be governed through democratic processes. Axios says both companies have acknowledged safety challenges and signalled they’re willing to slow parts of development or deployment.</p>
+        <p class="source"><a href="https://www.axios.com/2026/11/25/democrats-ai-safety-restrictions-openai-anthropic-axios" rel="noopener">Axios →</a></p>
       </article>
     </section>
 
     <aside class="callout" aria-label="Quick tip">
-      <strong>A note for the Copilot and Claude Code work: review is the new bottleneck</strong>
-      <p>Two of today’s pieces land on the same point. Anthropic’s company interviews found that as coding speeds up, steps like code review become the hold-up. In The Pragmatic Engineer, an engineering manager describes his team going from two reviewers per PR to none, and ending up with a buggy codebase. If you’re writing standards, how review keeps up with AI output is worth a line of its own.</p>
+      <strong>A note for the Claude Code pilot: MCP is becoming the front door</strong>
+      <p>Two of today’s stories point the same way. Skills over MCP is now in public beta in Claude Code. It’s on by default for Pro, Max and Ultra, Team plans need an admin to switch it on, and Enterprise is “coming soon”. Separately, Google will require AI agents to reach Workspace data through MCP or its CLI from 1 February 2027, and pitches that partly on lower token costs. If you’re deciding where internal tools and guidance should live for agents, MCP servers look like a safer bet than one-off integrations.</p>
     </aside>
 
     <footer class="footer">
       <span>Published for Spinal Frontier</span>
-      <span><a href="archive/2026-11-25.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
+      <span><a href="archive/2026-11-26.html">Today’s archive page</a> · <a href="archive/">Archives</a></span>
     </footer>
   </main>
 </body>
