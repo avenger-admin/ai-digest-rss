@@ -1,0 +1,57 @@
+{
+  "title": "Good morning — AI brief",
+  "lede": "Happy Friday! Anthropic has shared how Claude helped rebuild the API that serves Claude, and OpenAI is putting ChatGPT and Codex on one shared allowance from December. Plus: the US says yes to a million AI-computing satellites, a small open coding model from JetBrains that runs locally, and a Latent Space chat on building agents that sell.",
+  "hero": "media/2026-11-27.jpg",
+  "hero_alt": "Gradient title card reading “Trust, then ship” for the 27 November 2026 AI morning paper.",
+  "callout": {
+    "title": "Worth stealing: let production check the AI’s work",
+    "body": "Anthropic’s Rust story is less about Rust and more about verification. Claude wrote the first core path in about a week; the hard part was proving it matched the live service. They mirrored real traffic to both versions, compared results at checkpoints, and had agents chase each mismatch while engineers reviewed the fixes. If the team is eyeing any AI-assisted migration, shadow traffic plus diff-and-fix loops is a pattern worth copying."
+  },
+  "items": [
+    {
+      "headline": "Claude helped move Anthropic’s main API from Python to Rust, with no downtime",
+      "body": [
+        "Anthropic’s Messages API, the front door for customers and for its own apps like Claude Code, was written in Python in 2023. Traffic has grown roughly 1,800 times since early 2024, so the team moved it to Rust. Claude wrote a first version of the core request path in about a week.",
+        "Proving it behaved exactly like the old one was the real work. Anthropic turned the live API into a verifier: both versions handled the same traffic, differences were flagged, and agents were sent off to propose fixes for engineers to review. The new service uses about 70% less CPU per request and cuts median time to first token by about 20%."
+      ],
+      "source_label": "Anthropic →",
+      "source_url": "https://www.anthropic.com/research/migrating-api-to-rust"
+    },
+    {
+      "headline": "ChatGPT and Codex will share one allowance from December",
+      "body": [
+        "OpenAI says Plus, Pro and Business plans will soon have one usage allowance across ChatGPT and Codex, measured in tokens. Bigger models and harder tasks use more of it, while Instant chat won’t count at all. You’ll see what’s left and when it resets under Settings → Usage, and if you run out you can wait, upgrade or buy credits.",
+        "OpenAI expects most people won’t hit resets more often than today, but heavy users of both chat and coding may feel it. It hasn’t published the new allowance sizes yet."
+      ],
+      "source_label": "OpenAI Help Center →",
+      "source_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+    },
+    {
+      "headline": "The US approves a million SpaceX satellites to run AI in orbit",
+      "body": [
+        "The FCC has licensed SpaceX’s Starmind plan for up to one million satellites that act as solar-powered data centres in low-Earth orbit, processing AI work and relaying results to Earth via Starlink. It’s the first approval of its kind. Deployment must start by November 2033, with 10% up by November 2035 and half by November 2038. SpaceX wants to launch the first one next year.",
+        "Not everyone is cheering. Amazon called it a “lofty ambition rather than a real plan”, and astronomers warn it would badly hurt views of the night sky. It’s a sign of how hard the hunt for AI computing power has become as data centres on the ground face more opposition."
+      ],
+      "source_label": "BBC News →",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo"
+    },
+    {
+      "headline": "JetBrains releases a fast, open coding model you can run yourself",
+      "body": [
+        "JetBrains released Mellum2.1 Instruct, the quicker sibling of October’s Mellum2.1 Thinking. It’s a 12B mixture-of-experts model with only 2.5B parameters active at a time, and it gives straight answers without showing its reasoning. JetBrains pitches it for the simpler parts of a coding agent’s day: small fixes, commands and questions about the code. It produces about half as many tokens as the Thinking version and scores almost as well on SWE-bench Verified.",
+        "The weights are Apache 2.0 on Hugging Face, with GGUF builds for local tools and a multi-token prediction head to speed up generation. For teams that want coding help to stay on their own machines, it’s a neat “fast worker” to pair with a bigger model. The benchmark claims are JetBrains’ own."
+      ],
+      "source_label": "JetBrains Blog →",
+      "source_url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/"
+    },
+    {
+      "headline": "Latent Space: how Clay builds agents for sales teams",
+      "body": [
+        "In this week’s Latent Space episode, Clay’s Head of AI, Jeff Barg, explains how the company builds sales and marketing tools that any agent can use. Usage is already split about 50/50 between Clay’s own agent and outside harnesses such as Claude Code. By his napkin maths, checking all 40 million companies in Clay’s database against a customer profile would cost about $1,500.",
+        "Other good bits: why customers hate picking a model (Clay plans to choose for them), why they run agents on a home-grown system built on BullMQ instead of Temporal or LangGraph, and why agents still can’t debug other agents."
+      ],
+      "source_label": "Latent Space →",
+      "source_url": "https://latent.space/p/how_clay_builds_gtm_agents_jeff_barg_head_of_ai/"
+    }
+  ]
+}
